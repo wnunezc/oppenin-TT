@@ -1,0 +1,23 @@
+{
+  "preparacion": "2026-11-17T13:02:41.753495-05:00",
+  "zona": "America/Panama UTC-05:00",
+  "estado": "Preparada; no acredita ejecución",
+  "sesion": "E2E-02-A1",
+  "skill": "1.1",
+  "perfil": "PEO-01 v1.1",
+  "fuentes": [
+    {
+      "ruta": "D:\\OpsZone\\DevWorkspace\\Projects\\Tech-Test\\Oppenin\\SKILL.md",
+      "sha256": "4c155d3f6172c35a1ebb8b11685756d0153282cd4b0a3d3918195aaa9e89317b"
+    },
+    {
+      "ruta": "D:\\OpsZone\\DevWorkspace\\Projects\\Tech-Test\\Oppenin\\PERFIL-EXPEDIENTE.md",
+      "sha256": "538d9dbec35316a20aad0fa8888733b874dcb87f3b217f43759d2cc92c4432f6"
+    },
+    {
+      "ruta": "D:\\OpsZone\\DevWorkspace\\Projects\\Tech-Test\\Oppenin\\pruebas\\entradas\\E2E-02-proforma.pdf",
+      "sha256": "8449390f51372510b0a1be6cf29226ed8e75c997b90b54365b24ae16f04547c8"
+    }
+  ],
+  "solicitud_sha256": "c26852dbc811018b706754a52c150497f42c0e09206ca463670e2256ddac576f"
+}

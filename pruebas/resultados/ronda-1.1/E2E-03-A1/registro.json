@@ -1,0 +1,49 @@
+{
+  "inicio": "2026-11-17T13:01:13.572-05:00 America/Panama",
+  "fin": "2026-11-17T13:03:23.552-05:00",
+  "zona": "America/Panama UTC-05:00",
+  "fuentes": [
+    {
+      "ruta": "D:\\OpsZone\\DevWorkspace\\Projects\\Tech-Test\\Oppenin\\SKILL.md",
+      "sha256": "4c155d3f6172c35a1ebb8b11685756d0153282cd4b0a3d3918195aaa9e89317b"
+    },
+    {
+      "ruta": "D:\\OpsZone\\DevWorkspace\\Projects\\Tech-Test\\Oppenin\\PERFIL-EXPEDIENTE.md",
+      "sha256": "538d9dbec35316a20aad0fa8888733b874dcb87f3b217f43759d2cc92c4432f6"
+    },
+    {
+      "ruta": "D:\\OpsZone\\DevWorkspace\\Projects\\Tech-Test\\Oppenin\\pruebas\\entradas\\E2E-03-proforma.pdf",
+      "sha256": "c50b4b4eccf718b5c2e3cd921d1bdb725d6f880862d7fc2517f5b52624c6d06b"
+    },
+    {
+      "ruta": "D:\\OpsZone\\DevWorkspace\\Projects\\Tech-Test\\Oppenin\\pruebas\\resultados\\ronda-1.1\\E2E-03-A1\\solicitud-ia.txt",
+      "sha256": "f1430d796ada7a8e5962b63d628bb630506fbb4f853c3f919e1787667cc0fae2"
+    }
+  ],
+  "skill": "1.1",
+  "perfil": "PEO-01 v1.1",
+  "modelo": "No expuesto por la herramienta con identidad verificable; no se modificó modelo ni configuración",
+  "metodo": [
+    "Primera operación: DateTimeOffset.UtcNow convertido mediante TimeZoneInfo a SA Pacific Standard Time y escrito en inicio.txt antes de leer fuentes.",
+    "Get-Content -Raw de solicitud-ia.txt y después SKILL.md y PERFIL-EXPEDIENTE.md íntegros.",
+    "Python existente indicado: pypdf.PdfReader(ruta original); bucle enumerate(reader.pages,1); page.extract_text(); guardado propio UTF-8 en extraccion-pypdf.json. Una página leída de una página.",
+    "Comprobación ascii(texto extraído) para distinguir visualización de consola de texto UTF-8.",
+    "pdftoppm -png -r 120 <PDF original> <directorio autorizado>\\pagina; visión directa con view_image de pagina-1.png.",
+    "Aritmética System.Decimal: 20 * 80.00 y 1600.00 + 0.00 + 0.00; evidencia en calculos.json.",
+    "Control local regex de checklist: 21 filas de ID y 21 ID únicos; revisión de correspondencia de hallazgos y preguntas con PEO-01.",
+    "Get-FileHash -Algorithm SHA256 sobre bytes originales de las fuentes leídas."
+  ],
+  "incidencias": [
+    "pdftoppm emitió avisos No display font for Symbol y ArialUnicode; generó pagina-1.png, que se leyó visualmente sin campos esenciales ilegibles.",
+    "La salida de consola inicial mostró acentos con carácter de sustitución; extracción UTF-8 y representación escapada conservaron los caracteres, confirmados visualmente."
+  ],
+  "salidas": [
+    "D:\\OpsZone\\DevWorkspace\\Projects\\Tech-Test\\Oppenin\\pruebas\\resultados\\ronda-1.1\\E2E-03-A1\\inicio.txt",
+    "D:\\OpsZone\\DevWorkspace\\Projects\\Tech-Test\\Oppenin\\pruebas\\resultados\\ronda-1.1\\E2E-03-A1\\prompt-recibido.txt",
+    "D:\\OpsZone\\DevWorkspace\\Projects\\Tech-Test\\Oppenin\\pruebas\\resultados\\ronda-1.1\\E2E-03-A1\\extraccion-pypdf.json",
+    "D:\\OpsZone\\DevWorkspace\\Projects\\Tech-Test\\Oppenin\\pruebas\\resultados\\ronda-1.1\\E2E-03-A1\\pagina-1.png",
+    "D:\\OpsZone\\DevWorkspace\\Projects\\Tech-Test\\Oppenin\\pruebas\\resultados\\ronda-1.1\\E2E-03-A1\\calculos.json",
+    "D:\\OpsZone\\DevWorkspace\\Projects\\Tech-Test\\Oppenin\\pruebas\\resultados\\ronda-1.1\\E2E-03-A1\\salida-observada.md",
+    "D:\\OpsZone\\DevWorkspace\\Projects\\Tech-Test\\Oppenin\\pruebas\\resultados\\ronda-1.1\\E2E-03-A1\\registro.json"
+  ]
+}

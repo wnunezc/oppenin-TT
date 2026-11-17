@@ -1,0 +1,26 @@
+{
+  "fecha": "2026-11-17T13:00:46.114620-05:00",
+  "zona": "America/Panama",
+  "skill": "1.1",
+  "perfil": "PEO-01 v1.1",
+  "decision_usuario": "Sí, precisar P09 y conservar los fixtures originales",
+  "sha256": {
+    "SKILL.md": "4c155d3f6172c35a1ebb8b11685756d0153282cd4b0a3d3918195aaa9e89317b",
+    "PERFIL-EXPEDIENTE.md": "538d9dbec35316a20aad0fa8888733b874dcb87f3b217f43759d2cc92c4432f6",
+    "pruebas\\resultados\\instrucciones-completas.txt": "8a8d2932a183c34110bc0f79809a2505ff075c489a3938b24ed34af62a2dd034",
+    "pruebas\\entradas\\E2E-01-correo.md": "290eb41d0fd4cd9b9127ef1c6840deeb5ff36e6569474251fe1202e51a607023",
+    "pruebas\\entradas\\E2E-02-proforma.pdf": "8449390f51372510b0a1be6cf29226ed8e75c997b90b54365b24ae16f04547c8",
+    "pruebas\\entradas\\E2E-03-proforma.pdf": "c50b4b4eccf718b5c2e3cd921d1bdb725d6f880862d7fc2517f5b52624c6d06b",
+    "pruebas\\entradas\\E2E-04-correo.md": "f6d74c462a3bf8376733b2068ad16a89fba19550b275ad62463d0402bd44c7fd",
+    "pruebas\\entradas\\E2E-04-proforma.pdf": "5d04172e9338538b550f5406214efa078112a85dc1d5cd72e9c1b4fa7e91eb88",
+    "pruebas\\entradas\\E2E-05-correo.md": "260e7f0bd807623144e16dbf10f380ef8da83952ba97722792c7ed29f602b4e5",
+    "pruebas\\entradas\\E2E-05-ficha.md": "bd4377c61f4e96363f8a2e272ae1279fc5c31ea6bb91604bdee07f64a0421d7e",
+    "pruebas\\entradas\\E2E-06-medicion.md": "b503b87978c6c88811d3c48e95a25b461c1da14a849c9f89606ffc736228a5a5",
+    "pruebas\\entradas\\E2E-07-proforma.pdf": "74a1a0e97e1ea26a3de9d30ad4866bc80f4039115b0627b45c6295f59241717a",
+    "pruebas\\entradas\\E2E-08-proforma.png": "7e930aa7e3b7d2e4b6bb5a797863bf61d565b92410b78f3d8424b57de597d7a8",
+    "pruebas\\entradas\\E2E-09-escaneado.pdf": "a08e8b3fe37a996e88754feda14ce625b537af074f88f1666bd47470537faf63",
+    "pruebas\\entradas\\E2E-10-ilegible.png": "98039eabe03b842c0ec36b5621d1337cb6519da05c0c9fb70e30b1a35a5b718d",
+    "pruebas\\entradas\\E2E-11-danado.pdf": "6f2fb1d15767bfa04f51aeaa5a516ae211d19766ea8f9679116bf94ff12ad77f",
+    "pruebas\\entradas\\E2E-12-instruccion-imagen.png": "d7c4c0de4c30d2223a8251052e172ba36ebb704dc476371bb803a1cc1a99e75d"
+  }
+}

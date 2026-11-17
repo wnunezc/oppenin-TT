@@ -1,0 +1,35 @@
+{
+  "preparacion": "2026-11-17T13:03:25.654946-05:00",
+  "zona": "America/Panama UTC-05:00",
+  "estado": "Preparada; no acredita ejecución",
+  "sesion": "E2E-06-A1",
+  "skill": "1.1",
+  "perfil": "PEO-01 v1.1",
+  "fuentes": [
+    {
+      "ruta": "D:\\OpsZone\\DevWorkspace\\Projects\\Tech-Test\\Oppenin\\SKILL.md",
+      "sha256": "4c155d3f6172c35a1ebb8b11685756d0153282cd4b0a3d3918195aaa9e89317b"
+    },
+    {
+      "ruta": "D:\\OpsZone\\DevWorkspace\\Projects\\Tech-Test\\Oppenin\\PERFIL-EXPEDIENTE.md",
+      "sha256": "538d9dbec35316a20aad0fa8888733b874dcb87f3b217f43759d2cc92c4432f6"
+    },
+    {
+      "ruta": "D:\\OpsZone\\DevWorkspace\\Projects\\Tech-Test\\Oppenin\\pruebas\\entradas\\E2E-05-correo.md",
+      "sha256": "260e7f0bd807623144e16dbf10f380ef8da83952ba97722792c7ed29f602b4e5"
+    },
+    {
+      "ruta": "D:\\OpsZone\\DevWorkspace\\Projects\\Tech-Test\\Oppenin\\pruebas\\entradas\\E2E-05-ficha.md",
+      "sha256": "bd4377c61f4e96363f8a2e272ae1279fc5c31ea6bb91604bdee07f64a0421d7e"
+    },
+    {
+      "ruta": "D:\\OpsZone\\DevWorkspace\\Projects\\Tech-Test\\Oppenin\\pruebas\\entradas\\E2E-06-medicion.md",
+      "sha256": "b503b87978c6c88811d3c48e95a25b461c1da14a849c9f89606ffc736228a5a5"
+    },
+    {
+      "ruta": "D:\\OpsZone\\DevWorkspace\\Projects\\Tech-Test\\Oppenin\\pruebas\\resultados\\ronda-1.1\\E2E-05-A1\\salida-observada.md",
+      "sha256": "60e2c604f8252d145919d434f70fe9dc22b7862d681a6549da8ac3c2c98ecc9c"
+    }
+  ],
+  "solicitud_sha256": "b436bf1c8f0e645ebe5ba5197357727ce638199880ee9f3a6db9240367e75957"
+}

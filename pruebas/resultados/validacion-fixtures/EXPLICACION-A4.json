@@ -1,0 +1,15 @@
+{
+  "fecha": "2026-11-17T13:32:24.016487-05:00",
+  "zona": "America/Panama",
+  "fuente": "EXPLICACION.md",
+  "sha256": "29e8aab471f36809e9979b946fd6eece7a1d7d940f887dae8c48f1403aeaca5c",
+  "paginas": 1,
+  "formato": "A4 210 x 297 mm",
+  "margenes_cm": 2,
+  "texto_pt": 11,
+  "interlineado_pt": 15,
+  "titulo_pt": 16,
+  "metodo": "ReportLab: composición completa del texto a A4; PDF transitorio en memoria, pypdf cuenta páginas, Poppler stdin genera vista PNG. No se guarda PDF adicional.",
+  "vista": "pruebas/resultados/validacion-fixtures/EXPLICACION-A4.png",
+  "stderr_poppler": "Syntax Error: No display font for 'Symbol'\r\nSyntax Error: No display font for 'ArialUnicode'\r\n"
+}

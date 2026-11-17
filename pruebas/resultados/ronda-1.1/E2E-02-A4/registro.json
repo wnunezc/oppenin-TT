@@ -1,0 +1,54 @@
+{
+  "inicio": "2026-11-17 13:17:50 -05:00",
+  "fin": "2026-11-17T13:19:55-05:00",
+  "zona": "America/Panama UTC-05:00",
+  "fuentes": [
+    {
+      "ruta": "D:\\OpsZone\\DevWorkspace\\Projects\\Tech-Test\\Oppenin\\SKILL.md",
+      "sha256": "4c155d3f6172c35a1ebb8b11685756d0153282cd4b0a3d3918195aaa9e89317b"
+    },
+    {
+      "ruta": "D:\\OpsZone\\DevWorkspace\\Projects\\Tech-Test\\Oppenin\\PERFIL-EXPEDIENTE.md",
+      "sha256": "538d9dbec35316a20aad0fa8888733b874dcb87f3b217f43759d2cc92c4432f6"
+    },
+    {
+      "ruta": "D:\\OpsZone\\DevWorkspace\\Projects\\Tech-Test\\Oppenin\\pruebas\\entradas\\E2E-02-proforma.pdf",
+      "sha256": "8449390f51372510b0a1be6cf29226ed8e75c997b90b54365b24ae16f04547c8"
+    }
+  ],
+  "skill": "1.1",
+  "perfil": "PEO-01 v1.1",
+  "modelo": "No expuesto por la herramienta; no se verificó un identificador exacto de modelo. No se cambió modelo ni configuración.",
+  "metodo": {
+    "lecturas": [
+      "solicitud-ia.txt íntegra mediante Get-Content -Raw",
+      "SKILL.md y PERFIL-EXPEDIENTE.md íntegros mediante Get-Content -Raw",
+      "PDF original abierto con pypdf.PdfReader; iteración de todas sus páginas (1/1), page.extract_text(); extracción propia guardada en extraccion-propia.txt",
+      "Relectura UTF-8 de extracción propia para corregir únicamente visualización de consola"
+    ],
+    "comandos": [
+      "Primer comando: $inicio = [DateTimeOffset]::UtcNow.ToOffset([TimeSpan]::FromHours(-5)).ToString('yyyy-MM-dd HH:mm:ss zzz'); Set-Content -LiteralPath 'pruebas/resultados/ronda-1.1/E2E-02-A4/inicio.txt' -Value $inicio -Encoding utf8",
+      "Get-Content -LiteralPath 'pruebas/resultados/ronda-1.1/E2E-02-A4/solicitud-ia.txt' -Raw",
+      "Get-Content -LiteralPath 'SKILL.md' -Raw; Get-Content -LiteralPath 'PERFIL-EXPEDIENTE.md' -Raw",
+      "Python existente invocado por PowerShell con script por stdin: PdfReader(str(p)); for i,page in enumerate(r.pages,1): t=page.extract_text(); conservación UTF-8 de todas las páginas y hashlib.sha256(f.read_bytes()).hexdigest() sobre las tres fuentes originales",
+      "[Console]::OutputEncoding = [System.Text.Encoding]::UTF8; Get-Content -LiteralPath 'pruebas/resultados/ronda-1.1/E2E-02-A4/extraccion-propia.txt' -Raw -Encoding utf8",
+      "Set-Content -LiteralPath 'pruebas/resultados/ronda-1.1/E2E-02-A4/salida-observada.md' -Encoding utf8 con informe completo en here-string",
+      "Python existente: comprobación por regex de 21 controles únicos en orden; Decimal(20)*Decimal('80.00') y suma decimal de subtotal/impuestos/otros cargos; resultado en verificacion.txt"
+    ],
+    "python": "C:\\Program Files\\WindowsApps\\OpenAI.CodexPrimaryRuntime.v26-1112-737-0_26.1112.737.0_x64__3k8sg7r9htsxt\\dependencies\\python\\python.exe",
+    "renderizado_ocr": "No necesarios: extracción completa legible. No se atribuye lectura visual.",
+    "validacion": "21 controles únicos comprobados automáticamente; aritmética decimal comprobada; evidencia y aplicabilidad revisadas manualmente."
+  },
+  "incidencias": [
+    "La primera visualización de stdout de Python dañó acentos por codificación de consola; se releyó el archivo propio UTF-8 con salida de consola UTF-8. Texto de la fuente y extracción no alterados."
+  ],
+  "salidas": [
+    "D:\\OpsZone\\DevWorkspace\\Projects\\Tech-Test\\Oppenin\\pruebas\\resultados\\ronda-1.1\\E2E-02-A4\\inicio.txt",
+    "D:\\OpsZone\\DevWorkspace\\Projects\\Tech-Test\\Oppenin\\pruebas\\resultados\\ronda-1.1\\E2E-02-A4\\prompt-recibido.txt",
+    "D:\\OpsZone\\DevWorkspace\\Projects\\Tech-Test\\Oppenin\\pruebas\\resultados\\ronda-1.1\\E2E-02-A4\\extraccion-propia.txt",
+    "D:\\OpsZone\\DevWorkspace\\Projects\\Tech-Test\\Oppenin\\pruebas\\resultados\\ronda-1.1\\E2E-02-A4\\fuentes-sha256.json",
+    "D:\\OpsZone\\DevWorkspace\\Projects\\Tech-Test\\Oppenin\\pruebas\\resultados\\ronda-1.1\\E2E-02-A4\\salida-observada.md",
+    "D:\\OpsZone\\DevWorkspace\\Projects\\Tech-Test\\Oppenin\\pruebas\\resultados\\ronda-1.1\\E2E-02-A4\\verificacion.txt",
+    "D:\\OpsZone\\DevWorkspace\\Projects\\Tech-Test\\Oppenin\\pruebas\\resultados\\ronda-1.1\\E2E-02-A4\\registro.json"
+  ]
+}

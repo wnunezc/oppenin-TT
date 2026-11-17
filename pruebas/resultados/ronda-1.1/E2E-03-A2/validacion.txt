@@ -1,0 +1,2 @@
+Verificado automáticamente: 21 controles, cada ID P01-P10, F01-F05 e I01-I06 aparece exactamente una vez en el checklist.
+Revisión manual: estados admitidos, evidencias/motivos, hallazgos y preguntas vinculados al perfil; sin veredicto de prueba.

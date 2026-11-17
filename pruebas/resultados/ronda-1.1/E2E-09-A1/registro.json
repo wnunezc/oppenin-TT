@@ -1,0 +1,43 @@
+{
+  "inicio": "2026-11-17 13:06:17 -05:00",
+  "fin": "2026-11-17 13:08:12 -05:00",
+  "zona": "America/Panama UTC-05:00",
+  "fuentes": [
+    {
+      "sha256": "4c155d3f6172c35a1ebb8b11685756d0153282cd4b0a3d3918195aaa9e89317b",
+      "ruta": "D:\\OpsZone\\DevWorkspace\\Projects\\Tech-Test\\Oppenin\\SKILL.md"
+    },
+    {
+      "sha256": "538d9dbec35316a20aad0fa8888733b874dcb87f3b217f43759d2cc92c4432f6",
+      "ruta": "D:\\OpsZone\\DevWorkspace\\Projects\\Tech-Test\\Oppenin\\PERFIL-EXPEDIENTE.md"
+    },
+    {
+      "sha256": "a08e8b3fe37a996e88754feda14ce625b537af074f88f1666bd47470537faf63",
+      "ruta": "D:\\OpsZone\\DevWorkspace\\Projects\\Tech-Test\\Oppenin\\pruebas\\entradas\\E2E-09-escaneado.pdf"
+    }
+  ],
+  "skill": "1.1",
+  "perfil": "PEO-01 v1.1",
+  "modelo": "No expuesto por la herramienta; no se cambió modelo ni configuración",
+  "metodo": [
+    "Primera operación: DateTimeOffset.UtcNow.ToOffset(TimeSpan.FromHours(-5)); guardado en inicio.txt antes de leer fuentes.",
+    "Lectura íntegra con Get-Content de solicitud-ia.txt, SKILL.md y PERFIL-EXPEDIENTE.md; conservación del mensaje recibido en prompt-recibido.txt.",
+    "Python existente indicado por solicitud: pypdf.PdfReader sobre el PDF original; iteración de todas sus páginas: 1; page.extract_text() devolvió vacío; evidencia propia en extraccion-pypdf.txt.",
+    "Comando: pdftoppm -png -r 150 D:\\OpsZone\\DevWorkspace\\Projects\\Tech-Test\\Oppenin\\pruebas\\entradas\\E2E-09-escaneado.pdf D:\\OpsZone\\DevWorkspace\\Projects\\Tech-Test\\Oppenin\\pruebas\\resultados\\ronda-1.1\\E2E-09-A1\\pagina",
+    "tools.view_image de pagina-1.png: lectura visual directa de la única página completa; transcripción manual guardada en transcripcion-visual.txt.",
+    "Aritmética decimal explícita: 20 × 80.00 = 1600.00; 1600.00 + 0.00 + 0.00 = 1600.00 USD.",
+    "Verificación con regex de 21 ID únicos en checklist del informe. SHA256 con Get-FileHash sobre bytes originales."
+  ],
+  "incidencias": [
+    "Extracción pypdf vacía; resuelta mediante renderizado local y visión completa. No quedan campos esenciales no legibles."
+  ],
+  "salidas": [
+    "inicio.txt",
+    "prompt-recibido.txt",
+    "extraccion-pypdf.txt",
+    "pagina-1.png",
+    "transcripcion-visual.txt",
+    "salida-observada.md",
+    "registro.json"
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "inicio": "2026-11-17T13:01:27.615-05:00 America/Panama",
+  "fin": "2026-11-17T13:02:50.796-05:00",
+  "zona": "America/Panama UTC-05:00",
+  "fuentes": [
+    {
+      "ruta": "D:\\OpsZone\\DevWorkspace\\Projects\\Tech-Test\\Oppenin\\pruebas\\resultados\\ronda-1.1\\E2E-05-A1\\solicitud-ia.txt",
+      "sha256": "601642e7f79fab44a1684a74862154af83fae35c8eec3c54df5c727180fd9b7d"
+    },
+    {
+      "ruta": "D:\\OpsZone\\DevWorkspace\\Projects\\Tech-Test\\Oppenin\\SKILL.md",
+      "sha256": "4c155d3f6172c35a1ebb8b11685756d0153282cd4b0a3d3918195aaa9e89317b"
+    },
+    {
+      "ruta": "D:\\OpsZone\\DevWorkspace\\Projects\\Tech-Test\\Oppenin\\PERFIL-EXPEDIENTE.md",
+      "sha256": "538d9dbec35316a20aad0fa8888733b874dcb87f3b217f43759d2cc92c4432f6"
+    },
+    {
+      "ruta": "D:\\OpsZone\\DevWorkspace\\Projects\\Tech-Test\\Oppenin\\pruebas\\entradas\\E2E-05-correo.md",
+      "sha256": "260e7f0bd807623144e16dbf10f380ef8da83952ba97722792c7ed29f602b4e5"
+    },
+    {
+      "ruta": "D:\\OpsZone\\DevWorkspace\\Projects\\Tech-Test\\Oppenin\\pruebas\\entradas\\E2E-05-ficha.md",
+      "sha256": "bd4377c61f4e96363f8a2e272ae1279fc5c31ea6bb91604bdee07f64a0421d7e"
+    }
+  ],
+  "skill": "1.1",
+  "perfil": "PEO-01 v1.1",
+  "modelo": "No expuesto por la herramienta; sin identidad de modelo verificable en esta ejecución",
+  "metodo": [
+    "Primera operación: DateTimeOffset.UtcNow convertido a zona fija America/Panama UTC-05:00 mediante TimeZoneInfo; escritura en inicio.txt antes de leer fuentes.",
+    "Conservación literal del mensaje recibido en prompt-recibido.txt.",
+    "Get-Content -LiteralPath solicitud-ia.txt -Raw; lectura completa de los cuatro archivos autorizados mediante Get-Content -Raw.",
+    "Conservación de lectura textual propia en lecturas-propias.txt; Get-FileHash -Algorithm SHA256 sobre bytes originales.",
+    "Informe escrito mediante IO.File.WriteAllText UTF-8; comprobación local por expresión regular: 21 ID únicos en checklist.",
+    "No había PDF ni PNG enumerados; no procedió extracción pypdf ni visión. Sin red, instalaciones ni cambios de configuración."
+  ],
+  "incidencias": [],
+  "salidas": [
+    "inicio.txt",
+    "prompt-recibido.txt",
+    "lecturas-propias.txt",
+    "salida-observada.md",
+    "registro.json"
+  ]
+}

@@ -1,0 +1,1 @@
+Checklist: 21 controles, 21 únicos. Aritmética decimal verificada: 20 * 80.00 = 1600.00; 1600.00 + 0.00 + 0.00 = 1600.00. Verificación editorial: estado global, hallazgos y preguntas corresponden a PEO-01; imagen legible leída directamente.

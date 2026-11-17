@@ -1,0 +1,10 @@
+{
+  "registro_interrupcion": "2026-11-17T13:17:35.711976-05:00",
+  "zona": "America/Panama UTC-05:00",
+  "veredicto": "INTERRUMPIDA",
+  "motivo": "La herramienta collaboration notificó que el subagente excedió el límite de uso; no produjo informe final.",
+  "fuente": "Notificaciones de error de v11_02_a3, v11_03_a3 y v11_04_a3 en esta conversación",
+  "inicio_conservado": "2026-11-17 13:13:56 -05:00",
+  "fin_ejecucion": "No capturado; no se reconstruye",
+  "nota": "No cuenta entre las ejecuciones completas. Se conserva todo el material parcial y se reintenta en sesión limpia A4."
+}

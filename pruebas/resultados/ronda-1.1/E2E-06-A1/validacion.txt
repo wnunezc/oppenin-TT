@@ -1,0 +1,1 @@
+Se verificaron los 21 ID, cada uno exactamente una vez como fila de checklist. Se revisaron evidencia/motivo, estados literales, orden de nueve secciones y correspondencia de preguntas con hallazgos. No hay PDF/PNG autorizados; no procede pypdf/renderizado/visión. Informe anterior no modificado. No se realizaron pruebas de software: tarea exclusivamente documental.

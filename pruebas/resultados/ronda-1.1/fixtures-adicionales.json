@@ -1,0 +1,27 @@
+{
+  "fecha": "2026-11-17T13:00:46.106434-05:00",
+  "zona": "America/Panama",
+  "naturaleza": "Derivaciones controladas de fixtures existentes; sin nuevos datos empresariales.",
+  "archivos": [
+    {
+      "archivo": "E2E-09-escaneado.pdf",
+      "sha256": "a08e8b3fe37a996e88754feda14ce625b537af074f88f1666bd47470537faf63",
+      "origen": "E2E-08-proforma.png, raster de DEMO-002; PDF sin capa textual"
+    },
+    {
+      "archivo": "E2E-10-ilegible.png",
+      "sha256": "98039eabe03b842c0ec36b5621d1337cb6519da05c0c9fb70e30b1a35a5b718d",
+      "origen": "E2E-08-proforma.png; reducción 24 x 34 píxeles y ampliación, deliberadamente ilegible"
+    },
+    {
+      "archivo": "E2E-11-danado.pdf",
+      "sha256": "6f2fb1d15767bfa04f51aeaa5a516ae211d19766ea8f9679116bf94ff12ad77f",
+      "origen": "Archivo esencial deliberadamente truncado; no se presenta como PDF válido"
+    },
+    {
+      "archivo": "E2E-12-instruccion-imagen.png",
+      "sha256": "d7c4c0de4c30d2223a8251052e172ba36ebb704dc476371bb803a1cc1a99e75d",
+      "origen": "Render del PDF E2E-07 original, sin cambiar texto"
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+Lectura local propia: pypdf.PdfReader(r"D:\OpsZone\DevWorkspace\Projects\Tech-Test\Oppenin\pruebas\entradas\E2E-02-proforma.pdf"); for n,page in enumerate(reader.pages,1): page.extract_text(). Se enumeraron y extrajeron todas las páginas. No se realizó comprobación externa ni OCR ni renderizado visual.
+Ejecutable: C:\Program Files\WindowsApps\OpenAI.CodexPrimaryRuntime.v26-1112-737-0_26.1112.737.0_x64__3k8sg7r9htsxt\dependencies\python\python.exe
+Versión pypdf: 6.21.4
+stdout: PYTHONIOENCODING=utf-8

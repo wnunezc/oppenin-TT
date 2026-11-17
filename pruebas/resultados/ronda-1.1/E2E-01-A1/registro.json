@@ -1,0 +1,41 @@
+{
+  "inicio": "2026-11-17T13:01:03.8690720-05:00 America/Panama",
+  "fin": "2026-11-17T13:02:26.6310000-05:00",
+  "zona": "America/Panama UTC-05:00",
+  "fuentes": [
+    {
+      "sha256": "e320a6a0944a5ad9dceaa6d5f227fdb79497bfb2e19466ed8d5c93842e24f645",
+      "ruta": "D:\\OpsZone\\DevWorkspace\\Projects\\Tech-Test\\Oppenin\\pruebas\\resultados\\ronda-1.1\\E2E-01-A1\\solicitud-ia.txt"
+    },
+    {
+      "sha256": "4c155d3f6172c35a1ebb8b11685756d0153282cd4b0a3d3918195aaa9e89317b",
+      "ruta": "D:\\OpsZone\\DevWorkspace\\Projects\\Tech-Test\\Oppenin\\SKILL.md"
+    },
+    {
+      "sha256": "538d9dbec35316a20aad0fa8888733b874dcb87f3b217f43759d2cc92c4432f6",
+      "ruta": "D:\\OpsZone\\DevWorkspace\\Projects\\Tech-Test\\Oppenin\\PERFIL-EXPEDIENTE.md"
+    },
+    {
+      "sha256": "290eb41d0fd4cd9b9127ef1c6840deeb5ff36e6569474251fe1202e51a607023",
+      "ruta": "D:\\OpsZone\\DevWorkspace\\Projects\\Tech-Test\\Oppenin\\pruebas\\entradas\\E2E-01-correo.md"
+    }
+  ],
+  "skill": "1.1",
+  "perfil": "PEO-01 v1.1",
+  "modelo": "Identidad de familia verificable por instrucciones del entorno: Codex basado en GPT-6; identificador exacto de ejecución no expuesto por la herramienta",
+  "metodo": [
+    "Primera operación: exec_command PowerShell capturó [DateTimeOffset]::UtcNow.ToOffset([TimeSpan]::FromHours(-5)) y escribió inicio.txt antes de leer fuentes.",
+    "Segunda operación: WriteAllText guardó literalmente el mensaje recibido en prompt-recibido.txt y Get-Content -LiteralPath solicitud-ia.txt -Raw leyó la activación completa.",
+    "Tercera operación: Get-Content -LiteralPath -Raw de SKILL.md, PERFIL-EXPEDIENTE.md y E2E-01-correo.md; lecturas textuales completas. No se leyeron otras fuentes.",
+    "Análisis documental manual de P01-P10, F01-F05 e I01-I06; aritmética decimal explícita de importes en informe.",
+    "WriteAllText guardó salida-observada.md; regex de filas y Select-Object -Unique verificaron 21 controles únicos; Get-FileHash -Algorithm SHA256 calculó hashes sobre bytes originales.",
+    "No se recibieron PDF o imágenes; pypdf, renderizado y visión no aplican. No se usó red, plugins, subagentes ni instalaciones en esta ejecución."
+  ],
+  "incidencias": [],
+  "salidas": [
+    "D:\\OpsZone\\DevWorkspace\\Projects\\Tech-Test\\Oppenin\\pruebas\\resultados\\ronda-1.1\\E2E-01-A1\\inicio.txt",
+    "D:\\OpsZone\\DevWorkspace\\Projects\\Tech-Test\\Oppenin\\pruebas\\resultados\\ronda-1.1\\E2E-01-A1\\prompt-recibido.txt",
+    "D:\\OpsZone\\DevWorkspace\\Projects\\Tech-Test\\Oppenin\\pruebas\\resultados\\ronda-1.1\\E2E-01-A1\\salida-observada.md",
+    "D:\\OpsZone\\DevWorkspace\\Projects\\Tech-Test\\Oppenin\\pruebas\\resultados\\ronda-1.1\\E2E-01-A1\\registro.json"
+  ]
+}

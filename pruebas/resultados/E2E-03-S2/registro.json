@@ -1,0 +1,67 @@
+{
+  "ejecucion": "E2E-03-S2",
+  "inicio": "2026-11-17T12:32:27.9003795-05:00",
+  "fin": "2026-11-17T12:36:17.139628-05:00",
+  "zona_horaria": "America/Panama",
+  "offset": "UTC-05:00",
+  "fuentes": [
+    {
+      "ruta": "D:\\OpsZone\\DevWorkspace\\Projects\\Tech-Test\\Oppenin\\SKILL.md",
+      "sha256": "1e7e7f07177d56410da6e30f713bfafa01dcc12c22b590838963e3c799b2e68c"
+    },
+    {
+      "ruta": "D:\\OpsZone\\DevWorkspace\\Projects\\Tech-Test\\Oppenin\\PERFIL-EXPEDIENTE.md",
+      "sha256": "9828fdae46571641482ecbed0b160609db28a809c5551898df010af135a5ef42"
+    },
+    {
+      "ruta": "D:\\OpsZone\\DevWorkspace\\Projects\\Tech-Test\\Oppenin\\pruebas\\entradas\\E2E-03-proforma.pdf",
+      "sha256": "c50b4b4eccf718b5c2e3cd921d1bdb725d6f880862d7fc2517f5b52624c6d06b"
+    }
+  ],
+  "skill": {
+    "nombre": "revisor-expedientes-mobiliario",
+    "version": "1.0",
+    "archivo": "SKILL.md"
+  },
+  "perfil": {
+    "nombre": "PEO-01",
+    "version": "1.0",
+    "archivo": "PERFIL-EXPEDIENTE.md"
+  },
+  "modelo": "no expuesto por la herramienta",
+  "herramientas": [
+    "functions.exec",
+    "exec_command: PowerShell",
+    "apply_patch",
+    "Python: pathlib, pypdf.PdfReader, hashlib, datetime, json"
+  ],
+  "metodo": {
+    "inicio": "Get-Date -Format o antes de buscar o leer entradas",
+    "localizacion": "rg --files -g SKILL.md -g PERFIL-EXPEDIENTE.md -g E2E-03-proforma.pdf",
+    "lectura_skill_perfil": "Get-Content -LiteralPath SKILL.md -Raw -Encoding UTF8 y Get-Content -LiteralPath PERFIL-EXPEDIENTE.md -Raw -Encoding UTF8",
+    "pdf": "PdfReader sobre archivo real; iteracion de todas las r.pages y page.extract_text(); stdout UTF-8; sin OCR",
+    "paginas": 1,
+    "paginas_leidas": [
+      1
+    ],
+    "texto_original_y_comando": "Conservados en salida-observada.md, seccion Evidencia de extraccion propia",
+    "aritmetica": "Multiplicacion y suma decimal de importes declarados a centavos; sin conversion de monedas ni calculo de tributos",
+    "red": "No utilizada",
+    "acciones_externas": "Ninguna"
+  },
+  "incidencias": [
+    "Primer comando extenso de escritura termino con codigo 1 sin salida. Test-Path confirmo carpeta inexistente; posterior escritura con apply_patch y Python."
+  ],
+  "archivos_salida": [
+    "prompt-recibido.txt",
+    "salida-observada.md",
+    "registro.json"
+  ],
+  "validacion_salida": {
+    "json": "parseado",
+    "texto_pdf": "integro en informe, todas las paginas",
+    "checklist": "21 identificadores presentes",
+    "sha256_fuentes": "recalculados coincidentes",
+    "archivos": "solo los tres solicitados"
+  }
+}

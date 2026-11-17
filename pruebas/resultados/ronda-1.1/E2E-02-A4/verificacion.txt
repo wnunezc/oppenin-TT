@@ -1,0 +1,3 @@
+Checklist: 21 controles, una aparición de cada ID, en orden P01-P10/F01-F05/I01-I06.
+Aritmética decimal: multiplicación y suma concordantes a centavos.
+Revisión manual: evidencia/motivo en todos los controles; sin preguntas ajenas al perfil; lectura textual completa de 1/1 páginas.

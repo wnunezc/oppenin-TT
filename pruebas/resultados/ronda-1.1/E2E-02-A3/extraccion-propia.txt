@@ -1,0 +1,34 @@
+Metodo: pypdf.PdfReader; extract_text() de todas las paginas.
+Paginas: 1
+
+=== PAGINA 1 ===
+FICTICIO - SOLO PRUEBA TECNICA | Página 1
+ FICTICIO — SOLO PRUEBA TÉCNICA
+PROFORMA DEMO-PF-002 | R1 | Fecha: 2026-11-17
+Vigencia: hasta 2026-12-01 inclusive.
+Expediente: DEMO-002. Etapa solicitada: importación.
+Cliente: Residencia Beta Demo. Contacto: beta@cliente.example.
+Proyecto: mobiliario residencial, sillas de comedor.
+Destino: Casa Demo B, Ciudad de Panamá, Panamá.
+Proveedor: Demo Furniture Export. Contacto: ventas@exportador.example.
+L1: silla modelo S-20; 20 unidades; ruta importación.
+Dimensiones L x A x H: 500 x 550 x 850 mm.
+Material: estructura de acero y asiento de polipropileno.
+Acabado: negro mate.
+Precio unitario: USD 80.00. Subtotal: USD 1600.00.
+Embalaje: incluido. Transporte internacional: excluido.
+Transporte local: excluido. Tributos de importación: excluidos.
+Impuestos de esta proforma: USD 0.00. Otros cargos: USD 0.00.
+Total proforma: USD 1600.00. El total es de mercancía,
+no costo final puesto en destino.
+Pago: 30 % al confirmar pedido y 70 % antes del despacho.
+País de despacho: China. País de entrega: Panamá.
+Preparación: 30 días calendario desde recepción del anticipo.
+Transporte: estimado 35 días calendario desde despacho;
+no hay fecha firme de llegada. No incluye instalación.
+Las partes no han usado Incoterm en esta proforma.
+Especificación y condiciones aprobadas: DEMO-PF-002 R1.
+Constancia ficticia de aceptación del cliente:
+Luis Demo, beta@cliente.example, 2026-11-17,
+acepta expresamente las líneas y condiciones de DEMO-PF-002 R1.
+

@@ -1,0 +1,55 @@
+{
+  "inicio_registro_evidencia": "2026-11-17T12:26:18.917115-05:00",
+  "zona": "America/Panama UTC-05:00",
+  "archivos_leidos": [
+    {
+      "ruta": "D:\\OpsZone\\DevWorkspace\\Projects\\Tech-Test\\Oppenin\\SKILL.md",
+      "sha256": "1e7e7f07177d56410da6e30f713bfafa01dcc12c22b590838963e3c799b2e68c"
+    },
+    {
+      "ruta": "D:\\OpsZone\\DevWorkspace\\Projects\\Tech-Test\\Oppenin\\PERFIL-EXPEDIENTE.md",
+      "sha256": "9828fdae46571641482ecbed0b160609db28a809c5551898df010af135a5ef42"
+    },
+    {
+      "ruta": "D:\\OpsZone\\DevWorkspace\\Projects\\Tech-Test\\Oppenin\\pruebas\\entradas\\E2E-03-proforma.pdf",
+      "sha256": "c50b4b4eccf718b5c2e3cd921d1bdb725d6f880862d7fc2517f5b52624c6d06b"
+    }
+  ],
+  "paginas_pdf": 1,
+  "version_skill": "1.0",
+  "version_perfil": "PEO-01 v1.0",
+  "modelo": "no expuesto por la herramienta",
+  "metodos_lectura": [
+    "Get-Content -Raw -Encoding UTF8 para SKILL.md y PERFIL-EXPEDIENTE.md",
+    "pypdf.PdfReader: iteración y extract_text() de todas las páginas del PDF local"
+  ],
+  "herramientas": [
+    "functions.exec",
+    "exec_command",
+    "PowerShell",
+    "Python",
+    "pypdf"
+  ],
+  "observacion_inicio": "Marca real del inicio del registro de evidencia; lectura de skill y perfil realizada inmediatamente antes.",
+  "inicio": "2026-11-17T12:26:18.917115-05:00",
+  "fin": "2026-11-17T12:27:55.045807-05:00",
+  "evidencia": [
+    {
+      "archivo": "prompt-recibido.txt",
+      "sha256": "4847eaa31bb206d8c4e33c554d5545d130270f384fa9c2ff510c67c0d9daed82"
+    },
+    {
+      "archivo": "texto-extraido.txt",
+      "sha256": "7bc08737ca1fbf1b88b18a4e0aff8e36cc101d02bb7f20169d0e124766ea2887"
+    },
+    {
+      "archivo": "salida-observada.md",
+      "sha256": "9a3b283c0613050b60b1144008b00ae68d7f6c80362c670350ce316acbbfbfdc"
+    },
+    {
+      "archivo": "metodo-lectura.txt",
+      "sha256": "b5c4034e03493402a78fae385ff7d38614125a3d4d0123e1800b5f511f84a9dc"
+    }
+  ],
+  "verificacion": "Archivos de evidencia presentes y no vacíos; PDF iterado íntegramente: 1 página; informe incluye P01-P10, F01-F05 e I01-I06."
+}

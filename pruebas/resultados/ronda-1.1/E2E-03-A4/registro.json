@@ -1,0 +1,45 @@
+{
+  "inicio": "2026-11-17T13:18:00.417-05:00 America/Panama UTC-05:00",
+  "fin": "2026-11-17T13:20:06.231-05:00",
+  "zona": "America/Panama UTC-05:00",
+  "fuentes": [
+    {
+      "ruta": "D:\\OpsZone\\DevWorkspace\\Projects\\Tech-Test\\Oppenin\\SKILL.md",
+      "sha256": "4c155d3f6172c35a1ebb8b11685756d0153282cd4b0a3d3918195aaa9e89317b"
+    },
+    {
+      "ruta": "D:\\OpsZone\\DevWorkspace\\Projects\\Tech-Test\\Oppenin\\PERFIL-EXPEDIENTE.md",
+      "sha256": "538d9dbec35316a20aad0fa8888733b874dcb87f3b217f43759d2cc92c4432f6"
+    },
+    {
+      "ruta": "D:\\OpsZone\\DevWorkspace\\Projects\\Tech-Test\\Oppenin\\pruebas\\entradas\\E2E-03-proforma.pdf",
+      "sha256": "c50b4b4eccf718b5c2e3cd921d1bdb725d6f880862d7fc2517f5b52624c6d06b"
+    }
+  ],
+  "skill": "1.1",
+  "perfil": "PEO-01 v1.1",
+  "modelo": "no expuesto por la herramienta salvo identidad verificable",
+  "metodo": [
+    "Inicio real capturado con [DateTimeOffset]::UtcNow.ToOffset([TimeSpan]::FromHours(-5)) antes de leer fuentes.",
+    "Get-Content -LiteralPath solicitud-ia.txt -Raw; Get-Content -LiteralPath SKILL.md -Raw; Get-Content -LiteralPath PERFIL-EXPEDIENTE.md -Raw, en rutas autorizadas.",
+    "Python existente: C:\\Program Files\\WindowsApps\\OpenAI.CodexPrimaryRuntime.v26-1112-737-0_26.1112.737.0_x64__3k8sg7r9htsxt\\dependencies\\python\\python.exe extraer.py; código exacto conservado. PdfReader abre PDF original; extract_text() itera 1/1 páginas. SHA256 calculado sobre bytes originales con hashlib.sha256(read_bytes()).",
+    "pdftoppm -png -r 150 D:\\OpsZone\\DevWorkspace\\Projects\\Tech-Test\\Oppenin\\pruebas\\entradas\\E2E-03-proforma.pdf D:\\OpsZone\\DevWorkspace\\Projects\\Tech-Test\\Oppenin\\pruebas\\resultados\\ronda-1.1\\E2E-03-A4\\pagina",
+    "tools.view_image sobre pagina-1.png: lectura visual directa de toda la página renderizada para cotejar caracteres y contenido. Sin OCR.",
+    "Comprobación aritmética decimal explícita de importes en informe; cotejo local de 21 controles únicos mediante expresión regular y lectura del informe guardado."
+  ],
+  "incidencias": [
+    "pypdf extrajo caracteres de sustitución en algunos acentos; se resolvió para la lectura mediante renderizado y visión directa, conservando extracción original.",
+    "pdftoppm emitió Syntax Error: No display font for Symbol y Syntax Error: No display font for ArialUnicode; produjo pagina-1.png legible."
+  ],
+  "salidas": [
+    "inicio.txt",
+    "prompt-recibido.txt",
+    "extraer.py",
+    "extraccion-pypdf.json",
+    "fuentes-sha256.json",
+    "pagina-1.png",
+    "salida-observada.md",
+    "verificacion.txt",
+    "registro.json"
+  ]
+}

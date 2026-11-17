@@ -1,0 +1,49 @@
+{
+  "inicio": "2026-11-17T12:28:16.6201648-05:00",
+  "fin": "2026-11-17T12:29:39.8795142-05:00",
+  "zona_horaria": "America/Panama",
+  "utc_offset": "-05:00",
+  "fuentes": [
+    {
+      "ruta": "D:\\OpsZone\\DevWorkspace\\Projects\\Tech-Test\\Oppenin\\SKILL.md",
+      "sha256": "1E7E7F07177D56410DA6E30F713BFAFA01DCC12C22B590838963E3C799B2E68C",
+      "leido_completo": true
+    },
+    {
+      "ruta": "D:\\OpsZone\\DevWorkspace\\Projects\\Tech-Test\\Oppenin\\PERFIL-EXPEDIENTE.md",
+      "sha256": "9828FDAE46571641482ECBED0B160609DB28A809C5551898DF010AF135A5EF42",
+      "leido_completo": true
+    },
+    {
+      "ruta": "D:\\OpsZone\\DevWorkspace\\Projects\\Tech-Test\\Oppenin\\pruebas\\entradas\\E2E-05-correo.md",
+      "sha256": "260E7F0BD807623144E16DBF10F380EF8DA83952BA97722792C7ED29F602B4E5",
+      "leido_completo": true
+    },
+    {
+      "ruta": "D:\\OpsZone\\DevWorkspace\\Projects\\Tech-Test\\Oppenin\\pruebas\\entradas\\E2E-05-ficha.md",
+      "sha256": "BD4377C61F4E96363F8A2E272AE1279FC5C31EA6BB91604BDEE07F64A0421D7E",
+      "leido_completo": true
+    }
+  ],
+  "herramientas": [
+    "functions.exec",
+    "exec_command / PowerShell"
+  ],
+  "metodo": "Lectura íntegra directa de cuatro archivos UTF-8 mediante Get-Content -Raw; revisión documental PEO-01 por línea y etapa; operaciones aritméticas explícitas; SHA256 con Get-FileHash; escritura local limitada al directorio autorizado. Sin red, plugins, subagentes ni acciones externas.",
+  "skill": {
+    "nombre": "revisor-expedientes-mobiliario",
+    "version_instrucciones": "1.0",
+    "archivo": "SKILL.md"
+  },
+  "perfil": {
+    "nombre": "PEO-01",
+    "version": "1.0",
+    "archivo": "PERFIL-EXPEDIENTE.md"
+  },
+  "modelo": "no expuesto por la herramienta",
+  "salidas": [
+    "prompt-recibido.txt",
+    "salida-observada.md",
+    "registro.json"
+  ]
+}

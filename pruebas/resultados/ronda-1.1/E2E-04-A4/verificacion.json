@@ -1,0 +1,7 @@
+{
+  "controles": 21,
+  "orden_y_unicidad": "verificados",
+  "estados_y_evidencia": "verificados",
+  "aritmetica_decimal": "20 x 80.00 = 1600.00; 1600.00 + 0.00 + 0.00 = 1600.00",
+  "lectura_pdf": "pypdf; 1 pagina; extract_text de todas las paginas; extraccion propia UTF-8"
+}

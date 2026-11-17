@@ -1,0 +1,78 @@
+{
+  "fecha": "2026-11-17T12:57:52.009537-05:00",
+  "zona": "America/Panama",
+  "motivo": "Usuario autorizó resolver inconsistencias y revalidar. Copia previa a cambios; se conservan también todas las sesiones anteriores en sus ubicaciones originales.",
+  "archivos": [
+    {
+      "fuente": "SKILL.md",
+      "copia": "pruebas\\resultados\\historico-v1.0\\SKILL.md",
+      "sha256": "1e7e7f07177d56410da6e30f713bfafa01dcc12c22b590838963e3c799b2e68c"
+    },
+    {
+      "fuente": "PERFIL-EXPEDIENTE.md",
+      "copia": "pruebas\\resultados\\historico-v1.0\\PERFIL-EXPEDIENTE.md",
+      "sha256": "9828fdae46571641482ecbed0b160609db28a809c5551898df010af135a5ef42"
+    },
+    {
+      "fuente": "GUIA-DE-USO.md",
+      "copia": "pruebas\\resultados\\historico-v1.0\\GUIA-DE-USO.md",
+      "sha256": "6cbd4877c0234982082040d66f0a1a1fa6ad2cd1d29d5f21c4e333d441ce000a"
+    },
+    {
+      "fuente": "EXPLICACION.md",
+      "copia": "pruebas\\resultados\\historico-v1.0\\EXPLICACION.md",
+      "sha256": "b52139e3df2572f1810f464d2771234d73526ea316c05ede19503b455c657dc4"
+    },
+    {
+      "fuente": "REPORTE-CREACION.md",
+      "copia": "pruebas\\resultados\\historico-v1.0\\REPORTE-CREACION.md",
+      "sha256": "531fea3bf71202501c8989cb965f8812c8abd1c1ce37ee9d3ae775c81cce8714"
+    },
+    {
+      "fuente": "README.md",
+      "copia": "pruebas\\resultados\\historico-v1.0\\README.md",
+      "sha256": "d6094c05a2ea1ffde39ca9b2ba7953ba7a7d8409bd56e85b68e18703f142c3b5"
+    },
+    {
+      "fuente": "pruebas/RESULTADOS.md",
+      "copia": "pruebas\\resultados\\historico-v1.0\\pruebas\\RESULTADOS.md",
+      "sha256": "03f3418b0ad3fdd2075308c3effae38be93df671ad228dac235e4991ba2d2401"
+    },
+    {
+      "fuente": "pruebas/resultados/instrucciones-completas.txt",
+      "copia": "pruebas\\resultados\\historico-v1.0\\pruebas\\resultados\\instrucciones-completas.txt",
+      "sha256": "7bd7373e1b6ab291e00b337830d295958dad64d9da3ecfda9324a5fef79722de"
+    },
+    {
+      "fuente": "pruebas/resultados/comparacion-esperado-observado.json",
+      "copia": "pruebas\\resultados\\historico-v1.0\\pruebas\\resultados\\comparacion-esperado-observado.json",
+      "sha256": "9c21f366fb8c52574fa6975c21cb462865246746e78ec2a050c1a7c638a9e3e6"
+    },
+    {
+      "fuente": "pruebas/resultados/validacion-artefactos.json",
+      "copia": "pruebas\\resultados\\historico-v1.0\\pruebas\\resultados\\validacion-artefactos.json",
+      "sha256": "b7b7f1e854c7c6e719abea6fa05fde3b7a4b5abae37c3e4f424d6f1e908956be"
+    },
+    {
+      "fuente": "pruebas/resultados/auditoria-final.json",
+      "copia": "pruebas\\resultados\\historico-v1.0\\pruebas\\resultados\\auditoria-final.json",
+      "sha256": "ef621816af0fb8f7ff6359e23f0ce7a9f38b870878691a591fc6da694e03d676"
+    }
+  ],
+  "ejecuciones_previas": {
+    "pruebas\\resultados\\E2E-01-S1\\salida-observada.md": "07190cbbf7cac7d02993f8198e2e614ab5e70567f21507bbd745ce456852457c",
+    "pruebas\\resultados\\E2E-02-S1\\salida-observada.md": "a8f78bf6d75c79301c40ecae121172586bcb3e53cebad7f19019a34e8ba94410",
+    "pruebas\\resultados\\E2E-02-S2\\salida-observada.md": "68d5e9280143d606701bc63d4a523ff136b1a4f63069742bf00ccc2f40afb4bd",
+    "pruebas\\resultados\\E2E-02-S3\\salida-observada.md": "fb9e638ba46e32cc7adc5402671f1fdf5c412de43e7bb8ed90aabe8346250f25",
+    "pruebas\\resultados\\E2E-03-S1\\salida-observada.md": "9a3b283c0613050b60b1144008b00ae68d7f6c80362c670350ce316acbbfbfdc",
+    "pruebas\\resultados\\E2E-03-S2\\salida-observada.md": "084c43506f5b9d22f7501994a440115f1d22d96f3c6851aaff0db475559f42f0",
+    "pruebas\\resultados\\E2E-03-S3\\salida-observada.md": "c70a0decb8b29b980fb46bf498f77b194958d297aa16dc589eeb689c5d78251c",
+    "pruebas\\resultados\\E2E-04-S1\\salida-observada.md": "3a6ee4d59e948a68d9f820721af302bdf0336ff3f89aa3623588373cf700255e",
+    "pruebas\\resultados\\E2E-04-S2\\salida-observada.md": "75224b3ba4046a0548a89689166b0009fc1048e078aac3cb401518b98a90c88d",
+    "pruebas\\resultados\\E2E-04-S3\\salida-observada.md": "ed051bbf801e64e90f0f35b70b97709e9af8048bce0a62c2216015c4cd39ab9a",
+    "pruebas\\resultados\\E2E-05-S1\\salida-observada.md": "f0f2c6586eb3c53b774bd782d9a46c0424c79cd0c3d0b862d1e19ba9b0c1eea9",
+    "pruebas\\resultados\\E2E-06-S1\\salida-observada.md": "b28132e7056d20da698f1fc16bba357dcd17d116a1d076537c8895099bb7c26a",
+    "pruebas\\resultados\\E2E-07-S1\\salida-observada.md": "2e96d72cf98b9709785b5d4c75ccbadb966d3ed4feab2a93db01da44197f4af0",
+    "pruebas\\resultados\\E2E-08-S1\\salida-observada.md": "b0585ee8966ffbe784340ba734afa765f039f12fbf82191ff602b6c1ea9e72ef"
+  }
+}

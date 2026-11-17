@@ -1,0 +1,41 @@
+{
+  "inicio": "2026-11-17T13:03:52.821-05:00 America/Panama",
+  "fin": "2026-11-17T13:05:57.382-05:00",
+  "zona": "America/Panama UTC-05:00",
+  "fuentes": [
+    {
+      "ruta": "D:\\OpsZone\\DevWorkspace\\Projects\\Tech-Test\\Oppenin\\SKILL.md",
+      "sha256": "4c155d3f6172c35a1ebb8b11685756d0153282cd4b0a3d3918195aaa9e89317b"
+    },
+    {
+      "ruta": "D:\\OpsZone\\DevWorkspace\\Projects\\Tech-Test\\Oppenin\\PERFIL-EXPEDIENTE.md",
+      "sha256": "538d9dbec35316a20aad0fa8888733b874dcb87f3b217f43759d2cc92c4432f6"
+    },
+    {
+      "ruta": "D:\\OpsZone\\DevWorkspace\\Projects\\Tech-Test\\Oppenin\\pruebas\\entradas\\E2E-02-proforma.pdf",
+      "sha256": "8449390f51372510b0a1be6cf29226ed8e75c997b90b54365b24ae16f04547c8"
+    }
+  ],
+  "skill": "1.1",
+  "perfil": "PEO-01 v1.1",
+  "modelo": "No expuesto por la herramienta con identidad verificable; sin cambios de modelo/configuración.",
+  "metodo": "Lecturas efectivas y comandos:\n1. Primera operación: PowerShell New-Item del directorio autorizado; [TimeZoneInfo]::ConvertTimeBySystemTimeZoneId([DateTimeOffset]::UtcNow, 'SA Pacific Standard Time'); WriteAllText inicio.txt con formato yyyy-MM-ddTHH:mm:ss.fffzzz y America/Panama.\n2. WriteAllText prompt-recibido.txt con el mensaje de coordinación literal; Get-Content -LiteralPath solicitud-ia.txt -Raw.\n3. Get-Content -LiteralPath SKILL.md -Raw y Get-Content -LiteralPath PERFIL-EXPEDIENTE.md -Raw, ambas en la raíz autorizada.\n4. Python existente indicado en solicitud-ia.txt, ejecución mediante PowerShell here-string | & $py -. PdfReader(str(pdf)); iteración enumerate(r.pages,1), p.extract_text() para cada página (1 en total), guardado UTF-8 en extraccion-pypdf.txt. hashlib.sha256(p.read_bytes()).hexdigest() para SKILL.md, PERFIL-EXPEDIENTE.md y el PDF original; guardado fuentes-sha256.json.\n5. Relectura propia de extraccion-pypdf.txt con Python Path.read_text(encoding='utf-8') y sys.stdout.reconfigure(encoding='utf-8'), para visualizar correctamente caracteres acentuados. No se editó la extracción.\n6. Redacción y guardado PowerShell WriteAllText de salida-observada.md. Lectura completa del informe; comprobación automatizada mediante regex de 21 controles únicos P01-P10, F01-F05 e I01-I06 y comparación con lista completa. Revisión documental de estados, motivos y preguntas. Aritmética decimal exacta: 20 x 80.00 = 1600.00; 1600.00 + 0.00 + 0.00 = 1600.00.\n7. Sello fin datetime.now(timezone(timedelta(hours=-5))).isoformat(timespec='milliseconds'), después de guardar y comprobar el informe, y guardado registro.json.\nNo se renderizó ni se usó OCR: extracción de la única página completa y legible. No se usaron red, plugins, correo, subagentes, instalaciones ni cambios de configuración/modelo. No se leyeron AGENTS.md, MAESTRO-DESARROLLO.md, vault, otros expedientes/sesiones ni resultados esperados.\n",
+  "incidencias": [
+    "La salida inicial de consola sustituyó caracteres acentuados; se releyó la extracción propia con salida UTF-8 y el texto se visualizó correctamente. No hubo pérdida en la extracción guardada."
+  ],
+  "salidas": [
+    "D:\\OpsZone\\DevWorkspace\\Projects\\Tech-Test\\Oppenin\\pruebas\\resultados\\ronda-1.1\\E2E-02-A1\\inicio.txt",
+    "D:\\OpsZone\\DevWorkspace\\Projects\\Tech-Test\\Oppenin\\pruebas\\resultados\\ronda-1.1\\E2E-02-A1\\prompt-recibido.txt",
+    "D:\\OpsZone\\DevWorkspace\\Projects\\Tech-Test\\Oppenin\\pruebas\\resultados\\ronda-1.1\\E2E-02-A1\\extraccion-pypdf.txt",
+    "D:\\OpsZone\\DevWorkspace\\Projects\\Tech-Test\\Oppenin\\pruebas\\resultados\\ronda-1.1\\E2E-02-A1\\fuentes-sha256.json",
+    "D:\\OpsZone\\DevWorkspace\\Projects\\Tech-Test\\Oppenin\\pruebas\\resultados\\ronda-1.1\\E2E-02-A1\\metodo.txt",
+    "D:\\OpsZone\\DevWorkspace\\Projects\\Tech-Test\\Oppenin\\pruebas\\resultados\\ronda-1.1\\E2E-02-A1\\salida-observada.md",
+    "D:\\OpsZone\\DevWorkspace\\Projects\\Tech-Test\\Oppenin\\pruebas\\resultados\\ronda-1.1\\E2E-02-A1\\registro.json"
+  ],
+  "validacion": {
+    "controles_checklist": 21,
+    "cada_control_una_vez": true,
+    "pagina_pdf_leida": 1,
+    "informe_guardado_antes_fin": true
+  }
+}

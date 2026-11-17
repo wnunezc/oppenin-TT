@@ -1,0 +1,17 @@
+{
+  "fecha": "2026-11-17T12:21:43.142309-05:00",
+  "zona": "America/Panama",
+  "sha256": {
+    "SKILL.md": "1e7e7f07177d56410da6e30f713bfafa01dcc12c22b590838963e3c799b2e68c",
+    "PERFIL-EXPEDIENTE.md": "9828fdae46571641482ecbed0b160609db28a809c5551898df010af135a5ef42",
+    "pruebas\\entradas\\E2E-01-correo.md": "290eb41d0fd4cd9b9127ef1c6840deeb5ff36e6569474251fe1202e51a607023",
+    "pruebas\\entradas\\E2E-02-proforma.pdf": "8449390f51372510b0a1be6cf29226ed8e75c997b90b54365b24ae16f04547c8",
+    "pruebas\\entradas\\E2E-03-proforma.pdf": "c50b4b4eccf718b5c2e3cd921d1bdb725d6f880862d7fc2517f5b52624c6d06b",
+    "pruebas\\entradas\\E2E-04-correo.md": "f6d74c462a3bf8376733b2068ad16a89fba19550b275ad62463d0402bd44c7fd",
+    "pruebas\\entradas\\E2E-04-proforma.pdf": "5d04172e9338538b550f5406214efa078112a85dc1d5cd72e9c1b4fa7e91eb88",
+    "pruebas\\entradas\\E2E-05-correo.md": "260e7f0bd807623144e16dbf10f380ef8da83952ba97722792c7ed29f602b4e5",
+    "pruebas\\entradas\\E2E-05-ficha.md": "bd4377c61f4e96363f8a2e272ae1279fc5c31ea6bb91604bdee07f64a0421d7e",
+    "pruebas\\entradas\\E2E-06-medicion.md": "b503b87978c6c88811d3c48e95a25b461c1da14a849c9f89606ffc736228a5a5",
+    "pruebas\\entradas\\E2E-07-proforma.pdf": "74a1a0e97e1ea26a3de9d30ad4866bc80f4039115b0627b45c6295f59241717a"
+  }
+}

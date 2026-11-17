@@ -1,0 +1,65 @@
+{
+  "ejecucion": "E2E-07-S1",
+  "inicio": "2026-11-17T12:29:01.7160614-05:00",
+  "fin": "2026-11-17T12:31:16.406688-05:00",
+  "zona_horaria": "America/Panama",
+  "desfase": "UTC-05:00",
+  "fuentes": [
+    {
+      "ruta": "D:\\OpsZone\\DevWorkspace\\Projects\\Tech-Test\\Oppenin\\SKILL.md",
+      "sha256": "1e7e7f07177d56410da6e30f713bfafa01dcc12c22b590838963e3c799b2e68c"
+    },
+    {
+      "ruta": "D:\\OpsZone\\DevWorkspace\\Projects\\Tech-Test\\Oppenin\\PERFIL-EXPEDIENTE.md",
+      "sha256": "9828fdae46571641482ecbed0b160609db28a809c5551898df010af135a5ef42"
+    },
+    {
+      "ruta": "D:\\OpsZone\\DevWorkspace\\Projects\\Tech-Test\\Oppenin\\pruebas\\entradas\\E2E-07-proforma.pdf",
+      "sha256": "74a1a0e97e1ea26a3de9d30ad4866bc80f4039115b0627b45c6295f59241717a"
+    }
+  ],
+  "skill": {
+    "nombre": "revisor-expedientes-mobiliario",
+    "version": "1.0",
+    "ruta": "D:\\OpsZone\\DevWorkspace\\Projects\\Tech-Test\\Oppenin\\SKILL.md"
+  },
+  "perfil": {
+    "nombre": "PEO-01",
+    "version": "1.0",
+    "ruta": "D:\\OpsZone\\DevWorkspace\\Projects\\Tech-Test\\Oppenin\\PERFIL-EXPEDIENTE.md"
+  },
+  "modelo": "no expuesto por la herramienta",
+  "herramientas": [
+    "functions.exec",
+    "exec_command: PowerShell",
+    "Python existente: pathlib, pypdf.PdfReader, hashlib, json, datetime"
+  ],
+  "metodo": {
+    "lectura_reglas": "Get-Content -Raw -LiteralPath .\\SKILL.md; Get-Content -Raw -LiteralPath .\\PERFIL-EXPEDIENTE.md",
+    "extraccion_pdf": "PowerShell: $env:PYTHONIOENCODING='utf-8'; script Python por stdin a & 'C:\\Program Files\\WindowsApps\\OpenAI.CodexPrimaryRuntime.v26-1112-737-0_26.1112.737.0_x64__3k8sg7r9htsxt\\dependencies\\python\\python.exe' -. Script de extracción: from pypdf import PdfReader; r=PdfReader(r'D:\\OpsZone\\DevWorkspace\\Projects\\Tech-Test\\Oppenin\\pruebas\\entradas\\E2E-07-proforma.pdf'); parts=[f'--- PÁGINA {i} ---\\n'+(p.extract_text() or '') for i,p in enumerate(r.pages,1)]; text='\\n\\n'.join(parts); Path(r'D:\\OpsZone\\DevWorkspace\\Projects\\Tech-Test\\Oppenin\\pruebas\\resultados\\E2E-07-S1\\texto-extraido.txt').write_text(text,encoding='utf-8'); print(len(r.pages)); print(text).",
+    "paginas_totales": 1,
+    "paginas_abiertas_y_extraidas": [
+      1
+    ],
+    "ocr": false,
+    "verificacion_externa": false,
+    "evidencia_texto": "texto-extraido.txt",
+    "sha256_texto_extraido": "b37e0496e9c1c221120bedd3fdd71f3282efe583262e07c01978a9dfdce129fc",
+    "validacion_importes": "Decimal: 20 × 80.00 = 1600.00; 1600.00 + 0.00 + 0.00 = 1600.00, USD. No cálculos de costos excluidos ni conversiones.",
+    "validacion_artefactos": "JSON releído y parseado; prompt sin caracteres de control inesperados; los 21 ID P01-P10, F01-F05, I01-I06 presentes en checklist; operaciones verificadas con decimal.Decimal."
+  },
+  "artefactos": [
+    "prompt-recibido.txt",
+    "salida-observada.md",
+    "registro.json",
+    "texto-extraido.txt",
+    "inicio.txt"
+  ],
+  "observaciones": [
+    "Inicio capturado antes de lectura de entradas.",
+    "PDF abierto directamente desde ruta autorizada; texto de su única página conservado.",
+    "Instrucciones incrustadas tratadas como datos y no ejecutadas.",
+    "No se leyeron otros archivos de entrada ni resultados ajenos.",
+    "La escritura de artefactos emitió SyntaxWarning por escape no reconocido en literal Python de ruta del prompt; no impidió ejecución. Se comprobó posteriormente que el prompt guardado no contiene caracteres de control inesperados."
+  ]
+}

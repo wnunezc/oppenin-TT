@@ -1,0 +1,57 @@
+{
+  "prueba": "E2E-03-S3",
+  "inicio": "2026-11-17T12:36:46.4358041-05:00",
+  "fin": "2026-11-17T12:38:21.394600-05:00",
+  "zona": "America/Panama",
+  "offset": "UTC-05:00",
+  "fuentes": [
+    {
+      "ruta": "D:\\OpsZone\\DevWorkspace\\Projects\\Tech-Test\\Oppenin\\SKILL.md",
+      "sha256": "1e7e7f07177d56410da6e30f713bfafa01dcc12c22b590838963e3c799b2e68c",
+      "lectura": "íntegra",
+      "paginas_abiertas": null
+    },
+    {
+      "ruta": "D:\\OpsZone\\DevWorkspace\\Projects\\Tech-Test\\Oppenin\\PERFIL-EXPEDIENTE.md",
+      "sha256": "9828fdae46571641482ecbed0b160609db28a809c5551898df010af135a5ef42",
+      "lectura": "íntegra",
+      "paginas_abiertas": null
+    },
+    {
+      "ruta": "D:\\OpsZone\\DevWorkspace\\Projects\\Tech-Test\\Oppenin\\pruebas\\entradas\\E2E-03-proforma.pdf",
+      "sha256": "c50b4b4eccf718b5c2e3cd921d1bdb725d6f880862d7fc2517f5b52624c6d06b",
+      "lectura": "íntegra",
+      "paginas_abiertas": [
+        1
+      ]
+    }
+  ],
+  "skill": {
+    "nombre": "revisor-expedientes-mobiliario",
+    "version": "1.0",
+    "archivo": "SKILL.md"
+  },
+  "perfil": {
+    "nombre": "PEO-01",
+    "version": "1.0",
+    "archivo": "PERFIL-EXPEDIENTE.md"
+  },
+  "modelo": "no expuesto por la herramienta",
+  "herramientas": [
+    "functions.exec",
+    "exec_command (PowerShell)",
+    "Python -X utf8",
+    "pypdf.PdfReader / PageObject.extract_text"
+  ],
+  "metodo": "Inicio capturado antes de lecturas; lectura completa de skill y perfil con Get-Content -Raw; PDF real abierto con PdfReader y acceso/extracción de todas sus páginas (1/1); sin OCR ni render visual, sin red ni comprobación externa. Método y comando íntegro en metodo-comando.txt. Informe revisado contra texto íntegro extraído y todos los controles del perfil.",
+  "evidencia": {
+    "extraccion": "extraccion-propia.txt",
+    "comando": "metodo-comando.txt",
+    "prompt": "prompt-recibido.txt",
+    "informe": "salida-observada.md"
+  },
+  "limitaciones": [
+    "No se efectuó inspección visual de un render; se leyó la capa textual completa de la página.",
+    "No hay comprobación externa de las declaraciones del documento."
+  ]
+}

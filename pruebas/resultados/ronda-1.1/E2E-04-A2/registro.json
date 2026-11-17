@@ -1,0 +1,47 @@
+{
+  "inicio": "2026-11-17T13:11:23.258-05:00",
+  "fin": "2026-11-17T13:13:26.357-05:00",
+  "zona": "America/Panama UTC-05:00",
+  "fuentes": [
+    {
+      "ruta": "D:\\OpsZone\\DevWorkspace\\Projects\\Tech-Test\\Oppenin\\SKILL.md",
+      "sha256": "4c155d3f6172c35a1ebb8b11685756d0153282cd4b0a3d3918195aaa9e89317b"
+    },
+    {
+      "ruta": "D:\\OpsZone\\DevWorkspace\\Projects\\Tech-Test\\Oppenin\\PERFIL-EXPEDIENTE.md",
+      "sha256": "538d9dbec35316a20aad0fa8888733b874dcb87f3b217f43759d2cc92c4432f6"
+    },
+    {
+      "ruta": "D:\\OpsZone\\DevWorkspace\\Projects\\Tech-Test\\Oppenin\\pruebas\\entradas\\E2E-04-correo.md",
+      "sha256": "f6d74c462a3bf8376733b2068ad16a89fba19550b275ad62463d0402bd44c7fd"
+    },
+    {
+      "ruta": "D:\\OpsZone\\DevWorkspace\\Projects\\Tech-Test\\Oppenin\\pruebas\\entradas\\E2E-04-proforma.pdf",
+      "sha256": "5d04172e9338538b550f5406214efa078112a85dc1d5cd72e9c1b4fa7e91eb88"
+    }
+  ],
+  "skill": "1.1",
+  "perfil": "PEO-01 v1.1",
+  "modelo": "No expuesto por la herramienta con identidad verificable",
+  "metodo": [
+    "Primera operación: DateTimeOffset.UtcNow convertido con TimeZoneInfo SA Pacific Standard Time y escrito en inicio.txt antes de lecturas.",
+    "Get-Content -Raw: solicitud-ia.txt; SKILL.md completo, PERFIL-EXPEDIENTE.md completo y E2E-04-correo.md completo.",
+    "Python existente: pypdf.PdfReader(E2E-04-proforma.pdf), len(reader.pages)=1; bucle enumerate(reader.pages,1), page.extract_text(); salida propia extraccion-proforma.txt.",
+    "pdftoppm -png -r 120 E2E-04-proforma.pdf proforma; renderizada página 1 de 1.",
+    "view_image: proforma-1.png; lectura visual completa, incluidas cabecera, campos y constancia inferior.",
+    "Get-FileHash -Algorithm SHA256 sobre bytes originales de las cuatro fuentes.",
+    "Verificación de salida-observada.md: 21 controles únicos, todos los P01-P10, F01-F05 e I01-I06 presentes. Revisión documental de evidencias, estados y preguntas."
+  ],
+  "incidencias": [
+    "Extracción pypdf con caracteres de sustitución; resuelta lectura esencial mediante renderizado y visión. Se conserva extracción original sin corregir.",
+    "Poppler emitió Syntax Error: No display font for Symbol y ArialUnicode; render generado y campos legibles."
+  ],
+  "salidas": [
+    "inicio.txt",
+    "prompt-recibido.txt",
+    "extraccion-proforma.txt",
+    "proforma-1.png",
+    "salida-observada.md",
+    "registro.json"
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "inicio": "2026-11-17 13:11:16.806 -05:00 America/Panama",
+  "fin": "2026-11-17T13:13:24.968-05:00",
+  "zona": "America/Panama UTC-05:00",
+  "fuentes": [
+    {
+      "ruta": "D:\\OpsZone\\DevWorkspace\\Projects\\Tech-Test\\Oppenin\\SKILL.md",
+      "sha256": "4c155d3f6172c35a1ebb8b11685756d0153282cd4b0a3d3918195aaa9e89317b"
+    },
+    {
+      "ruta": "D:\\OpsZone\\DevWorkspace\\Projects\\Tech-Test\\Oppenin\\PERFIL-EXPEDIENTE.md",
+      "sha256": "538d9dbec35316a20aad0fa8888733b874dcb87f3b217f43759d2cc92c4432f6"
+    },
+    {
+      "ruta": "D:\\OpsZone\\DevWorkspace\\Projects\\Tech-Test\\Oppenin\\pruebas\\entradas\\E2E-03-proforma.pdf",
+      "sha256": "c50b4b4eccf718b5c2e3cd921d1bdb725d6f880862d7fc2517f5b52624c6d06b"
+    }
+  ],
+  "skill": "1.1",
+  "perfil": "PEO-01 v1.1",
+  "modelo": "No expuesto por la herramienta; no se modificó modelo ni configuración.",
+  "metodo": [
+    "Primera operación: captura con DateTimeOffset.UtcNow.ToOffset(-05:00) y escritura de inicio.txt antes de leer fuentes.",
+    "Conservación exacta del mensaje recibido en prompt-recibido.txt. Lectura de solicitud-ia.txt mediante Get-Content -Raw.",
+    "Lectura íntegra de SKILL.md y PERFIL-EXPEDIENTE.md mediante Get-Content -Raw.",
+    "Ejecución de extraer.py mediante C:\\Program Files\\WindowsApps\\OpenAI.CodexPrimaryRuntime.v26-1112-737-0_26.1112.737.0_x64__3k8sg7r9htsxt\\dependencies\\python\\python.exe; PdfReader y extract_text() en todas las páginas (1). SHA256 calculado sobre bytes originales con hashlib.sha256.",
+    "pdftoppm -png -r 120 D:\\OpsZone\\DevWorkspace\\Projects\\Tech-Test\\Oppenin\\pruebas\\entradas\\E2E-03-proforma.pdf D:\\OpsZone\\DevWorkspace\\Projects\\Tech-Test\\Oppenin\\pruebas\\resultados\\ronda-1.1\\E2E-03-A2\\pagina",
+    "Lectura visual directa de pagina-1.png mediante view_image: única página íntegra, legible. Se contrastó con la extracción; informe conserva transcripción visible de los campos.",
+    "Informe guardado en salida-observada.md. Validación automática de 21 ID únicos y revisión manual del contenido; después captura de fin con datetime.now en UTC-05:00."
+  ],
+  "incidencias": [
+    "La extracción pypdf presentó caracteres de reemplazo en palabras acentuadas; se resolvió mediante renderizado local y lectura visual íntegra de la página.",
+    "pdftoppm emitió: No display font for Symbol; No display font for ArialUnicode. La imagen se generó y todo el texto esencial resultó legible."
+  ],
+  "salidas": [
+    "D:\\OpsZone\\DevWorkspace\\Projects\\Tech-Test\\Oppenin\\pruebas\\resultados\\ronda-1.1\\E2E-03-A2\\inicio.txt",
+    "D:\\OpsZone\\DevWorkspace\\Projects\\Tech-Test\\Oppenin\\pruebas\\resultados\\ronda-1.1\\E2E-03-A2\\prompt-recibido.txt",
+    "D:\\OpsZone\\DevWorkspace\\Projects\\Tech-Test\\Oppenin\\pruebas\\resultados\\ronda-1.1\\E2E-03-A2\\extraer.py",
+    "D:\\OpsZone\\DevWorkspace\\Projects\\Tech-Test\\Oppenin\\pruebas\\resultados\\ronda-1.1\\E2E-03-A2\\fuentes-sha256.json",
+    "D:\\OpsZone\\DevWorkspace\\Projects\\Tech-Test\\Oppenin\\pruebas\\resultados\\ronda-1.1\\E2E-03-A2\\extraccion-propia.txt",
+    "D:\\OpsZone\\DevWorkspace\\Projects\\Tech-Test\\Oppenin\\pruebas\\resultados\\ronda-1.1\\E2E-03-A2\\pagina-1.png",
+    "D:\\OpsZone\\DevWorkspace\\Projects\\Tech-Test\\Oppenin\\pruebas\\resultados\\ronda-1.1\\E2E-03-A2\\salida-observada.md",
+    "D:\\OpsZone\\DevWorkspace\\Projects\\Tech-Test\\Oppenin\\pruebas\\resultados\\ronda-1.1\\E2E-03-A2\\validacion.txt",
+    "D:\\OpsZone\\DevWorkspace\\Projects\\Tech-Test\\Oppenin\\pruebas\\resultados\\ronda-1.1\\E2E-03-A2\\registro.json"
+  ]
+}

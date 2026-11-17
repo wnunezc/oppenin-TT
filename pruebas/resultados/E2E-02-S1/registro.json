@@ -1,0 +1,61 @@
+{
+  "inicio": "2026-11-17T12:26:23.204181-05:00",
+  "fin": "2026-11-17T12:27:34.507710-05:00",
+  "zona_horaria": "America/Panama UTC-05:00",
+  "archivos_leidos": [
+    {
+      "ruta": "D:\\OpsZone\\DevWorkspace\\Projects\\Tech-Test\\Oppenin\\SKILL.md",
+      "sha256": "1e7e7f07177d56410da6e30f713bfafa01dcc12c22b590838963e3c799b2e68c",
+      "metodo": "lectura integral UTF-8 y Get-Content -Raw"
+    },
+    {
+      "ruta": "D:\\OpsZone\\DevWorkspace\\Projects\\Tech-Test\\Oppenin\\PERFIL-EXPEDIENTE.md",
+      "sha256": "9828fdae46571641482ecbed0b160609db28a809c5551898df010af135a5ef42",
+      "metodo": "lectura integral UTF-8 y Get-Content -Raw"
+    },
+    {
+      "ruta": "D:\\OpsZone\\DevWorkspace\\Projects\\Tech-Test\\Oppenin\\pruebas\\entradas\\E2E-02-proforma.pdf",
+      "sha256": "8449390f51372510b0a1be6cf29226ed8e75c997b90b54365b24ae16f04547c8",
+      "metodo": "pypdf.PdfReader; enumeración de todas las páginas y page.extract_text()"
+    }
+  ],
+  "paginas_pdf": 1,
+  "paginas_extraidas": [
+    1
+  ],
+  "metodos_lectura": "Lectura local propia: pypdf.PdfReader(r\"D:\\OpsZone\\DevWorkspace\\Projects\\Tech-Test\\Oppenin\\pruebas\\entradas\\E2E-02-proforma.pdf\"); for n,page in enumerate(reader.pages,1): page.extract_text(). Se enumeraron y extrajeron todas las páginas. No se realizó comprobación externa ni OCR ni renderizado visual.\nEjecutable: C:\\Program Files\\WindowsApps\\OpenAI.CodexPrimaryRuntime.v26-1112-737-0_26.1112.737.0_x64__3k8sg7r9htsxt\\dependencies\\python\\python.exe\nVersión pypdf: 6.21.4\nstdout: PYTHONIOENCODING=utf-8\n",
+  "herramientas": {
+    "shell": "PowerShell mediante exec_command",
+    "python": "C:\\Program Files\\WindowsApps\\OpenAI.CodexPrimaryRuntime.v26-1112-737-0_26.1112.737.0_x64__3k8sg7r9htsxt\\dependencies\\python\\python.exe",
+    "python_version": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+    "pypdf": "6.21.4"
+  },
+  "version_skill": "1.0",
+  "perfil": "PEO-01 v1.0",
+  "modelo": "no expuesto por la herramienta",
+  "nota_inicio": "Inicio de captura del registro y extracción PDF; la lectura inicial de SKILL.md y PERFIL-EXPEDIENTE.md precedió esta captura y se repitió aquí.",
+  "evidencias_generadas": [
+    {
+      "archivo": "prompt-recibido.txt",
+      "sha256": "e630e54e98b3816cf9955fd9d986882c6c44df7405f5e267670f3120462b4f9f"
+    },
+    {
+      "archivo": "texto-extraido.txt",
+      "sha256": "ce41dde90167985ab265c377912949d55d08583f70c4dde40aa95eb8fb23eb9c"
+    },
+    {
+      "archivo": "metodo-lectura.txt",
+      "sha256": "f00687c2c24a7534507c06bcc96f38d6f6514034eb528f6380b86c0cad5bbd5c"
+    },
+    {
+      "archivo": "salida-observada.md",
+      "sha256": "a8f78bf6d75c79301c40ecae121172586bcb3e53cebad7f19019a34e8ba94410"
+    }
+  ],
+  "verificaciones": {
+    "paginas_leidas": 1,
+    "checklist_ids_completos": true,
+    "informe_guardado_utf8": true,
+    "acciones_externas": false
+  }
+}

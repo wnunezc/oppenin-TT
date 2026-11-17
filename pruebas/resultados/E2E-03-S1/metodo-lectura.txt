@@ -1,0 +1,15 @@
+Método efectivamente utilizado
+1. PowerShell: Get-Content -Raw -Encoding UTF8 SKILL.md y PERFIL-EXPEDIENTE.md (lectura íntegra).
+2. Python instalado, ejecutado mediante PowerShell con stdout UTF-8:
+& 'C:\Program Files\WindowsApps\OpenAI.CodexPrimaryRuntime.v26-1112-737-0_26.1112.737.0_x64__3k8sg7r9htsxt\dependencies\python\python.exe' -X utf8 -
+Código de apertura y extracción ejecutado, recibido por stdin:
+from pypdf import PdfReader
+reader=PdfReader(root/'pruebas/entradas/E2E-03-proforma.pdf')
+pages=[]
+for i,page in enumerate(reader.pages,1):
+    pages.append(f'=== PÁGINA {i} ===\n'+(page.extract_text() or ''))
+text='\n\n'.join(pages)
+(out/'texto-extraido.txt').write_text(text,encoding='utf-8')
+Resultado: una página abierta y extraída por el agente; texto íntegro conservado. No se empleó OCR ni lectura visual de la maquetación.
+3. SHA256 mediante hashlib.sha256(p.read_bytes()).hexdigest() de los tres archivos autorizados.
+4. Evidencia redactada con PowerShell Set-Content -Encoding utf8; registro temporal con datetime.now(timezone(timedelta(hours=-5))).isoformat().

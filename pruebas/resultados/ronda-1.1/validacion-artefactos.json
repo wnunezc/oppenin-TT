@@ -1,0 +1,1318 @@
+{
+  "fecha": "2026-11-17T13:27:07.003398-05:00",
+  "zona": "America/Panama",
+  "estado": "COMPLETADA",
+  "naturaleza": "Validación determinista complementaria; no sustituye la ejecución de IA",
+  "comprobaciones": [
+    {
+      "comprobacion": "Fixture original intacto: pruebas\\entradas\\E2E-01-correo.md",
+      "resultado": "CORRECTA",
+      "evidencia": "290eb41d0fd4cd9b9127ef1c6840deeb5ff36e6569474251fe1202e51a607023"
+    },
+    {
+      "comprobacion": "Fixture original intacto: pruebas\\entradas\\E2E-02-proforma.pdf",
+      "resultado": "CORRECTA",
+      "evidencia": "8449390f51372510b0a1be6cf29226ed8e75c997b90b54365b24ae16f04547c8"
+    },
+    {
+      "comprobacion": "Fixture original intacto: pruebas\\entradas\\E2E-03-proforma.pdf",
+      "resultado": "CORRECTA",
+      "evidencia": "c50b4b4eccf718b5c2e3cd921d1bdb725d6f880862d7fc2517f5b52624c6d06b"
+    },
+    {
+      "comprobacion": "Fixture original intacto: pruebas\\entradas\\E2E-04-correo.md",
+      "resultado": "CORRECTA",
+      "evidencia": "f6d74c462a3bf8376733b2068ad16a89fba19550b275ad62463d0402bd44c7fd"
+    },
+    {
+      "comprobacion": "Fixture original intacto: pruebas\\entradas\\E2E-04-proforma.pdf",
+      "resultado": "CORRECTA",
+      "evidencia": "5d04172e9338538b550f5406214efa078112a85dc1d5cd72e9c1b4fa7e91eb88"
+    },
+    {
+      "comprobacion": "Fixture original intacto: pruebas\\entradas\\E2E-05-correo.md",
+      "resultado": "CORRECTA",
+      "evidencia": "260e7f0bd807623144e16dbf10f380ef8da83952ba97722792c7ed29f602b4e5"
+    },
+    {
+      "comprobacion": "Fixture original intacto: pruebas\\entradas\\E2E-05-ficha.md",
+      "resultado": "CORRECTA",
+      "evidencia": "bd4377c61f4e96363f8a2e272ae1279fc5c31ea6bb91604bdee07f64a0421d7e"
+    },
+    {
+      "comprobacion": "Fixture original intacto: pruebas\\entradas\\E2E-06-medicion.md",
+      "resultado": "CORRECTA",
+      "evidencia": "b503b87978c6c88811d3c48e95a25b461c1da14a849c9f89606ffc736228a5a5"
+    },
+    {
+      "comprobacion": "Fixture original intacto: pruebas\\entradas\\E2E-07-proforma.pdf",
+      "resultado": "CORRECTA",
+      "evidencia": "74a1a0e97e1ea26a3de9d30ad4866bc80f4039115b0627b45c6295f59241717a"
+    },
+    {
+      "comprobacion": "Evidencia histórica conservada: .gitignore",
+      "resultado": "CORRECTA",
+      "evidencia": [
+        ".gitignore"
+      ]
+    },
+    {
+      "comprobacion": "Evidencia histórica conservada: EXPLICACION.md",
+      "resultado": "CORRECTA",
+      "evidencia": [
+        "pruebas\\resultados\\historico-v1.0\\EXPLICACION.md"
+      ]
+    },
+    {
+      "comprobacion": "Evidencia histórica conservada: GUIA-DE-USO.md",
+      "resultado": "CORRECTA",
+      "evidencia": [
+        "pruebas\\resultados\\historico-v1.0\\GUIA-DE-USO.md"
+      ]
+    },
+    {
+      "comprobacion": "Evidencia histórica conservada: PERFIL-EXPEDIENTE.md",
+      "resultado": "CORRECTA",
+      "evidencia": [
+        "pruebas\\resultados\\historico-v1.0\\PERFIL-EXPEDIENTE.md"
+      ]
+    },
+    {
+      "comprobacion": "Evidencia histórica conservada: PROMPTD-CREACION-SKILL.md",
+      "resultado": "CORRECTA",
+      "evidencia": [
+        "PROMPTD-CREACION-SKILL.md"
+      ]
+    },
+    {
+      "comprobacion": "Evidencia histórica conservada: PRUEBA TECNICA IT.pdf",
+      "resultado": "CORRECTA",
+      "evidencia": [
+        "PRUEBA TECNICA IT.pdf"
+      ]
+    },
+    {
+      "comprobacion": "Evidencia histórica conservada: REPORTE-CREACION.md",
+      "resultado": "CORRECTA",
+      "evidencia": [
+        "pruebas\\resultados\\historico-v1.0\\REPORTE-CREACION.md"
+      ]
+    },
+    {
+      "comprobacion": "Evidencia histórica conservada: SKILL.md",
+      "resultado": "CORRECTA",
+      "evidencia": [
+        "pruebas\\resultados\\historico-v1.0\\SKILL.md"
+      ]
+    },
+    {
+      "comprobacion": "Evidencia histórica conservada: TASK.MD",
+      "resultado": "CORRECTA",
+      "evidencia": [
+        "TASK.MD"
+      ]
+    },
+    {
+      "comprobacion": "Evidencia histórica conservada: pruebas\\RESULTADOS.md",
+      "resultado": "CORRECTA",
+      "evidencia": [
+        "pruebas\\resultados\\historico-v1.0\\pruebas\\RESULTADOS.md"
+      ]
+    },
+    {
+      "comprobacion": "Evidencia histórica conservada: pruebas\\entradas\\E2E-01-correo.md",
+      "resultado": "CORRECTA",
+      "evidencia": [
+        "pruebas\\entradas\\E2E-01-correo.md"
+      ]
+    },
+    {
+      "comprobacion": "Evidencia histórica conservada: pruebas\\entradas\\E2E-02-proforma.pdf",
+      "resultado": "CORRECTA",
+      "evidencia": [
+        "pruebas\\entradas\\E2E-02-proforma.pdf"
+      ]
+    },
+    {
+      "comprobacion": "Evidencia histórica conservada: pruebas\\entradas\\E2E-03-proforma.pdf",
+      "resultado": "CORRECTA",
+      "evidencia": [
+        "pruebas\\entradas\\E2E-03-proforma.pdf"
+      ]
+    },
+    {
+      "comprobacion": "Evidencia histórica conservada: pruebas\\entradas\\E2E-04-correo.md",
+      "resultado": "CORRECTA",
+      "evidencia": [
+        "pruebas\\entradas\\E2E-04-correo.md"
+      ]
+    },
+    {
+      "comprobacion": "Evidencia histórica conservada: pruebas\\entradas\\E2E-04-proforma.pdf",
+      "resultado": "CORRECTA",
+      "evidencia": [
+        "pruebas\\entradas\\E2E-04-proforma.pdf"
+      ]
+    },
+    {
+      "comprobacion": "Evidencia histórica conservada: pruebas\\entradas\\E2E-05-correo.md",
+      "resultado": "CORRECTA",
+      "evidencia": [
+        "pruebas\\entradas\\E2E-05-correo.md"
+      ]
+    },
+    {
+      "comprobacion": "Evidencia histórica conservada: pruebas\\entradas\\E2E-05-ficha.md",
+      "resultado": "CORRECTA",
+      "evidencia": [
+        "pruebas\\entradas\\E2E-05-ficha.md"
+      ]
+    },
+    {
+      "comprobacion": "Evidencia histórica conservada: pruebas\\entradas\\E2E-06-medicion.md",
+      "resultado": "CORRECTA",
+      "evidencia": [
+        "pruebas\\entradas\\E2E-06-medicion.md"
+      ]
+    },
+    {
+      "comprobacion": "Evidencia histórica conservada: pruebas\\entradas\\E2E-07-proforma.pdf",
+      "resultado": "CORRECTA",
+      "evidencia": [
+        "pruebas\\entradas\\E2E-07-proforma.pdf"
+      ]
+    },
+    {
+      "comprobacion": "Evidencia histórica conservada: pruebas\\entradas\\E2E-08-proforma.png",
+      "resultado": "CORRECTA",
+      "evidencia": [
+        "pruebas\\entradas\\E2E-08-proforma.png"
+      ]
+    },
+    {
+      "comprobacion": "Evidencia histórica conservada: pruebas\\resultados\\comparacion-esperado-observado.json",
+      "resultado": "CORRECTA",
+      "evidencia": [
+        "pruebas\\resultados\\comparacion-esperado-observado.json",
+        "pruebas\\resultados\\historico-v1.0\\pruebas\\resultados\\comparacion-esperado-observado.json"
+      ]
+    },
+    {
+      "comprobacion": "Evidencia histórica conservada: pruebas\\resultados\\eventos.jsonl",
+      "resultado": "CORRECTA",
+      "evidencia": [
+        "pruebas\\resultados\\historico-v1.0\\pruebas\\resultados\\eventos.jsonl"
+      ]
+    },
+    {
+      "comprobacion": "Evidencia histórica conservada: pruebas\\resultados\\instrucciones-completas.txt",
+      "resultado": "CORRECTA",
+      "evidencia": [
+        "pruebas\\resultados\\historico-v1.0\\pruebas\\resultados\\instrucciones-completas.txt"
+      ]
+    },
+    {
+      "comprobacion": "Evidencia histórica conservada: pruebas\\resultados\\manifest-inicial.json",
+      "resultado": "CORRECTA",
+      "evidencia": [
+        "pruebas\\resultados\\manifest-inicial.json"
+      ]
+    },
+    {
+      "comprobacion": "Evidencia histórica conservada: pruebas\\resultados\\validacion-artefactos.json",
+      "resultado": "CORRECTA",
+      "evidencia": [
+        "pruebas\\resultados\\validacion-artefactos.json",
+        "pruebas\\resultados\\historico-v1.0\\pruebas\\resultados\\validacion-artefactos.json"
+      ]
+    },
+    {
+      "comprobacion": "Evidencia histórica conservada: pruebas\\resultados\\E2E-01-R1\\ejecucion.json",
+      "resultado": "CORRECTA",
+      "evidencia": [
+        "pruebas\\resultados\\E2E-01-R1\\ejecucion.json"
+      ]
+    },
+    {
+      "comprobacion": "Evidencia histórica conservada: pruebas\\resultados\\E2E-01-R1\\eventos-cli.jsonl",
+      "resultado": "CORRECTA",
+      "evidencia": [
+        "pruebas\\resultados\\E2E-01-R1\\eventos-cli.jsonl"
+      ]
+    },
+    {
+      "comprobacion": "Evidencia histórica conservada: pruebas\\resultados\\E2E-01-R1\\inicio.json",
+      "resultado": "CORRECTA",
+      "evidencia": [
+        "pruebas\\resultados\\E2E-01-R1\\inicio.json"
+      ]
+    },
+    {
+      "comprobacion": "Evidencia histórica conservada: pruebas\\resultados\\E2E-01-R1\\prompt-completo.txt",
+      "resultado": "CORRECTA",
+      "evidencia": [
+        "pruebas\\resultados\\E2E-01-R1\\prompt-completo.txt"
+      ]
+    },
+    {
+      "comprobacion": "Evidencia histórica conservada: pruebas\\resultados\\E2E-01-R1\\stderr.txt",
+      "resultado": "CORRECTA",
+      "evidencia": [
+        "pruebas\\resultados\\E2E-01-R1\\stderr.txt"
+      ]
+    },
+    {
+      "comprobacion": "Evidencia histórica conservada: pruebas\\resultados\\E2E-01-S1\\prompt-recibido.txt",
+      "resultado": "CORRECTA",
+      "evidencia": [
+        "pruebas\\resultados\\E2E-01-S1\\prompt-recibido.txt"
+      ]
+    },
+    {
+      "comprobacion": "Evidencia histórica conservada: pruebas\\resultados\\E2E-01-S1\\registro.json",
+      "resultado": "CORRECTA",
+      "evidencia": [
+        "pruebas\\resultados\\E2E-01-S1\\registro.json"
+      ]
+    },
+    {
+      "comprobacion": "Evidencia histórica conservada: pruebas\\resultados\\E2E-01-S1\\salida-observada.md",
+      "resultado": "CORRECTA",
+      "evidencia": [
+        "pruebas\\resultados\\E2E-01-S1\\salida-observada.md"
+      ]
+    },
+    {
+      "comprobacion": "Evidencia histórica conservada: pruebas\\resultados\\E2E-02-R1\\ejecucion.json",
+      "resultado": "CORRECTA",
+      "evidencia": [
+        "pruebas\\resultados\\E2E-02-R1\\ejecucion.json"
+      ]
+    },
+    {
+      "comprobacion": "Evidencia histórica conservada: pruebas\\resultados\\E2E-02-R1\\eventos-cli.jsonl",
+      "resultado": "CORRECTA",
+      "evidencia": [
+        "pruebas\\resultados\\E2E-02-R1\\eventos-cli.jsonl"
+      ]
+    },
+    {
+      "comprobacion": "Evidencia histórica conservada: pruebas\\resultados\\E2E-02-R1\\inicio.json",
+      "resultado": "CORRECTA",
+      "evidencia": [
+        "pruebas\\resultados\\E2E-02-R1\\inicio.json"
+      ]
+    },
+    {
+      "comprobacion": "Evidencia histórica conservada: pruebas\\resultados\\E2E-02-R1\\prompt-completo.txt",
+      "resultado": "CORRECTA",
+      "evidencia": [
+        "pruebas\\resultados\\E2E-02-R1\\prompt-completo.txt"
+      ]
+    },
+    {
+      "comprobacion": "Evidencia histórica conservada: pruebas\\resultados\\E2E-02-R1\\stderr.txt",
+      "resultado": "CORRECTA",
+      "evidencia": [
+        "pruebas\\resultados\\E2E-02-R1\\stderr.txt"
+      ]
+    },
+    {
+      "comprobacion": "Evidencia histórica conservada: pruebas\\resultados\\E2E-02-S1\\metodo-lectura.txt",
+      "resultado": "CORRECTA",
+      "evidencia": [
+        "pruebas\\resultados\\E2E-02-S1\\metodo-lectura.txt"
+      ]
+    },
+    {
+      "comprobacion": "Evidencia histórica conservada: pruebas\\resultados\\E2E-02-S1\\prompt-recibido.txt",
+      "resultado": "CORRECTA",
+      "evidencia": [
+        "pruebas\\resultados\\E2E-02-S1\\prompt-recibido.txt"
+      ]
+    },
+    {
+      "comprobacion": "Evidencia histórica conservada: pruebas\\resultados\\E2E-02-S1\\registro.json",
+      "resultado": "CORRECTA",
+      "evidencia": [
+        "pruebas\\resultados\\E2E-02-S1\\registro.json"
+      ]
+    },
+    {
+      "comprobacion": "Evidencia histórica conservada: pruebas\\resultados\\E2E-02-S1\\salida-observada.md",
+      "resultado": "CORRECTA",
+      "evidencia": [
+        "pruebas\\resultados\\E2E-02-S1\\salida-observada.md"
+      ]
+    },
+    {
+      "comprobacion": "Evidencia histórica conservada: pruebas\\resultados\\E2E-02-S1\\texto-extraido.txt",
+      "resultado": "CORRECTA",
+      "evidencia": [
+        "pruebas\\resultados\\E2E-02-S1\\texto-extraido.txt"
+      ]
+    },
+    {
+      "comprobacion": "Evidencia histórica conservada: pruebas\\resultados\\E2E-02-S2\\calculo-decimal.txt",
+      "resultado": "CORRECTA",
+      "evidencia": [
+        "pruebas\\resultados\\E2E-02-S2\\calculo-decimal.txt"
+      ]
+    },
+    {
+      "comprobacion": "Evidencia histórica conservada: pruebas\\resultados\\E2E-02-S2\\inicio.txt",
+      "resultado": "CORRECTA",
+      "evidencia": [
+        "pruebas\\resultados\\E2E-02-S2\\inicio.txt"
+      ]
+    },
+    {
+      "comprobacion": "Evidencia histórica conservada: pruebas\\resultados\\E2E-02-S2\\prompt-recibido.txt",
+      "resultado": "CORRECTA",
+      "evidencia": [
+        "pruebas\\resultados\\E2E-02-S2\\prompt-recibido.txt"
+      ]
+    },
+    {
+      "comprobacion": "Evidencia histórica conservada: pruebas\\resultados\\E2E-02-S2\\registro.json",
+      "resultado": "CORRECTA",
+      "evidencia": [
+        "pruebas\\resultados\\E2E-02-S2\\registro.json"
+      ]
+    },
+    {
+      "comprobacion": "Evidencia histórica conservada: pruebas\\resultados\\E2E-02-S2\\salida-observada.md",
+      "resultado": "CORRECTA",
+      "evidencia": [
+        "pruebas\\resultados\\E2E-02-S2\\salida-observada.md"
+      ]
+    },
+    {
+      "comprobacion": "Evidencia histórica conservada: pruebas\\resultados\\E2E-02-S2\\texto-extraido.txt",
+      "resultado": "CORRECTA",
+      "evidencia": [
+        "pruebas\\resultados\\E2E-02-S2\\texto-extraido.txt"
+      ]
+    },
+    {
+      "comprobacion": "Evidencia histórica conservada: pruebas\\resultados\\E2E-02-S3\\extraccion-propia.txt",
+      "resultado": "CORRECTA",
+      "evidencia": [
+        "pruebas\\resultados\\E2E-02-S3\\extraccion-propia.txt"
+      ]
+    },
+    {
+      "comprobacion": "Evidencia histórica conservada: pruebas\\resultados\\E2E-02-S3\\metodo-extraccion.ps1",
+      "resultado": "CORRECTA",
+      "evidencia": [
+        "pruebas\\resultados\\E2E-02-S3\\metodo-extraccion.ps1"
+      ]
+    },
+    {
+      "comprobacion": "Evidencia histórica conservada: pruebas\\resultados\\E2E-02-S3\\prompt-recibido.txt",
+      "resultado": "CORRECTA",
+      "evidencia": [
+        "pruebas\\resultados\\E2E-02-S3\\prompt-recibido.txt"
+      ]
+    },
+    {
+      "comprobacion": "Evidencia histórica conservada: pruebas\\resultados\\E2E-02-S3\\registro.json",
+      "resultado": "CORRECTA",
+      "evidencia": [
+        "pruebas\\resultados\\E2E-02-S3\\registro.json"
+      ]
+    },
+    {
+      "comprobacion": "Evidencia histórica conservada: pruebas\\resultados\\E2E-02-S3\\salida-observada.md",
+      "resultado": "CORRECTA",
+      "evidencia": [
+        "pruebas\\resultados\\E2E-02-S3\\salida-observada.md"
+      ]
+    },
+    {
+      "comprobacion": "Evidencia histórica conservada: pruebas\\resultados\\E2E-03-R1\\ejecucion.json",
+      "resultado": "CORRECTA",
+      "evidencia": [
+        "pruebas\\resultados\\E2E-03-R1\\ejecucion.json"
+      ]
+    },
+    {
+      "comprobacion": "Evidencia histórica conservada: pruebas\\resultados\\E2E-03-R1\\eventos-cli.jsonl",
+      "resultado": "CORRECTA",
+      "evidencia": [
+        "pruebas\\resultados\\E2E-03-R1\\eventos-cli.jsonl"
+      ]
+    },
+    {
+      "comprobacion": "Evidencia histórica conservada: pruebas\\resultados\\E2E-03-R1\\inicio.json",
+      "resultado": "CORRECTA",
+      "evidencia": [
+        "pruebas\\resultados\\E2E-03-R1\\inicio.json"
+      ]
+    },
+    {
+      "comprobacion": "Evidencia histórica conservada: pruebas\\resultados\\E2E-03-R1\\prompt-completo.txt",
+      "resultado": "CORRECTA",
+      "evidencia": [
+        "pruebas\\resultados\\E2E-03-R1\\prompt-completo.txt"
+      ]
+    },
+    {
+      "comprobacion": "Evidencia histórica conservada: pruebas\\resultados\\E2E-03-R1\\stderr.txt",
+      "resultado": "CORRECTA",
+      "evidencia": [
+        "pruebas\\resultados\\E2E-03-R1\\stderr.txt"
+      ]
+    },
+    {
+      "comprobacion": "Evidencia histórica conservada: pruebas\\resultados\\E2E-03-S1\\metodo-lectura.txt",
+      "resultado": "CORRECTA",
+      "evidencia": [
+        "pruebas\\resultados\\E2E-03-S1\\metodo-lectura.txt"
+      ]
+    },
+    {
+      "comprobacion": "Evidencia histórica conservada: pruebas\\resultados\\E2E-03-S1\\prompt-recibido.txt",
+      "resultado": "CORRECTA",
+      "evidencia": [
+        "pruebas\\resultados\\E2E-03-S1\\prompt-recibido.txt"
+      ]
+    },
+    {
+      "comprobacion": "Evidencia histórica conservada: pruebas\\resultados\\E2E-03-S1\\registro.json",
+      "resultado": "CORRECTA",
+      "evidencia": [
+        "pruebas\\resultados\\E2E-03-S1\\registro.json"
+      ]
+    },
+    {
+      "comprobacion": "Evidencia histórica conservada: pruebas\\resultados\\E2E-03-S1\\salida-observada.md",
+      "resultado": "CORRECTA",
+      "evidencia": [
+        "pruebas\\resultados\\E2E-03-S1\\salida-observada.md"
+      ]
+    },
+    {
+      "comprobacion": "Evidencia histórica conservada: pruebas\\resultados\\E2E-03-S1\\texto-extraido.txt",
+      "resultado": "CORRECTA",
+      "evidencia": [
+        "pruebas\\resultados\\E2E-03-S1\\texto-extraido.txt"
+      ]
+    },
+    {
+      "comprobacion": "Evidencia histórica conservada: pruebas\\resultados\\E2E-03-S2\\prompt-recibido.txt",
+      "resultado": "CORRECTA",
+      "evidencia": [
+        "pruebas\\resultados\\E2E-03-S2\\prompt-recibido.txt"
+      ]
+    },
+    {
+      "comprobacion": "Evidencia histórica conservada: pruebas\\resultados\\E2E-03-S2\\registro.json",
+      "resultado": "CORRECTA",
+      "evidencia": [
+        "pruebas\\resultados\\E2E-03-S2\\registro.json"
+      ]
+    },
+    {
+      "comprobacion": "Evidencia histórica conservada: pruebas\\resultados\\E2E-03-S2\\salida-observada.md",
+      "resultado": "CORRECTA",
+      "evidencia": [
+        "pruebas\\resultados\\E2E-03-S2\\salida-observada.md"
+      ]
+    },
+    {
+      "comprobacion": "Evidencia histórica conservada: pruebas\\resultados\\E2E-03-S3\\extraccion-propia.txt",
+      "resultado": "CORRECTA",
+      "evidencia": [
+        "pruebas\\resultados\\E2E-03-S3\\extraccion-propia.txt"
+      ]
+    },
+    {
+      "comprobacion": "Evidencia histórica conservada: pruebas\\resultados\\E2E-03-S3\\inicio.txt",
+      "resultado": "CORRECTA",
+      "evidencia": [
+        "pruebas\\resultados\\E2E-03-S3\\inicio.txt"
+      ]
+    },
+    {
+      "comprobacion": "Evidencia histórica conservada: pruebas\\resultados\\E2E-03-S3\\metodo-comando.txt",
+      "resultado": "CORRECTA",
+      "evidencia": [
+        "pruebas\\resultados\\E2E-03-S3\\metodo-comando.txt"
+      ]
+    },
+    {
+      "comprobacion": "Evidencia histórica conservada: pruebas\\resultados\\E2E-03-S3\\prompt-recibido.txt",
+      "resultado": "CORRECTA",
+      "evidencia": [
+        "pruebas\\resultados\\E2E-03-S3\\prompt-recibido.txt"
+      ]
+    },
+    {
+      "comprobacion": "Evidencia histórica conservada: pruebas\\resultados\\E2E-03-S3\\registro.json",
+      "resultado": "CORRECTA",
+      "evidencia": [
+        "pruebas\\resultados\\E2E-03-S3\\registro.json"
+      ]
+    },
+    {
+      "comprobacion": "Evidencia histórica conservada: pruebas\\resultados\\E2E-03-S3\\salida-observada.md",
+      "resultado": "CORRECTA",
+      "evidencia": [
+        "pruebas\\resultados\\E2E-03-S3\\salida-observada.md"
+      ]
+    },
+    {
+      "comprobacion": "Evidencia histórica conservada: pruebas\\resultados\\E2E-04-S1\\prompt-recibido.txt",
+      "resultado": "CORRECTA",
+      "evidencia": [
+        "pruebas\\resultados\\E2E-04-S1\\prompt-recibido.txt"
+      ]
+    },
+    {
+      "comprobacion": "Evidencia histórica conservada: pruebas\\resultados\\E2E-04-S1\\registro.json",
+      "resultado": "CORRECTA",
+      "evidencia": [
+        "pruebas\\resultados\\E2E-04-S1\\registro.json"
+      ]
+    },
+    {
+      "comprobacion": "Evidencia histórica conservada: pruebas\\resultados\\E2E-04-S1\\salida-observada.md",
+      "resultado": "CORRECTA",
+      "evidencia": [
+        "pruebas\\resultados\\E2E-04-S1\\salida-observada.md"
+      ]
+    },
+    {
+      "comprobacion": "Evidencia histórica conservada: pruebas\\resultados\\E2E-04-S2\\extraccion-pdf.txt",
+      "resultado": "CORRECTA",
+      "evidencia": [
+        "pruebas\\resultados\\E2E-04-S2\\extraccion-pdf.txt"
+      ]
+    },
+    {
+      "comprobacion": "Evidencia histórica conservada: pruebas\\resultados\\E2E-04-S2\\prompt-recibido.txt",
+      "resultado": "CORRECTA",
+      "evidencia": [
+        "pruebas\\resultados\\E2E-04-S2\\prompt-recibido.txt"
+      ]
+    },
+    {
+      "comprobacion": "Evidencia histórica conservada: pruebas\\resultados\\E2E-04-S2\\registro.json",
+      "resultado": "CORRECTA",
+      "evidencia": [
+        "pruebas\\resultados\\E2E-04-S2\\registro.json"
+      ]
+    },
+    {
+      "comprobacion": "Evidencia histórica conservada: pruebas\\resultados\\E2E-04-S2\\salida-observada.md",
+      "resultado": "CORRECTA",
+      "evidencia": [
+        "pruebas\\resultados\\E2E-04-S2\\salida-observada.md"
+      ]
+    },
+    {
+      "comprobacion": "Evidencia histórica conservada: pruebas\\resultados\\E2E-04-S3\\extraccion-propia.txt",
+      "resultado": "CORRECTA",
+      "evidencia": [
+        "pruebas\\resultados\\E2E-04-S3\\extraccion-propia.txt"
+      ]
+    },
+    {
+      "comprobacion": "Evidencia histórica conservada: pruebas\\resultados\\E2E-04-S3\\prompt-recibido.txt",
+      "resultado": "CORRECTA",
+      "evidencia": [
+        "pruebas\\resultados\\E2E-04-S3\\prompt-recibido.txt"
+      ]
+    },
+    {
+      "comprobacion": "Evidencia histórica conservada: pruebas\\resultados\\E2E-04-S3\\registro.json",
+      "resultado": "CORRECTA",
+      "evidencia": [
+        "pruebas\\resultados\\E2E-04-S3\\registro.json"
+      ]
+    },
+    {
+      "comprobacion": "Evidencia histórica conservada: pruebas\\resultados\\E2E-04-S3\\salida-observada.md",
+      "resultado": "CORRECTA",
+      "evidencia": [
+        "pruebas\\resultados\\E2E-04-S3\\salida-observada.md"
+      ]
+    },
+    {
+      "comprobacion": "Evidencia histórica conservada: pruebas\\resultados\\E2E-05-S1\\prompt-recibido.txt",
+      "resultado": "CORRECTA",
+      "evidencia": [
+        "pruebas\\resultados\\E2E-05-S1\\prompt-recibido.txt"
+      ]
+    },
+    {
+      "comprobacion": "Evidencia histórica conservada: pruebas\\resultados\\E2E-05-S1\\registro.json",
+      "resultado": "CORRECTA",
+      "evidencia": [
+        "pruebas\\resultados\\E2E-05-S1\\registro.json"
+      ]
+    },
+    {
+      "comprobacion": "Evidencia histórica conservada: pruebas\\resultados\\E2E-05-S1\\salida-observada.md",
+      "resultado": "CORRECTA",
+      "evidencia": [
+        "pruebas\\resultados\\E2E-05-S1\\salida-observada.md"
+      ]
+    },
+    {
+      "comprobacion": "Evidencia histórica conservada: pruebas\\resultados\\E2E-06-S1\\prompt-recibido.txt",
+      "resultado": "CORRECTA",
+      "evidencia": [
+        "pruebas\\resultados\\E2E-06-S1\\prompt-recibido.txt"
+      ]
+    },
+    {
+      "comprobacion": "Evidencia histórica conservada: pruebas\\resultados\\E2E-06-S1\\registro.json",
+      "resultado": "CORRECTA",
+      "evidencia": [
+        "pruebas\\resultados\\E2E-06-S1\\registro.json"
+      ]
+    },
+    {
+      "comprobacion": "Evidencia histórica conservada: pruebas\\resultados\\E2E-06-S1\\salida-observada.md",
+      "resultado": "CORRECTA",
+      "evidencia": [
+        "pruebas\\resultados\\E2E-06-S1\\salida-observada.md"
+      ]
+    },
+    {
+      "comprobacion": "Evidencia histórica conservada: pruebas\\resultados\\E2E-07-S1\\inicio.txt",
+      "resultado": "CORRECTA",
+      "evidencia": [
+        "pruebas\\resultados\\E2E-07-S1\\inicio.txt"
+      ]
+    },
+    {
+      "comprobacion": "Evidencia histórica conservada: pruebas\\resultados\\E2E-07-S1\\prompt-recibido.txt",
+      "resultado": "CORRECTA",
+      "evidencia": [
+        "pruebas\\resultados\\E2E-07-S1\\prompt-recibido.txt"
+      ]
+    },
+    {
+      "comprobacion": "Evidencia histórica conservada: pruebas\\resultados\\E2E-07-S1\\registro.json",
+      "resultado": "CORRECTA",
+      "evidencia": [
+        "pruebas\\resultados\\E2E-07-S1\\registro.json"
+      ]
+    },
+    {
+      "comprobacion": "Evidencia histórica conservada: pruebas\\resultados\\E2E-07-S1\\salida-observada.md",
+      "resultado": "CORRECTA",
+      "evidencia": [
+        "pruebas\\resultados\\E2E-07-S1\\salida-observada.md"
+      ]
+    },
+    {
+      "comprobacion": "Evidencia histórica conservada: pruebas\\resultados\\E2E-07-S1\\texto-extraido.txt",
+      "resultado": "CORRECTA",
+      "evidencia": [
+        "pruebas\\resultados\\E2E-07-S1\\texto-extraido.txt"
+      ]
+    },
+    {
+      "comprobacion": "Evidencia histórica conservada: pruebas\\resultados\\E2E-08-S1\\prompt-recibido.txt",
+      "resultado": "CORRECTA",
+      "evidencia": [
+        "pruebas\\resultados\\E2E-08-S1\\prompt-recibido.txt"
+      ]
+    },
+    {
+      "comprobacion": "Evidencia histórica conservada: pruebas\\resultados\\E2E-08-S1\\registro.json",
+      "resultado": "CORRECTA",
+      "evidencia": [
+        "pruebas\\resultados\\E2E-08-S1\\registro.json"
+      ]
+    },
+    {
+      "comprobacion": "Evidencia histórica conservada: pruebas\\resultados\\E2E-08-S1\\salida-observada.md",
+      "resultado": "CORRECTA",
+      "evidencia": [
+        "pruebas\\resultados\\E2E-08-S1\\salida-observada.md"
+      ]
+    },
+    {
+      "comprobacion": "Evidencia histórica conservada: pruebas\\resultados\\herramientas\\comparar_resultados.py",
+      "resultado": "CORRECTA",
+      "evidencia": [
+        "pruebas\\resultados\\herramientas\\comparar_resultados.py"
+      ]
+    },
+    {
+      "comprobacion": "Evidencia histórica conservada: pruebas\\resultados\\herramientas\\ejecutar.py",
+      "resultado": "CORRECTA",
+      "evidencia": [
+        "pruebas\\resultados\\herramientas\\ejecutar.py"
+      ]
+    },
+    {
+      "comprobacion": "Evidencia histórica conservada: pruebas\\resultados\\herramientas\\preparar.py",
+      "resultado": "CORRECTA",
+      "evidencia": [
+        "pruebas\\resultados\\herramientas\\preparar.py"
+      ]
+    },
+    {
+      "comprobacion": "Evidencia histórica conservada: pruebas\\resultados\\herramientas\\validar_artefactos.py",
+      "resultado": "CORRECTA",
+      "evidencia": [
+        "pruebas\\resultados\\herramientas\\validar_artefactos.py"
+      ]
+    },
+    {
+      "comprobacion": "Evidencia histórica conservada: pruebas\\resultados\\herramientas\\vista_explicacion.py",
+      "resultado": "CORRECTA",
+      "evidencia": [
+        "pruebas\\resultados\\herramientas\\vista_explicacion.py"
+      ]
+    },
+    {
+      "comprobacion": "Evidencia histórica conservada: pruebas\\resultados\\validacion-fixtures\\E2E-02-extraido.txt",
+      "resultado": "CORRECTA",
+      "evidencia": [
+        "pruebas\\resultados\\validacion-fixtures\\E2E-02-extraido.txt"
+      ]
+    },
+    {
+      "comprobacion": "Evidencia histórica conservada: pruebas\\resultados\\validacion-fixtures\\E2E-02-vista.png",
+      "resultado": "CORRECTA",
+      "evidencia": [
+        "pruebas\\resultados\\validacion-fixtures\\E2E-02-vista.png"
+      ]
+    },
+    {
+      "comprobacion": "Evidencia histórica conservada: pruebas\\resultados\\validacion-fixtures\\E2E-03-extraido.txt",
+      "resultado": "CORRECTA",
+      "evidencia": [
+        "pruebas\\resultados\\validacion-fixtures\\E2E-03-extraido.txt"
+      ]
+    },
+    {
+      "comprobacion": "Evidencia histórica conservada: pruebas\\resultados\\validacion-fixtures\\E2E-03-vista.png",
+      "resultado": "CORRECTA",
+      "evidencia": [
+        "pruebas\\resultados\\validacion-fixtures\\E2E-03-vista.png"
+      ]
+    },
+    {
+      "comprobacion": "Evidencia histórica conservada: pruebas\\resultados\\validacion-fixtures\\E2E-04-extraido.txt",
+      "resultado": "CORRECTA",
+      "evidencia": [
+        "pruebas\\resultados\\validacion-fixtures\\E2E-04-extraido.txt"
+      ]
+    },
+    {
+      "comprobacion": "Evidencia histórica conservada: pruebas\\resultados\\validacion-fixtures\\E2E-04-vista.png",
+      "resultado": "CORRECTA",
+      "evidencia": [
+        "pruebas\\resultados\\validacion-fixtures\\E2E-04-vista.png"
+      ]
+    },
+    {
+      "comprobacion": "Evidencia histórica conservada: pruebas\\resultados\\validacion-fixtures\\E2E-07-extraido.txt",
+      "resultado": "CORRECTA",
+      "evidencia": [
+        "pruebas\\resultados\\validacion-fixtures\\E2E-07-extraido.txt"
+      ]
+    },
+    {
+      "comprobacion": "Evidencia histórica conservada: pruebas\\resultados\\validacion-fixtures\\E2E-07-vista.png",
+      "resultado": "CORRECTA",
+      "evidencia": [
+        "pruebas\\resultados\\validacion-fixtures\\E2E-07-vista.png"
+      ]
+    },
+    {
+      "comprobacion": "Evidencia histórica conservada: pruebas\\resultados\\validacion-fixtures\\enunciado-vista.png",
+      "resultado": "CORRECTA",
+      "evidencia": [
+        "pruebas\\resultados\\validacion-fixtures\\enunciado-vista.png"
+      ]
+    },
+    {
+      "comprobacion": "Evidencia histórica conservada: pruebas\\resultados\\validacion-fixtures\\EXPLICACION-A4.json",
+      "resultado": "CORRECTA",
+      "evidencia": [
+        "pruebas\\resultados\\historico-v1.0\\pruebas\\resultados\\validacion-fixtures\\EXPLICACION-A4.json"
+      ]
+    },
+    {
+      "comprobacion": "Evidencia histórica conservada: pruebas\\resultados\\validacion-fixtures\\EXPLICACION-A4.png",
+      "resultado": "CORRECTA",
+      "evidencia": [
+        "pruebas\\resultados\\historico-v1.0\\pruebas\\resultados\\validacion-fixtures\\EXPLICACION-A4.png"
+      ]
+    },
+    {
+      "comprobacion": "Sintaxis de scripts conservados",
+      "resultado": "CORRECTA",
+      "evidencia": "ast.parse; no bytecode ni instalaciones"
+    },
+    {
+      "comprobacion": "Control original sin alterar: P01",
+      "resultado": "CORRECTA",
+      "evidencia": "Fila idéntica al prompt original"
+    },
+    {
+      "comprobacion": "Control original sin alterar: P02",
+      "resultado": "CORRECTA",
+      "evidencia": "Fila idéntica al prompt original"
+    },
+    {
+      "comprobacion": "Control original sin alterar: P03",
+      "resultado": "CORRECTA",
+      "evidencia": "Fila idéntica al prompt original"
+    },
+    {
+      "comprobacion": "Control original sin alterar: P04",
+      "resultado": "CORRECTA",
+      "evidencia": "Fila idéntica al prompt original"
+    },
+    {
+      "comprobacion": "Control original sin alterar: P05",
+      "resultado": "CORRECTA",
+      "evidencia": "Fila idéntica al prompt original"
+    },
+    {
+      "comprobacion": "Control original sin alterar: P06",
+      "resultado": "CORRECTA",
+      "evidencia": "Fila idéntica al prompt original"
+    },
+    {
+      "comprobacion": "Control original sin alterar: P07",
+      "resultado": "CORRECTA",
+      "evidencia": "Fila idéntica al prompt original"
+    },
+    {
+      "comprobacion": "Control original sin alterar: P08",
+      "resultado": "CORRECTA",
+      "evidencia": "Fila idéntica al prompt original"
+    },
+    {
+      "comprobacion": "Control original sin alterar: P10",
+      "resultado": "CORRECTA",
+      "evidencia": "Fila idéntica al prompt original"
+    },
+    {
+      "comprobacion": "Control original sin alterar: F01",
+      "resultado": "CORRECTA",
+      "evidencia": "Fila idéntica al prompt original"
+    },
+    {
+      "comprobacion": "Control original sin alterar: F02",
+      "resultado": "CORRECTA",
+      "evidencia": "Fila idéntica al prompt original"
+    },
+    {
+      "comprobacion": "Control original sin alterar: F03",
+      "resultado": "CORRECTA",
+      "evidencia": "Fila idéntica al prompt original"
+    },
+    {
+      "comprobacion": "Control original sin alterar: F04",
+      "resultado": "CORRECTA",
+      "evidencia": "Fila idéntica al prompt original"
+    },
+    {
+      "comprobacion": "Control original sin alterar: F05",
+      "resultado": "CORRECTA",
+      "evidencia": "Fila idéntica al prompt original"
+    },
+    {
+      "comprobacion": "Control original sin alterar: I01",
+      "resultado": "CORRECTA",
+      "evidencia": "Fila idéntica al prompt original"
+    },
+    {
+      "comprobacion": "Control original sin alterar: I02",
+      "resultado": "CORRECTA",
+      "evidencia": "Fila idéntica al prompt original"
+    },
+    {
+      "comprobacion": "Control original sin alterar: I03",
+      "resultado": "CORRECTA",
+      "evidencia": "Fila idéntica al prompt original"
+    },
+    {
+      "comprobacion": "Control original sin alterar: I04",
+      "resultado": "CORRECTA",
+      "evidencia": "Fila idéntica al prompt original"
+    },
+    {
+      "comprobacion": "Control original sin alterar: I05",
+      "resultado": "CORRECTA",
+      "evidencia": "Fila idéntica al prompt original"
+    },
+    {
+      "comprobacion": "Control original sin alterar: I06",
+      "resultado": "CORRECTA",
+      "evidencia": "Fila idéntica al prompt original"
+    },
+    {
+      "comprobacion": "P09 versionado con decisión autorizada",
+      "resultado": "CORRECTA",
+      "evidencia": "PEO-01 v1.1; decisión del usuario conservada"
+    },
+    {
+      "comprobacion": "Entrada/instrucción de ronda intacta: SKILL.md",
+      "resultado": "CORRECTA",
+      "evidencia": "4c155d3f6172c35a1ebb8b11685756d0153282cd4b0a3d3918195aaa9e89317b"
+    },
+    {
+      "comprobacion": "Entrada/instrucción de ronda intacta: PERFIL-EXPEDIENTE.md",
+      "resultado": "CORRECTA",
+      "evidencia": "538d9dbec35316a20aad0fa8888733b874dcb87f3b217f43759d2cc92c4432f6"
+    },
+    {
+      "comprobacion": "Entrada/instrucción de ronda intacta: pruebas\\resultados\\instrucciones-completas.txt",
+      "resultado": "CORRECTA",
+      "evidencia": "8a8d2932a183c34110bc0f79809a2505ff075c489a3938b24ed34af62a2dd034"
+    },
+    {
+      "comprobacion": "Entrada/instrucción de ronda intacta: pruebas\\entradas\\E2E-01-correo.md",
+      "resultado": "CORRECTA",
+      "evidencia": "290eb41d0fd4cd9b9127ef1c6840deeb5ff36e6569474251fe1202e51a607023"
+    },
+    {
+      "comprobacion": "Entrada/instrucción de ronda intacta: pruebas\\entradas\\E2E-02-proforma.pdf",
+      "resultado": "CORRECTA",
+      "evidencia": "8449390f51372510b0a1be6cf29226ed8e75c997b90b54365b24ae16f04547c8"
+    },
+    {
+      "comprobacion": "Entrada/instrucción de ronda intacta: pruebas\\entradas\\E2E-03-proforma.pdf",
+      "resultado": "CORRECTA",
+      "evidencia": "c50b4b4eccf718b5c2e3cd921d1bdb725d6f880862d7fc2517f5b52624c6d06b"
+    },
+    {
+      "comprobacion": "Entrada/instrucción de ronda intacta: pruebas\\entradas\\E2E-04-correo.md",
+      "resultado": "CORRECTA",
+      "evidencia": "f6d74c462a3bf8376733b2068ad16a89fba19550b275ad62463d0402bd44c7fd"
+    },
+    {
+      "comprobacion": "Entrada/instrucción de ronda intacta: pruebas\\entradas\\E2E-04-proforma.pdf",
+      "resultado": "CORRECTA",
+      "evidencia": "5d04172e9338538b550f5406214efa078112a85dc1d5cd72e9c1b4fa7e91eb88"
+    },
+    {
+      "comprobacion": "Entrada/instrucción de ronda intacta: pruebas\\entradas\\E2E-05-correo.md",
+      "resultado": "CORRECTA",
+      "evidencia": "260e7f0bd807623144e16dbf10f380ef8da83952ba97722792c7ed29f602b4e5"
+    },
+    {
+      "comprobacion": "Entrada/instrucción de ronda intacta: pruebas\\entradas\\E2E-05-ficha.md",
+      "resultado": "CORRECTA",
+      "evidencia": "bd4377c61f4e96363f8a2e272ae1279fc5c31ea6bb91604bdee07f64a0421d7e"
+    },
+    {
+      "comprobacion": "Entrada/instrucción de ronda intacta: pruebas\\entradas\\E2E-06-medicion.md",
+      "resultado": "CORRECTA",
+      "evidencia": "b503b87978c6c88811d3c48e95a25b461c1da14a849c9f89606ffc736228a5a5"
+    },
+    {
+      "comprobacion": "Entrada/instrucción de ronda intacta: pruebas\\entradas\\E2E-07-proforma.pdf",
+      "resultado": "CORRECTA",
+      "evidencia": "74a1a0e97e1ea26a3de9d30ad4866bc80f4039115b0627b45c6295f59241717a"
+    },
+    {
+      "comprobacion": "Entrada/instrucción de ronda intacta: pruebas\\entradas\\E2E-08-proforma.png",
+      "resultado": "CORRECTA",
+      "evidencia": "7e930aa7e3b7d2e4b6bb5a797863bf61d565b92410b78f3d8424b57de597d7a8"
+    },
+    {
+      "comprobacion": "Entrada/instrucción de ronda intacta: pruebas\\entradas\\E2E-09-escaneado.pdf",
+      "resultado": "CORRECTA",
+      "evidencia": "a08e8b3fe37a996e88754feda14ce625b537af074f88f1666bd47470537faf63"
+    },
+    {
+      "comprobacion": "Entrada/instrucción de ronda intacta: pruebas\\entradas\\E2E-10-ilegible.png",
+      "resultado": "CORRECTA",
+      "evidencia": "98039eabe03b842c0ec36b5621d1337cb6519da05c0c9fb70e30b1a35a5b718d"
+    },
+    {
+      "comprobacion": "Entrada/instrucción de ronda intacta: pruebas\\entradas\\E2E-11-danado.pdf",
+      "resultado": "CORRECTA",
+      "evidencia": "6f2fb1d15767bfa04f51aeaa5a516ae211d19766ea8f9679116bf94ff12ad77f"
+    },
+    {
+      "comprobacion": "Entrada/instrucción de ronda intacta: pruebas\\entradas\\E2E-12-instruccion-imagen.png",
+      "resultado": "CORRECTA",
+      "evidencia": "d7c4c0de4c30d2223a8251052e172ba36ebb704dc476371bb803a1cc1a99e75d"
+    },
+    {
+      "comprobacion": "Explicación actual de una página A4",
+      "resultado": "CORRECTA",
+      "evidencia": {
+        "fecha": "2026-11-17T13:07:51.903298-05:00",
+        "zona": "America/Panama",
+        "fuente": "EXPLICACION.md",
+        "sha256": "7213658dff79c632ed64479d59599bc74ec6a4a1783cb451ceabdcad935fac6c",
+        "paginas": 1,
+        "formato": "A4 210 x 297 mm",
+        "margenes_cm": 2,
+        "texto_pt": 11,
+        "interlineado_pt": 15,
+        "titulo_pt": 16,
+        "metodo": "ReportLab: composición completa del texto a A4; PDF transitorio en memoria, pypdf cuenta páginas, Poppler stdin genera vista PNG. No se guarda PDF adicional.",
+        "vista": "pruebas/resultados/validacion-fixtures/EXPLICACION-A4.png",
+        "stderr_poppler": "Syntax Error: No display font for 'Symbol'\r\nSyntax Error: No display font for 'ArialUnicode'\r\n"
+      }
+    },
+    {
+      "comprobacion": "Versión portable completa",
+      "resultado": "CORRECTA",
+      "evidencia": "Ambos textos íntegros; sin rutas privadas como dependencia"
+    },
+    {
+      "comprobacion": "Enlace existente: README.md -> EXPLICACION.md",
+      "resultado": "CORRECTA",
+      "evidencia": "EXPLICACION.md"
+    },
+    {
+      "comprobacion": "Enlace existente: README.md -> GUIA-DE-USO.md",
+      "resultado": "CORRECTA",
+      "evidencia": "GUIA-DE-USO.md"
+    },
+    {
+      "comprobacion": "Enlace existente: README.md -> SKILL.md",
+      "resultado": "CORRECTA",
+      "evidencia": "SKILL.md"
+    },
+    {
+      "comprobacion": "Enlace existente: README.md -> PERFIL-EXPEDIENTE.md",
+      "resultado": "CORRECTA",
+      "evidencia": "PERFIL-EXPEDIENTE.md"
+    },
+    {
+      "comprobacion": "Enlace existente: README.md -> REPORTE-CREACION.md",
+      "resultado": "CORRECTA",
+      "evidencia": "REPORTE-CREACION.md"
+    },
+    {
+      "comprobacion": "Enlace existente: README.md -> pruebas/RESULTADOS.md",
+      "resultado": "CORRECTA",
+      "evidencia": "pruebas/RESULTADOS.md"
+    },
+    {
+      "comprobacion": "Enlace existente: README.md -> PROMPTD-CREACION-SKILL.md",
+      "resultado": "CORRECTA",
+      "evidencia": "PROMPTD-CREACION-SKILL.md"
+    },
+    {
+      "comprobacion": "Enlace existente: README.md -> SKILL.md",
+      "resultado": "CORRECTA",
+      "evidencia": "SKILL.md"
+    },
+    {
+      "comprobacion": "Enlace existente: README.md -> PERFIL-EXPEDIENTE.md",
+      "resultado": "CORRECTA",
+      "evidencia": "PERFIL-EXPEDIENTE.md"
+    },
+    {
+      "comprobacion": "Enlace existente: README.md -> pruebas/resultados/instrucciones-completas.txt",
+      "resultado": "CORRECTA",
+      "evidencia": "pruebas/resultados/instrucciones-completas.txt"
+    },
+    {
+      "comprobacion": "Enlace existente: README.md -> GUIA-DE-USO.md",
+      "resultado": "CORRECTA",
+      "evidencia": "GUIA-DE-USO.md"
+    },
+    {
+      "comprobacion": "Enlace existente: README.md -> pruebas/entradas/E2E-01-correo.md",
+      "resultado": "CORRECTA",
+      "evidencia": "pruebas/entradas/E2E-01-correo.md"
+    },
+    {
+      "comprobacion": "Enlace existente: README.md -> pruebas/entradas/",
+      "resultado": "CORRECTA",
+      "evidencia": "pruebas/entradas/"
+    },
+    {
+      "comprobacion": "Enlace existente: README.md -> pruebas/resultados/ronda-1.1/",
+      "resultado": "CORRECTA",
+      "evidencia": "pruebas/resultados/ronda-1.1/"
+    },
+    {
+      "comprobacion": "Enlace existente: README.md -> pruebas/resultados/historico-v1.0/",
+      "resultado": "CORRECTA",
+      "evidencia": "pruebas/resultados/historico-v1.0/"
+    },
+    {
+      "comprobacion": "Enlace existente: README.md -> pruebas/RESULTADOS.md",
+      "resultado": "CORRECTA",
+      "evidencia": "pruebas/RESULTADOS.md"
+    },
+    {
+      "comprobacion": "Enlace existente: README.md -> pruebas/resultados/ronda-1.1/validacion-artefactos.json",
+      "resultado": "CORRECTA",
+      "evidencia": "pruebas/resultados/ronda-1.1/validacion-artefactos.json"
+    },
+    {
+      "comprobacion": "Enlace existente: README.md -> pruebas/resultados/validacion-fixtures/EXPLICACION-A4.png",
+      "resultado": "CORRECTA",
+      "evidencia": "pruebas/resultados/validacion-fixtures/EXPLICACION-A4.png"
+    },
+    {
+      "comprobacion": "Enlace existente: pruebas/RESULTADOS.md -> resultados/ronda-1.1/E2E-01-A1/salida-observada.md",
+      "resultado": "CORRECTA",
+      "evidencia": "resultados/ronda-1.1/E2E-01-A1/salida-observada.md"
+    },
+    {
+      "comprobacion": "Enlace existente: pruebas/RESULTADOS.md -> resultados/ronda-1.1/E2E-02-A1/salida-observada.md",
+      "resultado": "CORRECTA",
+      "evidencia": "resultados/ronda-1.1/E2E-02-A1/salida-observada.md"
+    },
+    {
+      "comprobacion": "Enlace existente: pruebas/RESULTADOS.md -> resultados/ronda-1.1/E2E-03-A1/salida-observada.md",
+      "resultado": "CORRECTA",
+      "evidencia": "resultados/ronda-1.1/E2E-03-A1/salida-observada.md"
+    },
+    {
+      "comprobacion": "Enlace existente: pruebas/RESULTADOS.md -> resultados/ronda-1.1/E2E-04-A1/salida-observada.md",
+      "resultado": "CORRECTA",
+      "evidencia": "resultados/ronda-1.1/E2E-04-A1/salida-observada.md"
+    },
+    {
+      "comprobacion": "Enlace existente: pruebas/RESULTADOS.md -> resultados/ronda-1.1/E2E-05-A1/salida-observada.md",
+      "resultado": "CORRECTA",
+      "evidencia": "resultados/ronda-1.1/E2E-05-A1/salida-observada.md"
+    },
+    {
+      "comprobacion": "Enlace existente: pruebas/RESULTADOS.md -> resultados/ronda-1.1/E2E-06-A1/salida-observada.md",
+      "resultado": "CORRECTA",
+      "evidencia": "resultados/ronda-1.1/E2E-06-A1/salida-observada.md"
+    },
+    {
+      "comprobacion": "Enlace existente: pruebas/RESULTADOS.md -> resultados/ronda-1.1/E2E-07-A1/salida-observada.md",
+      "resultado": "CORRECTA",
+      "evidencia": "resultados/ronda-1.1/E2E-07-A1/salida-observada.md"
+    },
+    {
+      "comprobacion": "Enlace existente: pruebas/RESULTADOS.md -> resultados/ronda-1.1/E2E-02-A2/salida-observada.md",
+      "resultado": "CORRECTA",
+      "evidencia": "resultados/ronda-1.1/E2E-02-A2/salida-observada.md"
+    },
+    {
+      "comprobacion": "Enlace existente: pruebas/RESULTADOS.md -> resultados/ronda-1.1/E2E-03-A2/salida-observada.md",
+      "resultado": "CORRECTA",
+      "evidencia": "resultados/ronda-1.1/E2E-03-A2/salida-observada.md"
+    },
+    {
+      "comprobacion": "Enlace existente: pruebas/RESULTADOS.md -> resultados/ronda-1.1/E2E-04-A2/salida-observada.md",
+      "resultado": "CORRECTA",
+      "evidencia": "resultados/ronda-1.1/E2E-04-A2/salida-observada.md"
+    },
+    {
+      "comprobacion": "Enlace existente: pruebas/RESULTADOS.md -> resultados/ronda-1.1/E2E-02-A4/salida-observada.md",
+      "resultado": "CORRECTA",
+      "evidencia": "resultados/ronda-1.1/E2E-02-A4/salida-observada.md"
+    },
+    {
+      "comprobacion": "Enlace existente: pruebas/RESULTADOS.md -> resultados/ronda-1.1/E2E-03-A4/salida-observada.md",
+      "resultado": "CORRECTA",
+      "evidencia": "resultados/ronda-1.1/E2E-03-A4/salida-observada.md"
+    },
+    {
+      "comprobacion": "Enlace existente: pruebas/RESULTADOS.md -> resultados/ronda-1.1/E2E-04-A4/salida-observada.md",
+      "resultado": "CORRECTA",
+      "evidencia": "resultados/ronda-1.1/E2E-04-A4/salida-observada.md"
+    },
+    {
+      "comprobacion": "Enlace existente: pruebas/RESULTADOS.md -> resultados/ronda-1.1/E2E-08-A1/salida-observada.md",
+      "resultado": "CORRECTA",
+      "evidencia": "resultados/ronda-1.1/E2E-08-A1/salida-observada.md"
+    },
+    {
+      "comprobacion": "Enlace existente: pruebas/RESULTADOS.md -> resultados/ronda-1.1/E2E-09-A1/salida-observada.md",
+      "resultado": "CORRECTA",
+      "evidencia": "resultados/ronda-1.1/E2E-09-A1/salida-observada.md"
+    },
+    {
+      "comprobacion": "Enlace existente: pruebas/RESULTADOS.md -> resultados/ronda-1.1/E2E-10-A1/salida-observada.md",
+      "resultado": "CORRECTA",
+      "evidencia": "resultados/ronda-1.1/E2E-10-A1/salida-observada.md"
+    },
+    {
+      "comprobacion": "Enlace existente: pruebas/RESULTADOS.md -> resultados/ronda-1.1/E2E-11-A1/salida-observada.md",
+      "resultado": "CORRECTA",
+      "evidencia": "resultados/ronda-1.1/E2E-11-A1/salida-observada.md"
+    },
+    {
+      "comprobacion": "Enlace existente: pruebas/RESULTADOS.md -> resultados/ronda-1.1/E2E-12-A1/salida-observada.md",
+      "resultado": "CORRECTA",
+      "evidencia": "resultados/ronda-1.1/E2E-12-A1/salida-observada.md"
+    },
+    {
+      "comprobacion": "Enlace existente: pruebas/RESULTADOS.md -> resultados/ronda-1.1/comparacion-checklist-exacto.json",
+      "resultado": "CORRECTA",
+      "evidencia": "resultados/ronda-1.1/comparacion-checklist-exacto.json"
+    },
+    {
+      "comprobacion": "Enlace existente: pruebas/RESULTADOS.md -> resultados/ronda-1.1/E2E-02-A3/interrupcion.json",
+      "resultado": "CORRECTA",
+      "evidencia": "resultados/ronda-1.1/E2E-02-A3/interrupcion.json"
+    },
+    {
+      "comprobacion": "Enlace existente: pruebas/RESULTADOS.md -> resultados/ronda-1.1/E2E-03-A3/interrupcion.json",
+      "resultado": "CORRECTA",
+      "evidencia": "resultados/ronda-1.1/E2E-03-A3/interrupcion.json"
+    },
+    {
+      "comprobacion": "Enlace existente: pruebas/RESULTADOS.md -> resultados/ronda-1.1/E2E-04-A3/interrupcion.json",
+      "resultado": "CORRECTA",
+      "evidencia": "resultados/ronda-1.1/E2E-04-A3/interrupcion.json"
+    },
+    {
+      "comprobacion": "Enlace existente: pruebas/RESULTADOS.md -> resultados/ronda-1.1/comparacion-esperado-observado.json",
+      "resultado": "CORRECTA",
+      "evidencia": "resultados/ronda-1.1/comparacion-esperado-observado.json"
+    },
+    {
+      "comprobacion": "Enlace existente: pruebas/RESULTADOS.md -> resultados/ronda-1.1/revision-semantica.json",
+      "resultado": "CORRECTA",
+      "evidencia": "resultados/ronda-1.1/revision-semantica.json"
+    },
+    {
+      "comprobacion": "Enlace existente: pruebas/RESULTADOS.md -> resultados/ronda-1.1/validacion-artefactos.json",
+      "resultado": "CORRECTA",
+      "evidencia": "resultados/ronda-1.1/validacion-artefactos.json"
+    },
+    {
+      "comprobacion": "Enlace existente: pruebas/RESULTADOS.md -> resultados/historico-v1.0/",
+      "resultado": "CORRECTA",
+      "evidencia": "resultados/historico-v1.0/"
+    },
+    {
+      "comprobacion": "Enlace existente: pruebas/RESULTADOS.md -> resultados/validacion-fixtures/EXPLICACION-A4.png",
+      "resultado": "CORRECTA",
+      "evidencia": "resultados/validacion-fixtures/EXPLICACION-A4.png"
+    },
+    {
+      "comprobacion": "Enlace existente: pruebas/RESULTADOS.md -> resultados/validacion-fixtures/EXPLICACION-A4.json",
+      "resultado": "CORRECTA",
+      "evidencia": "resultados/validacion-fixtures/EXPLICACION-A4.json"
+    },
+    {
+      "comprobacion": "Originales ignorados por Git",
+      "resultado": "CORRECTA",
+      "evidencia": "TASK.MD\nPRUEBA TECNICA IT.pdf\n"
+    },
+    {
+      "comprobacion": "Índice Git sin archivos añadidos",
+      "resultado": "CORRECTA",
+      "evidencia": "git ls-files vacío; no se crea commit"
+    },
+    {
+      "comprobacion": "Sin esquema de workspace excluido",
+      "resultado": "CORRECTA",
+      "evidencia": "No se escribe vault ni se crean esos archivos"
+    }
+  ],
+  "total": 213
+}

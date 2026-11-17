@@ -1,0 +1,42 @@
+{
+  "inicio": "2026-11-17T12:23:14.538851-05:00",
+  "zona": "America/Panama",
+  "escenario": "E2E-02",
+  "repeticion": 1,
+  "herramienta": "codex-cli 0.136.0",
+  "modelo_configurado": "gpt-6.1-sol",
+  "razonamiento_configurado": "medium",
+  "modelo_servido": "no expuesto por la herramienta; ver eventos y stderr",
+  "skill": "1.0",
+  "perfil": "PEO-01 v1.0",
+  "comando": [
+    "C:\\Users\\wnune\\AppData\\Local\\Programs\\OpenAI\\Codex\\bin\\codex.EXE",
+    "exec",
+    "--ephemeral",
+    "--json",
+    "--sandbox",
+    "read-only",
+    "--color",
+    "never",
+    "-C",
+    "D:\\OpsZone\\DevWorkspace\\Projects\\Tech-Test\\Oppenin\\pruebas\\resultados\\E2E-02-R1",
+    "-o",
+    "D:\\OpsZone\\DevWorkspace\\Projects\\Tech-Test\\Oppenin\\pruebas\\resultados\\E2E-02-R1\\salida-observada.md",
+    "-"
+  ],
+  "entradas": [
+    {
+      "archivo": "SKILL.md",
+      "sha256": "1e7e7f07177d56410da6e30f713bfafa01dcc12c22b590838963e3c799b2e68c"
+    },
+    {
+      "archivo": "PERFIL-EXPEDIENTE.md",
+      "sha256": "9828fdae46571641482ecbed0b160609db28a809c5551898df010af135a5ef42"
+    },
+    {
+      "archivo": "pruebas\\entradas\\E2E-02-proforma.pdf",
+      "sha256": "8449390f51372510b0a1be6cf29226ed8e75c997b90b54365b24ae16f04547c8"
+    }
+  ],
+  "activacion": "skill y perfil completos en prompt; correo/ficha inline; PDF real por ruta con lectura de la IA autorizada; imagen adjunta nativa si aplica"
+}

@@ -1,0 +1,74 @@
+{
+  "ejecucion": "E2E-04-S2",
+  "inicio": "2026-11-17T12:33:35.1336387-05:00",
+  "fin": "2026-11-17T12:35:33.244902-05:00",
+  "zona_horaria": "America/Panama",
+  "desfase_utc": "UTC-05:00",
+  "captura_inicio": "Get-Date -Format o, antes de la lectura de SKILL.md, PERFIL-EXPEDIENTE.md y entradas",
+  "modelo": "no expuesto por la herramienta",
+  "skill": {
+    "archivo": "SKILL.md",
+    "nombre": "revisor-expedientes-mobiliario",
+    "version_instrucciones": "1.0"
+  },
+  "perfil": {
+    "archivo": "PERFIL-EXPEDIENTE.md",
+    "nombre": "PEO-01",
+    "version": "1.0"
+  },
+  "fuentes": [
+    {
+      "ruta": "D:\\OpsZone\\DevWorkspace\\Projects\\Tech-Test\\Oppenin\\SKILL.md",
+      "sha256": "1e7e7f07177d56410da6e30f713bfafa01dcc12c22b590838963e3c799b2e68c"
+    },
+    {
+      "ruta": "D:\\OpsZone\\DevWorkspace\\Projects\\Tech-Test\\Oppenin\\PERFIL-EXPEDIENTE.md",
+      "sha256": "9828fdae46571641482ecbed0b160609db28a809c5551898df010af135a5ef42"
+    },
+    {
+      "ruta": "D:\\OpsZone\\DevWorkspace\\Projects\\Tech-Test\\Oppenin\\pruebas\\entradas\\E2E-04-correo.md",
+      "sha256": "f6d74c462a3bf8376733b2068ad16a89fba19550b275ad62463d0402bd44c7fd"
+    },
+    {
+      "ruta": "D:\\OpsZone\\DevWorkspace\\Projects\\Tech-Test\\Oppenin\\pruebas\\entradas\\E2E-04-proforma.pdf",
+      "sha256": "5d04172e9338538b550f5406214efa078112a85dc1d5cd72e9c1b4fa7e91eb88"
+    }
+  ],
+  "artefactos": [
+    {
+      "ruta": "D:\\OpsZone\\DevWorkspace\\Projects\\Tech-Test\\Oppenin\\pruebas\\resultados\\E2E-04-S2\\prompt-recibido.txt",
+      "sha256": "0d0e36068b17c1a85761023a617885035028222b1398296553909db74df2d671"
+    },
+    {
+      "ruta": "D:\\OpsZone\\DevWorkspace\\Projects\\Tech-Test\\Oppenin\\pruebas\\resultados\\E2E-04-S2\\salida-observada.md",
+      "sha256": "75224b3ba4046a0548a89689166b0009fc1048e078aac3cb401518b98a90c88d"
+    },
+    {
+      "ruta": "D:\\OpsZone\\DevWorkspace\\Projects\\Tech-Test\\Oppenin\\pruebas\\resultados\\E2E-04-S2\\extraccion-pdf.txt",
+      "sha256": "2b9de24d2d989b93e2d48c9c513dec288f5884758a8f1047ababe2414d1d86af"
+    }
+  ],
+  "herramientas": [
+    "functions.exec",
+    "exec_command (PowerShell)",
+    "apply_patch",
+    "Python suministrado con pypdf"
+  ],
+  "metodo": {
+    "textos": "Get-Content -LiteralPath <ruta> -Raw; lectura íntegra con stdout UTF-8",
+    "pdf": "PdfReader sobre el archivo PDF real; extract_text() de todas sus páginas; 1 página leída. Sin OCR ni inspección visual.",
+    "extraccion": "extraccion-pdf.txt conserva el texto extraído por esta ejecución con delimitador de página.",
+    "comando_pdf": "& 'C:\\Program Files\\WindowsApps\\OpenAI.CodexPrimaryRuntime.v26-1112-737-0_26.1112.737.0_x64__3k8sg7r9htsxt\\dependencies\\python\\python.exe' -X utf8 -c \"from pypdf import PdfReader; from pathlib import Path; p=Path('pruebas/entradas/E2E-04-proforma.pdf'); r=PdfReader(p); print('PDF paginas:',len(r.pages)); print('\\n'.join('=== PAGINA '+str(i+1)+' ===\\n'+(pg.extract_text() or '') for i,pg in enumerate(r.pages)))\"",
+    "hashes": "hashlib.sha256 de bytes originales; sin normalizar fuentes",
+    "validacion": "Se comprobaron lectura de ambas entradas, número de páginas, extracción de todas las páginas y presencia de P01-P10/F01-F05/I01-I06 en informe. Revisión documental; no verificación externa."
+  },
+  "restricciones_observadas": {
+    "red": false,
+    "plugins": false,
+    "subagentes": false,
+    "acciones_externas": false,
+    "instalaciones": false,
+    "cambios_configuracion_modelo": false
+  },
+  "paginas_pdf": 1
+}

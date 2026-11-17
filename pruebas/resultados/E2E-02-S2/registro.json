@@ -1,0 +1,72 @@
+{
+  "ejecucion": "E2E-02-S2",
+  "inicio": "2026-11-17T12:31:52.5658261-05:00",
+  "fin": "2026-11-17T12:33:39.801976-05:00",
+  "zona_horaria": "America/Panama",
+  "desfase_utc": "UTC-05:00",
+  "fuentes": [
+    {
+      "ruta": "D:\\OpsZone\\DevWorkspace\\Projects\\Tech-Test\\Oppenin\\SKILL.md",
+      "sha256": "1e7e7f07177d56410da6e30f713bfafa01dcc12c22b590838963e3c799b2e68c"
+    },
+    {
+      "ruta": "D:\\OpsZone\\DevWorkspace\\Projects\\Tech-Test\\Oppenin\\PERFIL-EXPEDIENTE.md",
+      "sha256": "9828fdae46571641482ecbed0b160609db28a809c5551898df010af135a5ef42"
+    },
+    {
+      "ruta": "D:\\OpsZone\\DevWorkspace\\Projects\\Tech-Test\\Oppenin\\pruebas\\entradas\\E2E-02-proforma.pdf",
+      "sha256": "8449390f51372510b0a1be6cf29226ed8e75c997b90b54365b24ae16f04547c8"
+    }
+  ],
+  "skill": {
+    "nombre": "revisor-expedientes-mobiliario",
+    "version": "1.0",
+    "archivo": "SKILL.md"
+  },
+  "perfil": {
+    "nombre": "PEO-01",
+    "version": "1.0",
+    "archivo": "PERFIL-EXPEDIENTE.md"
+  },
+  "modelo": "no expuesto por la herramienta",
+  "herramientas": [
+    "functions.exec",
+    "exec_command (PowerShell)",
+    "Python 3.12.14",
+    "pypdf 6.21.4",
+    "Python decimal/hashlib/json/pathlib/datetime"
+  ],
+  "metodo": "Python/pypdf PdfReader('pruebas/entradas/E2E-02-proforma.pdf'); iteración completa enumerate(reader.pages, 1); page.extract_text() en cada página; conservación UTF-8 en texto-extraido.txt. Una página abierta y extraída. Sin renderizado visual ni OCR. PowerShell Get-Content -Raw para lectura íntegra de skill/perfil. Decimal para dos operaciones monetarias declaradas.",
+  "comando_extraccion": "@'\nimport sys\nfrom pypdf import PdfReader\nsys.stdout.reconfigure(encoding='utf-8')\np='pruebas/entradas/E2E-02-proforma.pdf'\nr=PdfReader(p)\nparts=[]\nfor i,page in enumerate(r.pages,1):\n    parts.append(f'=== PÁGINA {i} ===\\n{page.extract_text()}')\ns='\\n\\n'.join(parts)\nopen('pruebas/resultados/E2E-02-S2/texto-extraido.txt','w',encoding='utf-8').write(s)\nprint('Páginas:',len(r.pages))\nprint(s)\n'@ | & 'C:\\Program Files\\WindowsApps\\OpenAI.CodexPrimaryRuntime.v26-1112-737-0_26.1112.737.0_x64__3k8sg7r9htsxt\\dependencies\\python\\python.exe' -",
+  "paginas_pdf": 1,
+  "paginas_leidas": [
+    1
+  ],
+  "verificacion": {
+    "aritmetica_decimal": "20 × USD 80.00 = USD 1600.00\nUSD 1600.00 + USD 0.00 + USD 0.00 = USD 1600.00\n",
+    "texto_conservado": "texto-extraido.txt",
+    "limitacion": "No se realizó inspección visual, OCR ni comprobación externa."
+  },
+  "artefactos": [
+    {
+      "ruta": "D:\\OpsZone\\DevWorkspace\\Projects\\Tech-Test\\Oppenin\\pruebas\\resultados\\E2E-02-S2\\prompt-recibido.txt",
+      "sha256": "5a2aaa1a29dbba633479ef766c1ab7c172b66ed8cf377c165fdcc87151e75a41"
+    },
+    {
+      "ruta": "D:\\OpsZone\\DevWorkspace\\Projects\\Tech-Test\\Oppenin\\pruebas\\resultados\\E2E-02-S2\\salida-observada.md",
+      "sha256": "68d5e9280143d606701bc63d4a523ff136b1a4f63069742bf00ccc2f40afb4bd"
+    },
+    {
+      "ruta": "D:\\OpsZone\\DevWorkspace\\Projects\\Tech-Test\\Oppenin\\pruebas\\resultados\\E2E-02-S2\\texto-extraido.txt",
+      "sha256": "8b36b018b79ef5a0eea7b5dd2d29d1646a288f7bb2a9dce07a5d3cfc58a12d76"
+    },
+    {
+      "ruta": "D:\\OpsZone\\DevWorkspace\\Projects\\Tech-Test\\Oppenin\\pruebas\\resultados\\E2E-02-S2\\inicio.txt",
+      "sha256": "356c640d74e5a7bb34eb419191df266459f0a30a0ea4d1938ca5973c51b66c1c"
+    },
+    {
+      "ruta": "D:\\OpsZone\\DevWorkspace\\Projects\\Tech-Test\\Oppenin\\pruebas\\resultados\\E2E-02-S2\\calculo-decimal.txt",
+      "sha256": "7f15a72ffa2c02e41c81b2c5fd6b625febc7b6ccc06f61042cbe9064420e0120"
+    }
+  ]
+}

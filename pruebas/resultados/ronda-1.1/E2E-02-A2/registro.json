@@ -1,0 +1,45 @@
+{
+  "inicio": "2026-11-17T13:11:08.850-05:00 America/Panama UTC-05:00",
+  "fin": "2026-11-17T13:13:06.421-05:00",
+  "zona": "America/Panama UTC-05:00",
+  "fuentes": [
+    {
+      "ruta": "D:\\OpsZone\\DevWorkspace\\Projects\\Tech-Test\\Oppenin\\SKILL.md",
+      "sha256": "4c155d3f6172c35a1ebb8b11685756d0153282cd4b0a3d3918195aaa9e89317b"
+    },
+    {
+      "ruta": "D:\\OpsZone\\DevWorkspace\\Projects\\Tech-Test\\Oppenin\\PERFIL-EXPEDIENTE.md",
+      "sha256": "538d9dbec35316a20aad0fa8888733b874dcb87f3b217f43759d2cc92c4432f6"
+    },
+    {
+      "ruta": "D:\\OpsZone\\DevWorkspace\\Projects\\Tech-Test\\Oppenin\\pruebas\\entradas\\E2E-02-proforma.pdf",
+      "sha256": "8449390f51372510b0a1be6cf29226ed8e75c997b90b54365b24ae16f04547c8"
+    }
+  ],
+  "skill": "1.1",
+  "perfil": "PEO-01 v1.1",
+  "modelo": "No expuesto por la herramienta; no se afirma una identidad de modelo verificable.",
+  "metodo": [
+    "Primera operación: [DateTimeOffset]::UtcNow.ToOffset([TimeSpan]::FromHours(-5)); guardado en inicio.txt antes de leer fuentes.",
+    "Conservación literal del mensaje de coordinación en prompt-recibido.txt mediante Set-Content; lectura de solicitud-ia.txt con Get-Content -Raw.",
+    "Lectura íntegra con Get-Content -Raw de SKILL.md y PERFIL-EXPEDIENTE.md, únicos archivos de reglas enumerados.",
+    "Python existente indicado: from pypdf import PdfReader; r=PdfReader(ruta_pdf); for i,p in enumerate(r.pages,1): t=p.extract_text(). Una página iterada. Extracción original escrita en extraccion-pypdf.txt. SHA-256 mediante hashlib.sha256(p.read_bytes()).hexdigest() sobre los tres archivos autorizados originales.",
+    "Comando: pdftoppm -png -r 140 -singlefile D:\\OpsZone\\DevWorkspace\\Projects\\Tech-Test\\Oppenin\\pruebas\\entradas\\E2E-02-proforma.pdf D:\\OpsZone\\DevWorkspace\\Projects\\Tech-Test\\Oppenin\\pruebas\\resultados\\ronda-1.1\\E2E-02-A2\\pagina-1",
+    "Visión directa mediante view_image sobre pagina-1.png; lectura de toda la única página, incluidos encabezado, cuerpo, aceptación y pie. Sin OCR.",
+    "Informe guardado con Set-Content UTF-8. Comprobación por expresión regular de 21 IDs de checklist, todos únicos. Aritmética decimal declarada: 20 x 80.00 = 1600.00; 1600.00 + 0.00 + 0.00 = 1600.00.",
+    "Sin red, plugins, correo, subagentes, instalaciones o cambios de configuración/modelo; no se leyeron fuentes excluidas ni resultados esperados."
+  ],
+  "incidencias": [
+    "La extracción textual presentó caracteres dañados en acentos; se conservó sin corregir y se completó la lectura mediante renderizado y visión.",
+    "Poppler emitió: Syntax Error: No display font for Symbol; Syntax Error: No display font for ArialUnicode. Generó PNG legible; no impidió la revisión."
+  ],
+  "salidas": [
+    "inicio.txt",
+    "prompt-recibido.txt",
+    "extraccion-pypdf.txt",
+    "fuentes-sha256.json",
+    "pagina-1.png",
+    "salida-observada.md",
+    "registro.json"
+  ]
+}

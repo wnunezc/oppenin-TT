@@ -1,0 +1,43 @@
+{
+  "inicio": "2026-11-17T12:31:39.5861197-05:00",
+  "fin": "2026-11-17T12:33:06.0935698-05:00",
+  "zona_horaria": "America/Panama",
+  "utc_offset": "-05:00",
+  "archivos_leidos": [
+    {
+      "ruta": "SKILL.md",
+      "sha256": "1E7E7F07177D56410DA6E30F713BFAFA01DCC12C22B590838963E3C799B2E68C"
+    },
+    {
+      "ruta": "PERFIL-EXPEDIENTE.md",
+      "sha256": "9828FDAE46571641482ECBED0B160609DB28A809C5551898DF010AF135A5EF42"
+    },
+    {
+      "ruta": "pruebas/entradas/E2E-08-proforma.png",
+      "sha256": "7E930AA7E3B7D2E4B6BB5A797863BF61D565B92410B78F3D8424B57DE597D7A8"
+    }
+  ],
+  "herramientas": [
+    "functions.exec",
+    "tools.exec_command (PowerShell: captura temporal, localización, lectura de skill/perfil, escritura y SHA256)",
+    "tools.view_image",
+    "image"
+  ],
+  "metodo_vision": "Apertura directa de E2E-08-proforma.png mediante tools.view_image y observación visual de la imagen emitida por image. Sin OCR, PDF ni extracción de texto.",
+  "skill": {
+    "version": "1.0",
+    "archivo": "SKILL.md",
+    "nombre": "revisor-expedientes-mobiliario"
+  },
+  "perfil": {
+    "version": "1.0",
+    "archivo": "PERFIL-EXPEDIENTE.md",
+    "nombre": "PEO-01"
+  },
+  "modelo": "no expuesto por la herramienta",
+  "salidas": [
+    "prompt-recibido.txt",
+    "salida-observada.md",
+    "registro.json"
+  ]
+}

@@ -1,0 +1,1 @@
+Verificación local: 21 controles únicos (P01-P10, F01-F05, I01-I06); informe guardado y leído; sin comparación contra resultados esperados. Una página extraída y revisada visualmente.

@@ -1,0 +1,52 @@
+{
+  "inicio": "2026-11-17T13:18:07.315-05:00",
+  "fin": "2026-11-17T13:20:37.755-05:00",
+  "zona": "America/Panama UTC-05:00",
+  "fuentes": [
+    {
+      "ruta": "D:\\OpsZone\\DevWorkspace\\Projects\\Tech-Test\\Oppenin\\SKILL.md",
+      "sha256": "4c155d3f6172c35a1ebb8b11685756d0153282cd4b0a3d3918195aaa9e89317b"
+    },
+    {
+      "ruta": "D:\\OpsZone\\DevWorkspace\\Projects\\Tech-Test\\Oppenin\\PERFIL-EXPEDIENTE.md",
+      "sha256": "538d9dbec35316a20aad0fa8888733b874dcb87f3b217f43759d2cc92c4432f6"
+    },
+    {
+      "ruta": "D:\\OpsZone\\DevWorkspace\\Projects\\Tech-Test\\Oppenin\\pruebas\\entradas\\E2E-04-correo.md",
+      "sha256": "f6d74c462a3bf8376733b2068ad16a89fba19550b275ad62463d0402bd44c7fd"
+    },
+    {
+      "ruta": "D:\\OpsZone\\DevWorkspace\\Projects\\Tech-Test\\Oppenin\\pruebas\\entradas\\E2E-04-proforma.pdf",
+      "sha256": "5d04172e9338538b550f5406214efa078112a85dc1d5cd72e9c1b4fa7e91eb88"
+    },
+    {
+      "ruta": "D:\\OpsZone\\DevWorkspace\\Projects\\Tech-Test\\Oppenin\\pruebas\\resultados\\ronda-1.1\\E2E-04-A4\\solicitud-ia.txt",
+      "sha256": "c6155ac7ec61b3ca0ecb27a19409a521d3f216b78baa572f8b3261df429aecc7"
+    }
+  ],
+  "skill": "1.1",
+  "perfil": "PEO-01 v1.1",
+  "modelo": "no expuesto por la herramienta salvo identidad verificable",
+  "metodo": [
+    "Primera operacion: PowerShell [DateTimeOffset]::UtcNow.ToOffset([TimeSpan]::FromHours(-5)); guardado ISO 8601 en inicio.txt antes de leer fuentes.",
+    "PowerShell: conservacion literal del mensaje delegado en prompt-recibido.txt y Get-Content -LiteralPath solicitud-ia.txt -Raw.",
+    "PowerShell: Get-Content -LiteralPath -Raw de SKILL.md, PERFIL-EXPEDIENTE.md y E2E-04-correo.md, completos.",
+    "Python existente indicado por solicitud; from pypdf import PdfReader; reader=PdfReader(ruta original E2E-04-proforma.pdf); for i,page in enumerate(reader.pages,1): page.extract_text(); escritura propia UTF-8 extraccion-proforma.txt. Una pagina iterada, texto completo legible; no fue necesario renderizar.",
+    "Python json.dumps(ensure_ascii=True) de extraccion-proforma.txt para leer sin ambiguedad de codificacion de consola.",
+    "PowerShell WriteAllText UTF-8 del informe; python validacion-registro.py comprueba checklist, aritmetica decimal y genera registro. Script conservado.",
+    "Fuentes hasheadas con hashlib.sha256 sobre read_bytes de originales; sin red, plugins, correo, subagentes, instalaciones ni cambios de configuracion/modelo."
+  ],
+  "incidencias": [
+    "La validacion local inicial esperaba por error siete segmentos al separar las cuatro columnas del checklist; se corrigio a seis y se repitio. No se cambio el informe.",
+    "La consola mostro caracteres acentuados alterados en la primera salida Python por codificacion de stdout. Se verifico el texto UTF-8 propio mediante JSON con escapes Unicode; no se modifico la fuente ni se reconstruyeron datos."
+  ],
+  "salidas": [
+    "D:\\OpsZone\\DevWorkspace\\Projects\\Tech-Test\\Oppenin\\pruebas\\resultados\\ronda-1.1\\E2E-04-A4\\inicio.txt",
+    "D:\\OpsZone\\DevWorkspace\\Projects\\Tech-Test\\Oppenin\\pruebas\\resultados\\ronda-1.1\\E2E-04-A4\\prompt-recibido.txt",
+    "D:\\OpsZone\\DevWorkspace\\Projects\\Tech-Test\\Oppenin\\pruebas\\resultados\\ronda-1.1\\E2E-04-A4\\extraccion-proforma.txt",
+    "D:\\OpsZone\\DevWorkspace\\Projects\\Tech-Test\\Oppenin\\pruebas\\resultados\\ronda-1.1\\E2E-04-A4\\salida-observada.md",
+    "D:\\OpsZone\\DevWorkspace\\Projects\\Tech-Test\\Oppenin\\pruebas\\resultados\\ronda-1.1\\E2E-04-A4\\verificacion.json",
+    "D:\\OpsZone\\DevWorkspace\\Projects\\Tech-Test\\Oppenin\\pruebas\\resultados\\ronda-1.1\\E2E-04-A4\\validacion-registro.py",
+    "D:\\OpsZone\\DevWorkspace\\Projects\\Tech-Test\\Oppenin\\pruebas\\resultados\\ronda-1.1\\E2E-04-A4\\registro.json"
+  ]
+}

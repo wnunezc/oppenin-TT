@@ -1,0 +1,44 @@
+{
+  "ejecucion": "E2E-01-S1",
+  "inicio": "2026-11-17T12:25:39.1862102-05:00",
+  "fin": "2026-11-17T12:26:47.5149612-05:00",
+  "zona_horaria": "America/Panama",
+  "offset": "UTC-05:00",
+  "archivos_leidos": [
+    {
+      "ruta": "SKILL.md",
+      "sha256": "1E7E7F07177D56410DA6E30F713BFAFA01DCC12C22B590838963E3C799B2E68C",
+      "metodo": "Lectura textual íntegra mediante PowerShell Get-Content -LiteralPath -Raw; hash binario mediante Get-FileHash -Algorithm SHA256"
+    },
+    {
+      "ruta": "PERFIL-EXPEDIENTE.md",
+      "sha256": "9828FDAE46571641482ECBED0B160609DB28A809C5551898DF010AF135A5EF42",
+      "metodo": "Lectura textual íntegra mediante PowerShell Get-Content -LiteralPath -Raw; hash binario mediante Get-FileHash -Algorithm SHA256"
+    },
+    {
+      "ruta": "pruebas/entradas/E2E-01-correo.md",
+      "sha256": "290EB41D0FD4CD9B9127EF1C6840DEEB5FF36E6569474251FE1202E51A607023",
+      "metodo": "Lectura textual íntegra mediante PowerShell Get-Content -LiteralPath -Raw; hash binario mediante Get-FileHash -Algorithm SHA256"
+    }
+  ],
+  "herramientas_verificables": [
+    "functions.exec",
+    "functions.exec -> tools.exec_command",
+    "PowerShell: Get-Date, Get-Content, New-Item, Get-FileHash, ConvertTo-Json",
+    ".NET System.IO.File.WriteAllText; System.TimeZoneInfo"
+  ],
+  "skill": {
+    "nombre": "revisor-expedientes-mobiliario",
+    "version_instrucciones": "1.0"
+  },
+  "perfil": "PEO-01 v1.0",
+  "modelo": "no expuesto por la herramienta",
+  "configuracion_modelo_modificada": false,
+  "fuentes_externas_consultadas": false,
+  "veredicto_de_prueba_emitido": false,
+  "salidas": [
+    "prompt-recibido.txt",
+    "salida-observada.md",
+    "registro.json"
+  ]
+}

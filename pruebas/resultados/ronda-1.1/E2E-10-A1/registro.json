@@ -1,0 +1,43 @@
+{
+  "inicio": "2026-11-17 13:06:25 -05:00 America/Panama",
+  "fin": "2026-11-17 13:07:38 -05:00",
+  "zona": "America/Panama UTC-05:00",
+  "fuentes": [
+    {
+      "sha256": "4c155d3f6172c35a1ebb8b11685756d0153282cd4b0a3d3918195aaa9e89317b",
+      "ruta": "D:\\OpsZone\\DevWorkspace\\Projects\\Tech-Test\\Oppenin\\SKILL.md"
+    },
+    {
+      "sha256": "538d9dbec35316a20aad0fa8888733b874dcb87f3b217f43759d2cc92c4432f6",
+      "ruta": "D:\\OpsZone\\DevWorkspace\\Projects\\Tech-Test\\Oppenin\\PERFIL-EXPEDIENTE.md"
+    },
+    {
+      "sha256": "98039eabe03b842c0ec36b5621d1337cb6519da05c0c9fb70e30b1a35a5b718d",
+      "ruta": "D:\\OpsZone\\DevWorkspace\\Projects\\Tech-Test\\Oppenin\\pruebas\\entradas\\E2E-10-ilegible.png"
+    },
+    {
+      "sha256": "6b2b5c559b715b2f6e3d59b8f14ab36a8d8e0661daf443242ca87142b7495066",
+      "ruta": "D:\\OpsZone\\DevWorkspace\\Projects\\Tech-Test\\Oppenin\\pruebas\\resultados\\ronda-1.1\\E2E-10-A1\\solicitud-ia.txt"
+    }
+  ],
+  "skill": "1.1",
+  "perfil": "PEO-01 v1.1",
+  "modelo": "No expuesto por la herramienta; identidad verificable disponible: Codex, agente basado en GPT-6 según instrucciones de sesión.",
+  "metodo": [
+    "Primera operación: captura real UTC convertida a UTC-05:00 mediante DateTimeOffset y Set-Content en inicio.txt.",
+    "Lectura íntegra por Get-Content -Raw de solicitud-ia.txt, SKILL.md y PERFIL-EXPEDIENTE.md.",
+    "tools.view_image de la ruta original PNG; visión directa de todas sus regiones; sin texto legible.",
+    "Informe y acta propios mediante Set-Content. SHA256 mediante Get-FileHash. Checklist comprobado por Select-String: 21 filas.",
+    "No se recibió PDF: pypdf y renderizado no aplicables. No se usó OCR, red, plugins, correo, subagentes ni instalaciones."
+  ],
+  "incidencias": [
+    "Única fuente esencial ilegible por pixelación; etapa y rutas no determinables."
+  ],
+  "salidas": [
+    "inicio.txt",
+    "prompt-recibido.txt",
+    "salida-observada.md",
+    "lectura-visual.txt",
+    "registro.json"
+  ]
+}

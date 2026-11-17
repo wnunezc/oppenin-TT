@@ -1,0 +1,74 @@
+{
+  "inicio": "2026-11-17T12:30:02.7101620-05:00",
+  "fin": "2026-11-17T12:31:55.4892449-05:00",
+  "zona_horaria": "America/Panama",
+  "offset": "UTC-05:00",
+  "expediente": "DEMO-005",
+  "revision_analisis": 2,
+  "skill": {
+    "ruta": "SKILL.md",
+    "nombre": "revisor-expedientes-mobiliario",
+    "version": "1.0"
+  },
+  "perfil": {
+    "ruta": "PERFIL-EXPEDIENTE.md",
+    "nombre": "PEO-01",
+    "version": "1.0"
+  },
+  "modelo": "no expuesto por la herramienta",
+  "fuentes": [
+    {
+      "ruta": "SKILL.md",
+      "sha256": "1E7E7F07177D56410DA6E30F713BFAFA01DCC12C22B590838963E3C799B2E68C",
+      "metodo": "lectura íntegra de texto con Get-Content -Raw"
+    },
+    {
+      "ruta": "PERFIL-EXPEDIENTE.md",
+      "sha256": "9828FDAE46571641482ECBED0B160609DB28A809C5551898DF010AF135A5EF42",
+      "metodo": "lectura íntegra de texto con Get-Content -Raw"
+    },
+    {
+      "ruta": "pruebas/entradas/E2E-05-correo.md",
+      "sha256": "260E7F0BD807623144E16DBF10F380EF8DA83952BA97722792C7ED29F602B4E5",
+      "metodo": "lectura íntegra de texto con Get-Content -Raw"
+    },
+    {
+      "ruta": "pruebas/entradas/E2E-05-ficha.md",
+      "sha256": "BD4377C61F4E96363F8A2E272AE1279FC5C31EA6BB91604BDEE07F64A0421D7E",
+      "metodo": "lectura íntegra de texto con Get-Content -Raw"
+    },
+    {
+      "ruta": "pruebas/entradas/E2E-06-medicion.md",
+      "sha256": "B503B87978C6C88811D3C48E95A25B461C1DA14A849C9F89606FFC736228A5A5",
+      "metodo": "lectura íntegra de texto con Get-Content -Raw"
+    },
+    {
+      "ruta": "pruebas/resultados/E2E-05-S1/salida-observada.md",
+      "sha256": "F0F2C6586EB3C53B774BD782D9A46C0424C79CD0C3D0B862D1E19BA9B0C1EEA9",
+      "metodo": "lectura íntegra de texto con Get-Content -Raw"
+    }
+  ],
+  "herramientas": [
+    "functions.exec",
+    "exec_command",
+    "PowerShell: DateTimeOffset, Get-Content, New-Item, Set-Content, Get-FileHash, ConvertTo-Json"
+  ],
+  "metodo": "Inicio capturado antes de leer las seis fuentes autorizadas. Lectura íntegra textual; cotejo de C/F/M y antecedente aportado; aplicación de P01-P10, F01-F05 e I01-I06 con precedencia de estados PEO-01. Aritmética decimal de importes declarados; comparación dimensional exacta sin conversión. Registro del cierre documental H01 y conservación del antecedente. Sin red, plugins, subagentes, OCR, visión, instalaciones ni acciones externas.",
+  "verificacion": {
+    "lectura_archivo_generado": "Get-Content -Raw",
+    "controles_checklist": 21,
+    "secciones_obligatorias": 9,
+    "sha256": "Get-FileHash -Algorithm SHA256",
+    "limite": "No se realizó comprobación externa de los hechos ni de las referencias normativas."
+  },
+  "archivos_salida": [
+    {
+      "ruta": "pruebas/resultados/E2E-06-S1/prompt-recibido.txt",
+      "sha256": "DC4D2B1AFB8C36DB72CFCD2AABB618F1F6C702B406E781D0FB655591BCBEB402"
+    },
+    {
+      "ruta": "pruebas/resultados/E2E-06-S1/salida-observada.md",
+      "sha256": "B28132E7056D20DA698F1FC16BBA357DCD17D116A1D076537C8895099BB7C26A"
+    }
+  ]
+}

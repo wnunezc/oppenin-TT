@@ -1,0 +1,35 @@
+{
+  "inicio": "2026-11-17T12:28:12.3646648-05:00",
+  "nota_inicio": "Primer sello horario real capturado durante revisión; lecturas iniciales previas sin hora capturada. No se reconstruye hora supuesta.",
+  "fin": "2026-11-17T12:30:58.141217-05:00",
+  "zona_horaria": "America/Panama UTC-05",
+  "fuentes": [
+    {
+      "ruta": "D:\\OpsZone\\DevWorkspace\\Projects\\Tech-Test\\Oppenin\\SKILL.md",
+      "sha256": "1e7e7f07177d56410da6e30f713bfafa01dcc12c22b590838963e3c799b2e68c"
+    },
+    {
+      "ruta": "D:\\OpsZone\\DevWorkspace\\Projects\\Tech-Test\\Oppenin\\PERFIL-EXPEDIENTE.md",
+      "sha256": "9828fdae46571641482ecbed0b160609db28a809c5551898df010af135a5ef42"
+    },
+    {
+      "ruta": "D:\\OpsZone\\DevWorkspace\\Projects\\Tech-Test\\Oppenin\\pruebas\\entradas\\E2E-04-correo.md",
+      "sha256": "f6d74c462a3bf8376733b2068ad16a89fba19550b275ad62463d0402bd44c7fd"
+    },
+    {
+      "ruta": "D:\\OpsZone\\DevWorkspace\\Projects\\Tech-Test\\Oppenin\\pruebas\\entradas\\E2E-04-proforma.pdf",
+      "sha256": "5d04172e9338538b550f5406214efa078112a85dc1d5cd72e9c1b4fa7e91eb88"
+    }
+  ],
+  "skill": "revisor-expedientes-mobiliario 1.0",
+  "perfil": "PEO-01 v1.0",
+  "modelo": "no expuesto por la herramienta",
+  "herramientas": [
+    "functions.exec",
+    "exec_command PowerShell",
+    "apply_patch",
+    "Python/pypdf"
+  ],
+  "metodo": "Lectura UTF-8 completa de skill, perfil y correo; PdfReader/extract_text sobre 1/1 páginas del PDF real; comando y texto conservados en salida-observada.md. SHA256 sobre bytes originales. Sin consultas externas.",
+  "python": "C:\\Program Files\\WindowsApps\\OpenAI.CodexPrimaryRuntime.v26-1112-737-0_26.1112.737.0_x64__3k8sg7r9htsxt\\dependencies\\python\\python.exe"
+}

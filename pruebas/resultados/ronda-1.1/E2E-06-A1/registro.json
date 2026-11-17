@@ -1,0 +1,63 @@
+{
+  "inicio": "2026-11-17T13:03:41.956-05:00",
+  "fin": "2026-11-17T13:05:37.344-05:00",
+  "zona": "America/Panama UTC-05:00",
+  "fuentes": [
+    {
+      "ruta": "D:\\OpsZone\\DevWorkspace\\Projects\\Tech-Test\\Oppenin\\SKILL.md",
+      "sha256": "4c155d3f6172c35a1ebb8b11685756d0153282cd4b0a3d3918195aaa9e89317b",
+      "evidencia": "D:\\OpsZone\\DevWorkspace\\Projects\\Tech-Test\\Oppenin\\pruebas\\resultados\\ronda-1.1\\E2E-06-A1\\fuentes-leidas\\01-SKILL.md"
+    },
+    {
+      "ruta": "D:\\OpsZone\\DevWorkspace\\Projects\\Tech-Test\\Oppenin\\PERFIL-EXPEDIENTE.md",
+      "sha256": "538d9dbec35316a20aad0fa8888733b874dcb87f3b217f43759d2cc92c4432f6",
+      "evidencia": "D:\\OpsZone\\DevWorkspace\\Projects\\Tech-Test\\Oppenin\\pruebas\\resultados\\ronda-1.1\\E2E-06-A1\\fuentes-leidas\\02-PERFIL-EXPEDIENTE.md"
+    },
+    {
+      "ruta": "D:\\OpsZone\\DevWorkspace\\Projects\\Tech-Test\\Oppenin\\pruebas\\entradas\\E2E-05-correo.md",
+      "sha256": "260e7f0bd807623144e16dbf10f380ef8da83952ba97722792c7ed29f602b4e5",
+      "evidencia": "D:\\OpsZone\\DevWorkspace\\Projects\\Tech-Test\\Oppenin\\pruebas\\resultados\\ronda-1.1\\E2E-06-A1\\fuentes-leidas\\03-E2E-05-correo.md"
+    },
+    {
+      "ruta": "D:\\OpsZone\\DevWorkspace\\Projects\\Tech-Test\\Oppenin\\pruebas\\entradas\\E2E-05-ficha.md",
+      "sha256": "bd4377c61f4e96363f8a2e272ae1279fc5c31ea6bb91604bdee07f64a0421d7e",
+      "evidencia": "D:\\OpsZone\\DevWorkspace\\Projects\\Tech-Test\\Oppenin\\pruebas\\resultados\\ronda-1.1\\E2E-06-A1\\fuentes-leidas\\04-E2E-05-ficha.md"
+    },
+    {
+      "ruta": "D:\\OpsZone\\DevWorkspace\\Projects\\Tech-Test\\Oppenin\\pruebas\\entradas\\E2E-06-medicion.md",
+      "sha256": "b503b87978c6c88811d3c48e95a25b461c1da14a849c9f89606ffc736228a5a5",
+      "evidencia": "D:\\OpsZone\\DevWorkspace\\Projects\\Tech-Test\\Oppenin\\pruebas\\resultados\\ronda-1.1\\E2E-06-A1\\fuentes-leidas\\05-E2E-06-medicion.md"
+    },
+    {
+      "ruta": "D:\\OpsZone\\DevWorkspace\\Projects\\Tech-Test\\Oppenin\\pruebas\\resultados\\ronda-1.1\\E2E-05-A1\\salida-observada.md",
+      "sha256": "60e2c604f8252d145919d434f70fe9dc22b7862d681a6549da8ac3c2c98ecc9c",
+      "evidencia": "D:\\OpsZone\\DevWorkspace\\Projects\\Tech-Test\\Oppenin\\pruebas\\resultados\\ronda-1.1\\E2E-06-A1\\fuentes-leidas\\06-salida-observada.md"
+    }
+  ],
+  "skill": "1.1",
+  "perfil": "PEO-01 v1.1",
+  "modelo": "No expuesto por la herramienta; sin identificador de modelo verificable en esta sesión.",
+  "metodo": [
+    "Primera operación: [DateTimeOffset]::UtcNow.ToOffset([TimeSpan]::FromHours(-5)), persistida mediante File.WriteAllText en inicio.txt antes de leer fuentes.",
+    "Solicitud leída mediante Get-Content -LiteralPath solicitud-ia.txt -Raw; prompt recibido conservado literalmente en prompt-recibido.txt.",
+    "Lectura completa de las seis fuentes autorizadas: foreach ($p in $paths) { Get-Content -LiteralPath (Join-Path $base $p) -Raw }.",
+    "Evidencias propias: File.ReadAllBytes y File.WriteAllBytes; hashes: Get-FileHash -Algorithm SHA256 sobre bytes originales.",
+    "Sin PDF ni PNG autorizados: no se ejecutaron pypdf, renderizado, OCR ni visión.",
+    "Comprobación de 21 controles únicos mediante regex de filas; revisión documental y aritmética decimal explícita de importes.",
+    "Informe guardado con File.WriteAllText antes de capturar fin. Sin instalaciones, cambios de configuración, red, plugins o delegación."
+  ],
+  "incidencias": [],
+  "salidas": [
+    "D:\\OpsZone\\DevWorkspace\\Projects\\Tech-Test\\Oppenin\\pruebas\\resultados\\ronda-1.1\\E2E-06-A1\\inicio.txt",
+    "D:\\OpsZone\\DevWorkspace\\Projects\\Tech-Test\\Oppenin\\pruebas\\resultados\\ronda-1.1\\E2E-06-A1\\prompt-recibido.txt",
+    "D:\\OpsZone\\DevWorkspace\\Projects\\Tech-Test\\Oppenin\\pruebas\\resultados\\ronda-1.1\\E2E-06-A1\\salida-observada.md",
+    "D:\\OpsZone\\DevWorkspace\\Projects\\Tech-Test\\Oppenin\\pruebas\\resultados\\ronda-1.1\\E2E-06-A1\\validacion.txt",
+    "D:\\OpsZone\\DevWorkspace\\Projects\\Tech-Test\\Oppenin\\pruebas\\resultados\\ronda-1.1\\E2E-06-A1\\registro.json",
+    "D:\\OpsZone\\DevWorkspace\\Projects\\Tech-Test\\Oppenin\\pruebas\\resultados\\ronda-1.1\\E2E-06-A1\\fuentes-leidas\\01-SKILL.md",
+    "D:\\OpsZone\\DevWorkspace\\Projects\\Tech-Test\\Oppenin\\pruebas\\resultados\\ronda-1.1\\E2E-06-A1\\fuentes-leidas\\02-PERFIL-EXPEDIENTE.md",
+    "D:\\OpsZone\\DevWorkspace\\Projects\\Tech-Test\\Oppenin\\pruebas\\resultados\\ronda-1.1\\E2E-06-A1\\fuentes-leidas\\03-E2E-05-correo.md",
+    "D:\\OpsZone\\DevWorkspace\\Projects\\Tech-Test\\Oppenin\\pruebas\\resultados\\ronda-1.1\\E2E-06-A1\\fuentes-leidas\\04-E2E-05-ficha.md",
+    "D:\\OpsZone\\DevWorkspace\\Projects\\Tech-Test\\Oppenin\\pruebas\\resultados\\ronda-1.1\\E2E-06-A1\\fuentes-leidas\\05-E2E-06-medicion.md",
+    "D:\\OpsZone\\DevWorkspace\\Projects\\Tech-Test\\Oppenin\\pruebas\\resultados\\ronda-1.1\\E2E-06-A1\\fuentes-leidas\\06-salida-observada.md"
+  ]
+}

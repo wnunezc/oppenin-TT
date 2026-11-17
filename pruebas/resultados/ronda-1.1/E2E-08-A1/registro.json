@@ -1,0 +1,42 @@
+{
+  "inicio": "2026-11-17T13:09:00.043-05:00",
+  "fin": "2026-11-17T13:10:51.699-05:00",
+  "zona": "America/Panama UTC-05:00",
+  "fuentes": [
+    {
+      "ruta": "D:\\OpsZone\\DevWorkspace\\Projects\\Tech-Test\\Oppenin\\SKILL.md",
+      "sha256": "4c155d3f6172c35a1ebb8b11685756d0153282cd4b0a3d3918195aaa9e89317b"
+    },
+    {
+      "ruta": "D:\\OpsZone\\DevWorkspace\\Projects\\Tech-Test\\Oppenin\\PERFIL-EXPEDIENTE.md",
+      "sha256": "538d9dbec35316a20aad0fa8888733b874dcb87f3b217f43759d2cc92c4432f6"
+    },
+    {
+      "ruta": "D:\\OpsZone\\DevWorkspace\\Projects\\Tech-Test\\Oppenin\\pruebas\\entradas\\E2E-08-proforma.png",
+      "sha256": "7e930aa7e3b7d2e4b6bb5a797863bf61d565b92410b78f3d8424b57de597d7a8"
+    }
+  ],
+  "skill": "1.1",
+  "perfil": "PEO-01 v1.1",
+  "modelo": "No expuesto por la herramienta; no se cambió modelo ni configuración.",
+  "metodo": [
+    "Primera operación: [DateTimeOffset]::UtcNow.ToOffset([TimeSpan]::FromHours(-5)).ToString('yyyy-MM-ddTHH:mm:ss.fffzzz'); escritura de inicio.txt antes de leer fuentes.",
+    "Conservación literal del mensaje delegado en prompt-recibido.txt mediante WriteAllText UTF-8.",
+    "Get-Content -LiteralPath solicitud-ia.txt -Raw; lectura íntegra de activación.",
+    "Get-Content -LiteralPath SKILL.md -Raw; Get-Content -LiteralPath PERFIL-EXPEDIENTE.md -Raw; lectura íntegra de reglas autorizadas.",
+    "tools.view_image({path: D:\\OpsZone\\DevWorkspace\\Projects\\Tech-Test\\Oppenin\\pruebas\\entradas\\E2E-08-proforma.png}); visión directa de la imagen completa, página visible 1, todas sus regiones. Transcripción propia en transcripcion-visual.md.",
+    "No se abrieron PDF, por ser PNG la única entrada del expediente; pypdf y pdftoppm no fueron necesarios ni ejecutados. No OCR ni extracción de otra sesión.",
+    "Aritmética decimal a centavos: 20 × 80.00 = 1600.00; 1600.00 + 0.00 + 0.00 = 1600.00.",
+    "Escritura UTF-8 de transcripcion-visual.md y salida-observada.md; lectura del informe propio y comprobación por regex de 21 filas de checklist con 21 ID únicos. Revisión documental de estados/evidencias y preguntas.",
+    "Get-FileHash -LiteralPath de cada una de las tres fuentes autorizadas -Algorithm SHA256 sobre bytes originales.",
+    "Sello fin real después de guardar el informe; escritura de registro.json."
+  ],
+  "incidencias": [],
+  "salidas": [
+    "D:\\OpsZone\\DevWorkspace\\Projects\\Tech-Test\\Oppenin\\pruebas\\resultados\\ronda-1.1\\E2E-08-A1\\inicio.txt",
+    "D:\\OpsZone\\DevWorkspace\\Projects\\Tech-Test\\Oppenin\\pruebas\\resultados\\ronda-1.1\\E2E-08-A1\\prompt-recibido.txt",
+    "D:\\OpsZone\\DevWorkspace\\Projects\\Tech-Test\\Oppenin\\pruebas\\resultados\\ronda-1.1\\E2E-08-A1\\transcripcion-visual.md",
+    "D:\\OpsZone\\DevWorkspace\\Projects\\Tech-Test\\Oppenin\\pruebas\\resultados\\ronda-1.1\\E2E-08-A1\\salida-observada.md",
+    "D:\\OpsZone\\DevWorkspace\\Projects\\Tech-Test\\Oppenin\\pruebas\\resultados\\ronda-1.1\\E2E-08-A1\\registro.json"
+  ]
+}

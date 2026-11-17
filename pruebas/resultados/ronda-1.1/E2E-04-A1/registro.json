@@ -1,0 +1,50 @@
+{
+  "inicio": "2026-11-17T13:06:07.574-05:00",
+  "fin": "2026-11-17T13:08:12.142-05:00",
+  "zona": "America/Panama UTC-05:00",
+  "fuentes": [
+    {
+      "ruta": "D:\\OpsZone\\DevWorkspace\\Projects\\Tech-Test\\Oppenin\\pruebas\\resultados\\ronda-1.1\\E2E-04-A1\\solicitud-ia.txt",
+      "sha256": "22c2b667a6b94b3a8811670f7e83411a760a9ae3f918bd19845f2bfa1ced2bd7"
+    },
+    {
+      "ruta": "D:\\OpsZone\\DevWorkspace\\Projects\\Tech-Test\\Oppenin\\SKILL.md",
+      "sha256": "4c155d3f6172c35a1ebb8b11685756d0153282cd4b0a3d3918195aaa9e89317b"
+    },
+    {
+      "ruta": "D:\\OpsZone\\DevWorkspace\\Projects\\Tech-Test\\Oppenin\\PERFIL-EXPEDIENTE.md",
+      "sha256": "538d9dbec35316a20aad0fa8888733b874dcb87f3b217f43759d2cc92c4432f6"
+    },
+    {
+      "ruta": "D:\\OpsZone\\DevWorkspace\\Projects\\Tech-Test\\Oppenin\\pruebas\\entradas\\E2E-04-correo.md",
+      "sha256": "f6d74c462a3bf8376733b2068ad16a89fba19550b275ad62463d0402bd44c7fd"
+    },
+    {
+      "ruta": "D:\\OpsZone\\DevWorkspace\\Projects\\Tech-Test\\Oppenin\\pruebas\\entradas\\E2E-04-proforma.pdf",
+      "sha256": "5d04172e9338538b550f5406214efa078112a85dc1d5cd72e9c1b4fa7e91eb88"
+    }
+  ],
+  "skill": "1.1",
+  "perfil": "PEO-01 v1.1",
+  "modelo": "No expuesto por la herramienta; no se declara versión de modelo no verificable",
+  "metodo": [
+    "Primera operación: PowerShell DateTimeOffset.UtcNow.ToOffset(TimeSpan.FromHours(-5)); escritura inmediata inicio.txt antes de leer fuentes.",
+    "Conservación literal del mensaje delegado en prompt-recibido.txt; lectura íntegra Get-Content -LiteralPath solicitud-ia.txt -Raw.",
+    "Get-Content -LiteralPath para SKILL.md, PERFIL-EXPEDIENTE.md y E2E-04-correo.md, todos íntegros.",
+    "& C:\\Program Files\\WindowsApps\\OpenAI.CodexPrimaryRuntime.v26-1112-737-0_26.1112.737.0_x64__3k8sg7r9htsxt\\dependencies\\python\\python.exe extraer_pdf.py; script conservado con PdfReader, iteración enumerate(r.pages, 1), extract_text() en 1/1 páginas; extracción propia conservada. Sin renderizado/OCR: extracción con campos completos.",
+    "Informe escrito con System.IO.File.WriteAllText UTF-8; validación regex de 21 controles únicos; Get-FileHash SHA256 sobre bytes originales de fuentes; sello fin posterior a guardar informe."
+  ],
+  "incidencias": [
+    "La consola PowerShell mostró acentos de la salida de Python con caracteres de sustitución por codificación de salida; extraccion-pdf.txt se escribió directamente en UTF-8 desde Python. No impidió leer los campos.",
+    "Sin instalación, cambio de configuración/modelo, consultas externas, subagentes ni lecturas de otras sesiones."
+  ],
+  "salidas": [
+    "D:\\OpsZone\\DevWorkspace\\Projects\\Tech-Test\\Oppenin\\pruebas\\resultados\\ronda-1.1\\E2E-04-A1\\inicio.txt",
+    "D:\\OpsZone\\DevWorkspace\\Projects\\Tech-Test\\Oppenin\\pruebas\\resultados\\ronda-1.1\\E2E-04-A1\\prompt-recibido.txt",
+    "D:\\OpsZone\\DevWorkspace\\Projects\\Tech-Test\\Oppenin\\pruebas\\resultados\\ronda-1.1\\E2E-04-A1\\extraer_pdf.py",
+    "D:\\OpsZone\\DevWorkspace\\Projects\\Tech-Test\\Oppenin\\pruebas\\resultados\\ronda-1.1\\E2E-04-A1\\extraccion-pdf.txt",
+    "D:\\OpsZone\\DevWorkspace\\Projects\\Tech-Test\\Oppenin\\pruebas\\resultados\\ronda-1.1\\E2E-04-A1\\salida-observada.md",
+    "D:\\OpsZone\\DevWorkspace\\Projects\\Tech-Test\\Oppenin\\pruebas\\resultados\\ronda-1.1\\E2E-04-A1\\verificacion.txt",
+    "D:\\OpsZone\\DevWorkspace\\Projects\\Tech-Test\\Oppenin\\pruebas\\resultados\\ronda-1.1\\E2E-04-A1\\registro.json"
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "ejecucion": "E2E-02-S3",
+  "inicio": "2026-11-17T12:34:00-05:00",
+  "fin": "2026-11-17T12:36:03-05:00",
+  "zona_horaria": "America/Panama UTC-05",
+  "modelo": "no expuesto por la herramienta",
+  "skill": {
+    "archivo": "SKILL.md",
+    "nombre": "revisor-expedientes-mobiliario",
+    "version": "1.0"
+  },
+  "perfil": {
+    "archivo": "PERFIL-EXPEDIENTE.md",
+    "nombre": "PEO-01",
+    "version": "1.0"
+  },
+  "fuentes": [
+    {
+      "ruta": "D:\\OpsZone\\DevWorkspace\\Projects\\Tech-Test\\Oppenin\\SKILL.md",
+      "sha256": "1e7e7f07177d56410da6e30f713bfafa01dcc12c22b590838963e3c799b2e68c",
+      "lectura": "íntegra",
+      "paginas": null
+    },
+    {
+      "ruta": "D:\\OpsZone\\DevWorkspace\\Projects\\Tech-Test\\Oppenin\\PERFIL-EXPEDIENTE.md",
+      "sha256": "9828fdae46571641482ecbed0b160609db28a809c5551898df010af135a5ef42",
+      "lectura": "íntegra",
+      "paginas": null
+    },
+    {
+      "ruta": "D:\\OpsZone\\DevWorkspace\\Projects\\Tech-Test\\Oppenin\\pruebas\\entradas\\E2E-02-proforma.pdf",
+      "sha256": "8449390f51372510b0a1be6cf29226ed8e75c997b90b54365b24ae16f04547c8",
+      "lectura": "íntegra",
+      "paginas": 1
+    }
+  ],
+  "herramientas": [
+    "functions.exec",
+    "exec_command (PowerShell)",
+    "Python -X utf8",
+    "pypdf.PdfReader/extract_text",
+    "hashlib.sha256",
+    "decimal.Decimal"
+  ],
+  "metodo": {
+    "inicio": "Get-Date -Format yyyy-MM-ddTHH:mm:sszzz antes de leer entradas",
+    "lectura_bases": "Get-Content -LiteralPath SKILL.md -Raw; Get-Content -LiteralPath PERFIL-EXPEDIENTE.md -Raw",
+    "pdf": "PdfReader sobre archivo real; recorrido exhaustivo enumerate(r.pages,1), extract_text por página; 1/1 páginas; sin OCR",
+    "comando_reproducible": "metodo-extraccion.ps1",
+    "extraccion": "extraccion-propia.txt",
+    "comprobaciones": "Aritmética decimal de subtotal/total, cobertura de P01-P10/F01-F05/I01-I06; sin comprobación externa"
+  },
+  "alcance": "Solo las tres fuentes autorizadas; sin red, plugins, subagentes, instalaciones ni acciones externas",
+  "artefactos": [
+    {
+      "ruta": "pruebas\\resultados\\E2E-02-S3\\prompt-recibido.txt",
+      "sha256": "0cdfb7690dd7937b541fc4650d25d3be05970ffd24a6d9282edeb2ec19de437c"
+    },
+    {
+      "ruta": "pruebas\\resultados\\E2E-02-S3\\salida-observada.md",
+      "sha256": "fb9e638ba46e32cc7adc5402671f1fdf5c412de43e7bb8ed90aabe8346250f25"
+    },
+    {
+      "ruta": "pruebas\\resultados\\E2E-02-S3\\extraccion-propia.txt",
+      "sha256": "8b36b018b79ef5a0eea7b5dd2d29d1646a288f7bb2a9dce07a5d3cfc58a12d76"
+    },
+    {
+      "ruta": "pruebas\\resultados\\E2E-02-S3\\metodo-extraccion.ps1",
+      "sha256": "b55fe715e9adeef6524153a604999f89d1409911c14ffa2ccc86794f0d9783aa"
+    }
+  ],
+  "verificacion_artefactos": "JSON legible, SHA256 de fuentes/artefactos coincidentes, 21 ID del checklist y extracción de 1 página comprobados.",
+  "observaciones_ejecucion": "Python emitió SyntaxWarning por secuencia de escape no reconocida en el literal del prompt; escritura completada, sin caracteres de control y con las barras conservadas."
+}

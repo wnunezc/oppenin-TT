@@ -1,0 +1,83 @@
+{
+  "ejecucion": "E2E-04-S3",
+  "inicio": "2026-11-17T12:36:03.2032605-05:00",
+  "fin": "2026-11-17T12:38:06.685429-05:00",
+  "zona_horaria": "America/Panama",
+  "desfase_utc": "UTC-05:00",
+  "modelo": "no expuesto por la herramienta",
+  "skill": {
+    "archivo": "SKILL.md",
+    "nombre": "revisor-expedientes-mobiliario",
+    "version": "1.0"
+  },
+  "perfil": {
+    "archivo": "PERFIL-EXPEDIENTE.md",
+    "nombre": "PEO-01",
+    "version": "1.0"
+  },
+  "fuentes": [
+    {
+      "ruta": "D:\\OpsZone\\DevWorkspace\\Projects\\Tech-Test\\Oppenin\\SKILL.md",
+      "sha256": "1e7e7f07177d56410da6e30f713bfafa01dcc12c22b590838963e3c799b2e68c"
+    },
+    {
+      "ruta": "D:\\OpsZone\\DevWorkspace\\Projects\\Tech-Test\\Oppenin\\PERFIL-EXPEDIENTE.md",
+      "sha256": "9828fdae46571641482ecbed0b160609db28a809c5551898df010af135a5ef42"
+    },
+    {
+      "ruta": "D:\\OpsZone\\DevWorkspace\\Projects\\Tech-Test\\Oppenin\\pruebas\\entradas\\E2E-04-correo.md",
+      "sha256": "f6d74c462a3bf8376733b2068ad16a89fba19550b275ad62463d0402bd44c7fd"
+    },
+    {
+      "ruta": "D:\\OpsZone\\DevWorkspace\\Projects\\Tech-Test\\Oppenin\\pruebas\\entradas\\E2E-04-proforma.pdf",
+      "sha256": "5d04172e9338538b550f5406214efa078112a85dc1d5cd72e9c1b4fa7e91eb88"
+    }
+  ],
+  "herramientas": [
+    "functions.exec",
+    "exec_command (PowerShell)",
+    "Python disponible en ruta autorizada",
+    "pypdf.PdfReader"
+  ],
+  "metodo": {
+    "lectura_textos": "Get-Content -LiteralPath <ruta> -Raw -Encoding UTF8; lectura íntegra de skill, perfil y correo",
+    "pdf": "PdfReader(Path(\"pruebas/entradas/E2E-04-proforma.pdf\")); recorrido de r.pages; page.extract_text() en todas las páginas; 1 de 1 páginas abierta y extraída; sin OCR",
+    "extraccion": "extraccion-propia.txt",
+    "comando_pdf": "$env:PYTHONIOENCODING = 'utf-8'; @'\nfrom pathlib import Path\nfrom pypdf import PdfReader\np=Path('pruebas/entradas/E2E-04-proforma.pdf')\nr=PdfReader(p)\nprint('PÁGINAS:',len(r.pages))\ntexts=[]\nfor i,page in enumerate(r.pages,1):\n    text=page.extract_text()\n    texts.append(f'=== PÁGINA {i} ===\\n{text}\\n')\nresult=''.join(texts)\nprint(result)\nout=Path('pruebas/resultados/E2E-04-S3')\nout.mkdir(parents=True, exist_ok=True)\n(out/'extraccion-propia.txt').write_text(result,encoding='utf-8')\n'@ | & 'C:\\Program Files\\WindowsApps\\OpenAI.CodexPrimaryRuntime.v26-1112-737-0_26.1112.737.0_x64__3k8sg7r9htsxt\\dependencies\\python\\python.exe' -"
+  },
+  "verificacion": {
+    "pdf_paginas": 1,
+    "pdf_paginas_extraidas": 1,
+    "extraccion_sha256": "edd9c51ad4d998790629c20e21d7277ee15ebb275dcba32a76f71db3899b188e",
+    "requisitos_registrados": [
+      "P01",
+      "P02",
+      "P03",
+      "P04",
+      "P05",
+      "P06",
+      "P07",
+      "P08",
+      "P09",
+      "P10",
+      "F01",
+      "F02",
+      "F03",
+      "F04",
+      "F05",
+      "I01",
+      "I02",
+      "I03",
+      "I04",
+      "I05",
+      "I06"
+    ],
+    "artefactos": "JSON leído correctamente; cuatro salidas no vacías; 21 controles presentes; hash de extracción comprobado"
+  },
+  "salidas": [
+    "prompt-recibido.txt",
+    "salida-observada.md",
+    "registro.json",
+    "extraccion-propia.txt"
+  ]
+}

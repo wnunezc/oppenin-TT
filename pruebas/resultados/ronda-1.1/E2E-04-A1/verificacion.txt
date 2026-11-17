@@ -1,0 +1,1 @@
+Verificación documental: 21 controles únicos presentes; P01-P10, F01-F05 e I01-I06. Cada fila incluye aplicabilidad, estado y evidencia/motivo. Preguntas vinculadas a H01-H04. PDF leído: 1/1 páginas mediante pypdf. No se ejecutaron pruebas de software: tarea documental sin modificación de código.

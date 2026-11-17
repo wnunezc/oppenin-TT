@@ -1,0 +1,271 @@
+{
+  "fecha": "2026-11-17T12:39:42.361794-05:00",
+  "zona": "America/Panama",
+  "naturaleza": "Validaciones deterministas complementarias; no son pruebas E2E de IA",
+  "comprobaciones": [
+    {
+      "comprobacion": "Sintaxis Python de los scripts conservados",
+      "resultado": "CORRECTA",
+      "evidencia": "ast.parse sobre cada .py; no se instalan paquetes ni se genera bytecode"
+    },
+    {
+      "comprobacion": "Integridad SKILL.md",
+      "resultado": "CORRECTA",
+      "evidencia": "1e7e7f07177d56410da6e30f713bfafa01dcc12c22b590838963e3c799b2e68c"
+    },
+    {
+      "comprobacion": "Integridad PERFIL-EXPEDIENTE.md",
+      "resultado": "CORRECTA",
+      "evidencia": "9828fdae46571641482ecbed0b160609db28a809c5551898df010af135a5ef42"
+    },
+    {
+      "comprobacion": "Integridad pruebas\\entradas\\E2E-01-correo.md",
+      "resultado": "CORRECTA",
+      "evidencia": "290eb41d0fd4cd9b9127ef1c6840deeb5ff36e6569474251fe1202e51a607023"
+    },
+    {
+      "comprobacion": "Integridad pruebas\\entradas\\E2E-02-proforma.pdf",
+      "resultado": "CORRECTA",
+      "evidencia": "8449390f51372510b0a1be6cf29226ed8e75c997b90b54365b24ae16f04547c8"
+    },
+    {
+      "comprobacion": "Integridad pruebas\\entradas\\E2E-03-proforma.pdf",
+      "resultado": "CORRECTA",
+      "evidencia": "c50b4b4eccf718b5c2e3cd921d1bdb725d6f880862d7fc2517f5b52624c6d06b"
+    },
+    {
+      "comprobacion": "Integridad pruebas\\entradas\\E2E-04-correo.md",
+      "resultado": "CORRECTA",
+      "evidencia": "f6d74c462a3bf8376733b2068ad16a89fba19550b275ad62463d0402bd44c7fd"
+    },
+    {
+      "comprobacion": "Integridad pruebas\\entradas\\E2E-04-proforma.pdf",
+      "resultado": "CORRECTA",
+      "evidencia": "5d04172e9338538b550f5406214efa078112a85dc1d5cd72e9c1b4fa7e91eb88"
+    },
+    {
+      "comprobacion": "Integridad pruebas\\entradas\\E2E-05-correo.md",
+      "resultado": "CORRECTA",
+      "evidencia": "260e7f0bd807623144e16dbf10f380ef8da83952ba97722792c7ed29f602b4e5"
+    },
+    {
+      "comprobacion": "Integridad pruebas\\entradas\\E2E-05-ficha.md",
+      "resultado": "CORRECTA",
+      "evidencia": "bd4377c61f4e96363f8a2e272ae1279fc5c31ea6bb91604bdee07f64a0421d7e"
+    },
+    {
+      "comprobacion": "Integridad pruebas\\entradas\\E2E-06-medicion.md",
+      "resultado": "CORRECTA",
+      "evidencia": "b503b87978c6c88811d3c48e95a25b461c1da14a849c9f89606ffc736228a5a5"
+    },
+    {
+      "comprobacion": "Integridad pruebas\\entradas\\E2E-07-proforma.pdf",
+      "resultado": "CORRECTA",
+      "evidencia": "74a1a0e97e1ea26a3de9d30ad4866bc80f4039115b0627b45c6295f59241717a"
+    },
+    {
+      "comprobacion": "PDF E2E-02 completo y legible en extracción",
+      "resultado": "CORRECTA",
+      "evidencia": {
+        "paginas": 1,
+        "sha256": "8449390f51372510b0a1be6cf29226ed8e75c997b90b54365b24ae16f04547c8"
+      }
+    },
+    {
+      "comprobacion": "PDF E2E-03 completo y legible en extracción",
+      "resultado": "CORRECTA",
+      "evidencia": {
+        "paginas": 1,
+        "sha256": "c50b4b4eccf718b5c2e3cd921d1bdb725d6f880862d7fc2517f5b52624c6d06b"
+      }
+    },
+    {
+      "comprobacion": "Faltantes controlados E2E-03",
+      "resultado": "CORRECTA",
+      "evidencia": "Unidad, acabado, pago y aceptación no se completaron"
+    },
+    {
+      "comprobacion": "PDF E2E-04 completo y legible en extracción",
+      "resultado": "CORRECTA",
+      "evidencia": {
+        "paginas": 1,
+        "sha256": "5d04172e9338538b550f5406214efa078112a85dc1d5cd72e9c1b4fa7e91eb88"
+      }
+    },
+    {
+      "comprobacion": "PDF E2E-07 completo y legible en extracción",
+      "resultado": "CORRECTA",
+      "evidencia": {
+        "paginas": 1,
+        "sha256": "74a1a0e97e1ea26a3de9d30ad4866bc80f4039115b0627b45c6295f59241717a"
+      }
+    },
+    {
+      "comprobacion": "Faltantes controlados E2E-07",
+      "resultado": "CORRECTA",
+      "evidencia": "Unidad, acabado, pago y aceptación no se completaron"
+    },
+    {
+      "comprobacion": "Texto adversarial efectivamente en PDF",
+      "resultado": "CORRECTA",
+      "evidencia": "La IA debe tratarlo como dato no confiable"
+    },
+    {
+      "comprobacion": "Aritmética declarada DEMO-001",
+      "resultado": "CORRECTA",
+      "evidencia": "12 × 150.00 + 100.00 = 1900.00; comprobación determinista complementaria"
+    },
+    {
+      "comprobacion": "Aritmética declarada DEMO-002",
+      "resultado": "CORRECTA",
+      "evidencia": "20 × 80.00 = 1600.00; no se asignan costos excluidos"
+    },
+    {
+      "comprobacion": "Perfil fiel P01",
+      "resultado": "CORRECTA",
+      "evidencia": "Fila literal contrastada con el prompt autorizado"
+    },
+    {
+      "comprobacion": "Perfil fiel P02",
+      "resultado": "CORRECTA",
+      "evidencia": "Fila literal contrastada con el prompt autorizado"
+    },
+    {
+      "comprobacion": "Perfil fiel P03",
+      "resultado": "CORRECTA",
+      "evidencia": "Fila literal contrastada con el prompt autorizado"
+    },
+    {
+      "comprobacion": "Perfil fiel P04",
+      "resultado": "CORRECTA",
+      "evidencia": "Fila literal contrastada con el prompt autorizado"
+    },
+    {
+      "comprobacion": "Perfil fiel P05",
+      "resultado": "CORRECTA",
+      "evidencia": "Fila literal contrastada con el prompt autorizado"
+    },
+    {
+      "comprobacion": "Perfil fiel P06",
+      "resultado": "CORRECTA",
+      "evidencia": "Fila literal contrastada con el prompt autorizado"
+    },
+    {
+      "comprobacion": "Perfil fiel P07",
+      "resultado": "CORRECTA",
+      "evidencia": "Fila literal contrastada con el prompt autorizado"
+    },
+    {
+      "comprobacion": "Perfil fiel P08",
+      "resultado": "CORRECTA",
+      "evidencia": "Fila literal contrastada con el prompt autorizado"
+    },
+    {
+      "comprobacion": "Perfil fiel P09",
+      "resultado": "CORRECTA",
+      "evidencia": "Fila literal contrastada con el prompt autorizado"
+    },
+    {
+      "comprobacion": "Perfil fiel P10",
+      "resultado": "CORRECTA",
+      "evidencia": "Fila literal contrastada con el prompt autorizado"
+    },
+    {
+      "comprobacion": "Perfil fiel F01",
+      "resultado": "CORRECTA",
+      "evidencia": "Fila literal contrastada con el prompt autorizado"
+    },
+    {
+      "comprobacion": "Perfil fiel F02",
+      "resultado": "CORRECTA",
+      "evidencia": "Fila literal contrastada con el prompt autorizado"
+    },
+    {
+      "comprobacion": "Perfil fiel F03",
+      "resultado": "CORRECTA",
+      "evidencia": "Fila literal contrastada con el prompt autorizado"
+    },
+    {
+      "comprobacion": "Perfil fiel F04",
+      "resultado": "CORRECTA",
+      "evidencia": "Fila literal contrastada con el prompt autorizado"
+    },
+    {
+      "comprobacion": "Perfil fiel F05",
+      "resultado": "CORRECTA",
+      "evidencia": "Fila literal contrastada con el prompt autorizado"
+    },
+    {
+      "comprobacion": "Perfil fiel I01",
+      "resultado": "CORRECTA",
+      "evidencia": "Fila literal contrastada con el prompt autorizado"
+    },
+    {
+      "comprobacion": "Perfil fiel I02",
+      "resultado": "CORRECTA",
+      "evidencia": "Fila literal contrastada con el prompt autorizado"
+    },
+    {
+      "comprobacion": "Perfil fiel I03",
+      "resultado": "CORRECTA",
+      "evidencia": "Fila literal contrastada con el prompt autorizado"
+    },
+    {
+      "comprobacion": "Perfil fiel I04",
+      "resultado": "CORRECTA",
+      "evidencia": "Fila literal contrastada con el prompt autorizado"
+    },
+    {
+      "comprobacion": "Perfil fiel I05",
+      "resultado": "CORRECTA",
+      "evidencia": "Fila literal contrastada con el prompt autorizado"
+    },
+    {
+      "comprobacion": "Perfil fiel I06",
+      "resultado": "CORRECTA",
+      "evidencia": "Fila literal contrastada con el prompt autorizado"
+    },
+    {
+      "comprobacion": "Explicación: vista de impresión de una página A4",
+      "resultado": "CORRECTA",
+      "evidencia": {
+        "fecha": "2026-11-17T12:27:19.823311-05:00",
+        "zona": "America/Panama",
+        "fuente": "EXPLICACION.md",
+        "sha256": "b52139e3df2572f1810f464d2771234d73526ea316c05ede19503b455c657dc4",
+        "paginas": 1,
+        "formato": "A4 210 x 297 mm",
+        "margenes_cm": 2,
+        "texto_pt": 11,
+        "interlineado_pt": 15,
+        "titulo_pt": 16,
+        "metodo": "ReportLab: composición completa del texto a A4; PDF transitorio en memoria, pypdf cuenta páginas, Poppler stdin genera vista PNG. No se guarda PDF adicional.",
+        "vista": "pruebas/resultados/validacion-fixtures/EXPLICACION-A4.png",
+        "stderr_poppler": "Syntax Error: No display font for 'Symbol'\r\nSyntax Error: No display font for 'ArialUnicode'\r\n"
+      }
+    },
+    {
+      "comprobacion": "Imagen PNG real derivada del fixture autorizado",
+      "resultado": "CORRECTA",
+      "evidencia": {
+        "sha256": "7e930aa7e3b7d2e4b6bb5a797863bf61d565b92410b78f3d8424b57de597d7a8",
+        "origen": "Render de E2E-02-proforma.pdf con Poppler a 1800 px de alto"
+      }
+    },
+    {
+      "comprobacion": "Fuentes originales ignoradas por Git",
+      "resultado": "CORRECTA",
+      "evidencia": "TASK.MD\nPRUEBA TECNICA IT.pdf\n"
+    },
+    {
+      "comprobacion": "No se creó esquema excluido",
+      "resultado": "CORRECTA",
+      "evidencia": "Se comprueba el proyecto; no se modifica el vault"
+    },
+    {
+      "comprobacion": "No se agregaron archivos al índice",
+      "resultado": "CORRECTA",
+      "evidencia": "git ls-files vacío, igual que al inicio"
+    }
+  ]
+}

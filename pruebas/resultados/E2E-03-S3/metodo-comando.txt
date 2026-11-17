@@ -1,0 +1,11 @@
+@'
+from pathlib import Path
+from pypdf import PdfReader
+p=Path('pruebas/entradas/E2E-03-proforma.pdf')
+r=PdfReader(p)
+text='METODO: pypdf.PdfReader; acceso a cada pagina y extract_text().\nPAGINAS: '+str(len(r.pages))+'\n'
+for n,page in enumerate(r.pages,1):
+ text+='\n===== PAGINA '+str(n)+' =====\n'+(page.extract_text() or '[SIN TEXTO EXTRAIBLE]')+'\n'
+Path('pruebas/resultados/E2E-03-S3/extraccion-propia.txt').write_text(text,encoding='utf-8')
+print(text)
+'@ | & 'C:\Program Files\WindowsApps\OpenAI.CodexPrimaryRuntime.v26-1112-737-0_26.1112.737.0_x64__3k8sg7r9htsxt\dependencies\python\python.exe' -X utf8 -

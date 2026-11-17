@@ -1,0 +1,47 @@
+{
+  "inicio": "2026-11-17 13:08:43.7155180 -05:00",
+  "fin": "2026-11-17 13:10:24.3803652 -05:00",
+  "zona": "America/Panama UTC-05:00",
+  "fuentes": [
+    {
+      "ruta": "D:\\OpsZone\\DevWorkspace\\Projects\\Tech-Test\\Oppenin\\pruebas\\resultados\\ronda-1.1\\E2E-11-A1\\solicitud-ia.txt",
+      "sha256": "f3301432bb5d20a77b1ff49892fe277d7cd665aa7fc36ef1d8e9920f2216d412"
+    },
+    {
+      "ruta": "D:\\OpsZone\\DevWorkspace\\Projects\\Tech-Test\\Oppenin\\SKILL.md",
+      "sha256": "4c155d3f6172c35a1ebb8b11685756d0153282cd4b0a3d3918195aaa9e89317b"
+    },
+    {
+      "ruta": "D:\\OpsZone\\DevWorkspace\\Projects\\Tech-Test\\Oppenin\\PERFIL-EXPEDIENTE.md",
+      "sha256": "538d9dbec35316a20aad0fa8888733b874dcb87f3b217f43759d2cc92c4432f6"
+    },
+    {
+      "ruta": "D:\\OpsZone\\DevWorkspace\\Projects\\Tech-Test\\Oppenin\\pruebas\\entradas\\E2E-11-danado.pdf",
+      "sha256": "6f2fb1d15767bfa04f51aeaa5a516ae211d19766ea8f9679116bf94ff12ad77f"
+    }
+  ],
+  "skill": "1.1",
+  "perfil": "PEO-01 v1.1",
+  "modelo": "No expuesto por la herramienta; no se cambió modelo ni configuración",
+  "metodo": [
+    "Primera operación: DateTimeOffset.UtcNow.ToOffset(TimeSpan.FromHours(-5)) y WriteAllText de inicio.txt antes de leer fuentes.",
+    "Conservación literal del mensaje de activación en prompt-recibido.txt; Get-Content -Raw de solicitud-ia.txt, SKILL.md y PERFIL-EXPEDIENTE.md.",
+    "Python existente: C:\\Program Files\\WindowsApps\\OpenAI.CodexPrimaryRuntime.v26-1112-737-0_26.1112.737.0_x64__3k8sg7r9htsxt\\dependencies\\python\\python.exe; script por stdin: PdfReader(ruta), len(reader.pages), bucle enumerate(reader.pages,1) y page.extract_text(), con captura de excepciones en extraccion-pypdf.json. La apertura falló antes de acceder al número de páginas o al bucle.",
+    "Comando: pdftoppm -png D:\\OpsZone\\DevWorkspace\\Projects\\Tech-Test\\Oppenin\\pruebas\\entradas\\E2E-11-danado.pdf D:\\OpsZone\\DevWorkspace\\Projects\\Tech-Test\\Oppenin\\pruebas\\resultados\\ronda-1.1\\E2E-11-A1\\pagina. Se solicitó renderizar todas las páginas; falló sin generar páginas para visión. Salida conservada mediante Tee-Object.",
+    "Informe guardado en UTF-8. Validación mediante regex de filas de checklist: 21 controles únicos P01-P10, F01-F05 e I01-I06. Revisión documental de estados, evidencia y pregunta vinculada al único hallazgo.",
+    "Get-FileHash -Algorithm SHA256 sobre bytes originales de las cuatro fuentes autorizadas leídas; sello fin obtenido después de guardar el informe."
+  ],
+  "incidencias": [
+    "pypdf: EOF marker not found; PdfStreamError: Stream has ended unexpectedly. No fue posible leer ninguna página ni determinar su cantidad.",
+    "Poppler: Syntax Error: Couldn't find trailer dictionary (dos veces); Syntax Error: Couldn't read xref table. Código de salida 1. No se generaron imágenes y no se realizó lectura visual.",
+    "Se informa NO EVALUABLE por fuente esencial ilegible. No se reconstruyeron datos ni se consultaron fuentes no enumeradas."
+  ],
+  "salidas": [
+    "D:\\OpsZone\\DevWorkspace\\Projects\\Tech-Test\\Oppenin\\pruebas\\resultados\\ronda-1.1\\E2E-11-A1\\inicio.txt",
+    "D:\\OpsZone\\DevWorkspace\\Projects\\Tech-Test\\Oppenin\\pruebas\\resultados\\ronda-1.1\\E2E-11-A1\\prompt-recibido.txt",
+    "D:\\OpsZone\\DevWorkspace\\Projects\\Tech-Test\\Oppenin\\pruebas\\resultados\\ronda-1.1\\E2E-11-A1\\extraccion-pypdf.json",
+    "D:\\OpsZone\\DevWorkspace\\Projects\\Tech-Test\\Oppenin\\pruebas\\resultados\\ronda-1.1\\E2E-11-A1\\renderizado-poppler.txt",
+    "D:\\OpsZone\\DevWorkspace\\Projects\\Tech-Test\\Oppenin\\pruebas\\resultados\\ronda-1.1\\E2E-11-A1\\salida-observada.md",
+    "D:\\OpsZone\\DevWorkspace\\Projects\\Tech-Test\\Oppenin\\pruebas\\resultados\\ronda-1.1\\E2E-11-A1\\registro.json"
+  ]
+}
